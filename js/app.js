@@ -16,6 +16,9 @@
     // Multiselect state
     const msState = { market: [], form: [], holder: [], substance: [], route: [], atc: [] };
 
+    // Filter pill clear functions (populated by updateFilterPills)
+    let _pillClears = [];
+
     // ATC browser state
     let atcBrowserFilter = '';
     let atcBrowserVisible = false;
@@ -36,6 +39,14 @@
         'R': 'Respiratory System',
         'S': 'Sensory Organs',
         'V': 'Various'
+    };
+
+    // ── Column → Sort field mapping ────────────────────
+    const COLUMN_SORT_MAP = {
+        productName: 'name',
+        paHolder: 'holder',
+        authorisedDate: 'date',
+        marketInfo: 'market'
     };
 
     // ── Table Column Definitions ───────────────────────
@@ -212,6 +223,7 @@
             populateFilters();
             buildColumnPicker();
             applyUrlState();
+            updateFilterPills();
             initAtcBrowser();
             if (atcBrowserVisible) $('atcBrowserPanel').style.display = '';
             sortSelect.value = currentSort;
@@ -596,6 +608,7 @@
         applySort();
         renderProducts();
         updateClearButton();
+        updateFilterPills();
         updateUrlState();
     }
 
@@ -679,12 +692,29 @@
         updateStats();
 
         if (filteredProducts.length === 0) {
+            const suggestions = getSuggestions();
+            const suggestHTML = suggestions.length
+                ? `<div class="no-results-suggestions">
+                    <div class="no-results-suggest-label">Try removing one of these filters:</div>
+                    ${suggestions.map((s, i) =>
+                        `<button class="suggestion-btn" data-sug="${i}">
+                            <span>${escHTML(s.label)}</span>
+                            <span class="suggestion-count">${s.count.toLocaleString()} result${s.count === 1 ? '' : 's'}</span>
+                        </button>`
+                    ).join('')}
+                   </div>` : '';
             productsContainer.innerHTML = `
                 <div class="no-results">
                     <div class="no-results-icon">🔍</div>
                     <div class="no-results-text">No medications found</div>
-                    <p style="color:#86868b;margin-top:6px;">Try adjusting your search or filters</p>
+                    <p style="color:#86868b;margin-top:6px;">Your current filters returned no results.</p>
+                    ${suggestHTML}
                 </div>`;
+            // Wire suggestion buttons
+            productsContainer.querySelectorAll('.suggestion-btn').forEach(btn => {
+                const s = suggestions[parseInt(btn.dataset.sug)];
+                btn.addEventListener('click', () => { s.action(); filterAndRender(); });
+            });
             paginationControls.style.display = 'none';
             return;
         }
@@ -722,15 +752,31 @@
 
     function renderTableView(page) {
         const cols = TABLE_COLUMNS.filter(c => visibleColumns.includes(c.key));
+        const [sortField, sortDir] = currentSort.split('-');
+
         productsContainer.innerHTML = `
             <div class="products-table-wrapper">
             <table class="products-table">
                 <thead>
-                    <tr>${cols.map(c => `<th>${c.header}</th>`).join('')}</tr>
+                    <tr>${cols.map(c => {
+                        const sf = COLUMN_SORT_MAP[c.key];
+                        const isActive = sf && sf === sortField;
+                        let arrow = '';
+                        if (isActive) {
+                            if (sortDir === 'desc') arrow = '<span class="sort-arrow">▼</span>';
+                            else if (sortDir === 'asc') arrow = '<span class="sort-arrow">▲</span>';
+                            else arrow = '<span class="sort-arrow">⇅</span>';
+                        } else if (sf) {
+                            arrow = '<span class="sort-arrow sort-arrow-inactive">⇅</span>';
+                        }
+                        const activeClass = isActive ? ' class="sort-active"' : '';
+                        const sortAttr = sf ? ` data-sort-field="${sf}"` : '';
+                        return `<th${activeClass}${sortAttr}>${c.header}${arrow}</th>`;
+                    }).join('')}</tr>
                 </thead>
                 <tbody>
                     ${page.map(p => `
-                        <tr data-id="${escHTML(p.drugIDPK)}">
+                        <tr data-id="${escHTML(p.drugIDPK)}" tabindex="0">
                             ${cols.map(c => {
                                 const style = c.style ? ` style="${c.style}"` : '';
                                 return `<td${style}>${c.render(p)}</td>`;
@@ -740,8 +786,43 @@
                 </tbody>
             </table>
             </div>`;
+
+        // Row click + keyboard navigation
         productsContainer.querySelectorAll('tbody tr').forEach(row => {
             row.addEventListener('click', () => showDetail(row.dataset.id));
+            row.addEventListener('keydown', e => {
+                if (e.key === 'Enter') { showDetail(row.dataset.id); return; }
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    const next = row.nextElementSibling;
+                    if (next) next.focus();
+                }
+                if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    const prev = row.previousElementSibling;
+                    if (prev) prev.focus();
+                }
+            });
+        });
+
+        // Header click-to-sort
+        productsContainer.querySelectorAll('th[data-sort-field]').forEach(th => {
+            th.addEventListener('click', () => {
+                const sf = th.dataset.sortField;
+                if (sf === 'market') {
+                    currentSort = 'market';
+                } else if (currentSort === `${sf}-asc`) {
+                    currentSort = `${sf}-desc`;
+                } else {
+                    currentSort = `${sf}-asc`;
+                }
+                localStorage.setItem('sortMode', currentSort);
+                sortSelect.value = currentSort;
+                applySort();
+                currentPage = 1;
+                renderProducts();
+                updateUrlState();
+            });
         });
     }
 
@@ -935,7 +1016,117 @@
             updateMsDisplay(wrapper, key);
         });
 
+        updateFilterPills();
         filterAndRender();
+    }
+
+    // ── Filter Pill Bar ────────────────────────────────
+    function updateFilterPills() {
+        const bar = $('filterPillsBar');
+        if (!bar) return;
+        _pillClears = [];
+        const pills = [];
+
+        function addPill(label, value, clearFn) {
+            pills.push({ label, value });
+            _pillClears.push(clearFn);
+        }
+
+        if (searchTerm) {
+            addPill('Search', `"${searchTerm}"`, () => {
+                searchInput.value = ''; searchTerm = '';
+                searchClear.classList.remove('visible');
+                searchHint.style.display = '';
+            });
+        }
+        const msLabels = { market: 'Market', form: 'Form', holder: 'Holder', substance: 'Substance', route: 'Route', atc: 'ATC Code' };
+        Object.entries(msLabels).forEach(([key, label]) => {
+            if (msState[key].length) {
+                const display = msState[key].length === 1 ? msState[key][0] : `${msState[key].length} selected`;
+                addPill(label, display, () => {
+                    msState[key] = [];
+                    const w = document.querySelector(`.multiselect-wrapper[data-ms="${key}"]`);
+                    w.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+                    w.querySelectorAll('.multiselect-option').forEach(o => o.style.display = '');
+                    const si = w.querySelector('.multiselect-search input');
+                    if (si) si.value = '';
+                    updateMsDisplay(w, key);
+                });
+            }
+        });
+        if (filterType.value) addPill('Type', filterType.value, () => { filterType.value = ''; });
+        if (filterStatus.value) addPill('Registration', filterStatus.value, () => { filterStatus.value = ''; });
+        if (filterLegalBasis.value) addPill('Legal Basis', filterLegalBasis.value, () => { filterLegalBasis.value = ''; });
+        if (filterDispensing.value) addPill('Dispensing', filterDispensing.value, () => { filterDispensing.value = ''; });
+        if (atcBrowserFilter) addPill('ATC Tree', atcBrowserFilter, () => { atcBrowserFilter = ''; if (atcBrowserInitialized) updateAtcBrowserUI(); });
+
+        if (!pills.length) { bar.style.display = 'none'; return; }
+        bar.style.display = 'flex';
+        bar.innerHTML = pills.map((p, i) =>
+            `<span class="filter-pill"><span class="filter-pill-label">${escHTML(p.label)}:</span><span class="filter-pill-value" title="${escHTML(p.value)}">${escHTML(p.value)}</span><button class="filter-pill-remove" data-idx="${i}" title="Remove">×</button></span>`
+        ).join('');
+        bar.querySelectorAll('.filter-pill-remove').forEach(btn => {
+            btn.addEventListener('click', () => {
+                _pillClears[parseInt(btn.dataset.idx)]();
+                filterAndRender();
+            });
+        });
+    }
+
+    // ── Smart No-Results Suggestions ──────────────────
+    function getSuggestions() {
+        const results = [];
+        const savedSearch = searchTerm;
+        const savedAtc = atcBrowserFilter;
+        const savedMs = Object.fromEntries(Object.entries(msState).map(([k,v]) => [k, [...v]]));
+        const savedType = filterType.value;
+        const savedStatus = filterStatus.value;
+        const savedLegal = filterLegalBasis.value;
+        const savedDisp = filterDispensing.value;
+
+        function test(label, changeFn, actionFn) {
+            changeFn();
+            applyFilters();
+            const count = filteredProducts.length;
+            // Restore all state
+            searchTerm = savedSearch;
+            atcBrowserFilter = savedAtc;
+            Object.keys(msState).forEach(k => msState[k] = [...savedMs[k]]);
+            filterType.value = savedType;
+            filterStatus.value = savedStatus;
+            filterLegalBasis.value = savedLegal;
+            filterDispensing.value = savedDisp;
+            applyFilters(); // restore to 0-result state
+            if (count > 0) results.push({ label, count, action: actionFn });
+        }
+
+        if (savedSearch) {
+            test(`Remove search "${savedSearch}"`,
+                () => { searchTerm = ''; },
+                () => { searchInput.value=''; searchTerm=''; searchClear.classList.remove('visible'); searchHint.style.display=''; }
+            );
+        }
+        const msLabels2 = { market: 'Market Status', form: 'Dosage Form', holder: 'PA Holder', substance: 'Active Substance', route: 'Route', atc: 'ATC Code' };
+        Object.entries(msLabels2).forEach(([key, label]) => {
+            if (msState[key].length) {
+                test(`Remove ${label} filter`,
+                    () => { msState[key] = []; },
+                    () => {
+                        msState[key] = [];
+                        const w = document.querySelector(`.multiselect-wrapper[data-ms="${key}"]`);
+                        w.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+                        updateMsDisplay(w, key);
+                    }
+                );
+            }
+        });
+        if (savedAtc) test('Remove ATC Tree filter', () => { atcBrowserFilter = ''; }, () => { atcBrowserFilter = ''; if (atcBrowserInitialized) updateAtcBrowserUI(); });
+        if (savedType) test(`Remove Product Type filter`, () => { filterType.value = ''; }, () => { filterType.value = ''; });
+        if (savedStatus) test(`Remove Registration filter`, () => { filterStatus.value = ''; }, () => { filterStatus.value = ''; });
+        if (savedLegal) test(`Remove Legal Basis filter`, () => { filterLegalBasis.value = ''; }, () => { filterLegalBasis.value = ''; });
+        if (savedDisp) test(`Remove Dispensing filter`, () => { filterDispensing.value = ''; }, () => { filterDispensing.value = ''; });
+
+        return results.sort((a, b) => b.count - a.count).slice(0, 4);
     }
 
     function updateClearButton() {

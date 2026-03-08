@@ -580,6 +580,68 @@ body.dark .atc-active-filter { color: #0a84ff; background: rgba(10,132,255,0.12)
 .atc-collapse-btn:hover { color: #0071e3; background: rgba(0,113,227,0.06); }
 body.dark .atc-collapse-btn:hover { color: #0a84ff; background: rgba(10,132,255,0.08); }
 
+/* ── Filter Pills Bar ─────────────────────────────── */
+.filter-pills-bar {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    margin-top: 10px; align-items: center;
+}
+.filter-pill {
+    display: inline-flex; align-items: center; gap: 4px;
+    background: rgba(0,113,227,0.07); border: 1px solid rgba(0,113,227,0.22);
+    border-radius: 20px; padding: 3px 4px 3px 10px;
+    font-size: 12px; color: #0055b3; max-width: 240px;
+}
+body.dark .filter-pill { background: rgba(10,132,255,0.1); border-color: rgba(10,132,255,0.3); color: #4da3ff; }
+.filter-pill-label { font-weight: 600; white-space: nowrap; }
+.filter-pill-value { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; min-width: 0; }
+.filter-pill-remove {
+    background: rgba(0,113,227,0.12); border: none; color: #0071e3;
+    font-size: 13px; cursor: pointer; line-height: 1; border-radius: 50%;
+    width: 18px; height: 18px; display: flex; align-items: center;
+    justify-content: center; flex-shrink: 0; transition: all 0.15s;
+}
+.filter-pill-remove:hover { background: #0071e3; color: white; }
+body.dark .filter-pill-remove { color: #0a84ff; background: rgba(10,132,255,0.15); }
+body.dark .filter-pill-remove:hover { background: #0a84ff; color: white; }
+
+/* ── Table sort indicators & keyboard nav ─────────── */
+.products-table th.sort-active { color: #0071e3; background: #e4eaf5; }
+body.dark .products-table th.sort-active { color: #0a84ff; background: #2a3040; }
+.sort-arrow { font-size: 9px; vertical-align: middle; margin-left: 2px; }
+.sort-arrow-inactive { opacity: 0.25; }
+.products-table th[data-sort-field] { cursor: pointer; }
+.products-table tbody tr:focus {
+    outline: 2px solid #0071e3; outline-offset: -2px;
+    background: rgba(0,113,227,0.05) !important;
+}
+body.dark .products-table tbody tr:focus {
+    outline-color: #0a84ff; background: rgba(10,132,255,0.08) !important;
+}
+
+/* ── No-results suggestions ───────────────────────── */
+.no-results-suggestions {
+    margin-top: 18px; display: flex; flex-direction: column;
+    gap: 8px; align-items: center;
+}
+.no-results-suggest-label {
+    font-size: 12px; color: #86868b; margin-bottom: 2px;
+}
+.suggestion-btn {
+    padding: 7px 16px; border-radius: 10px; font-size: 12px;
+    background: white; border: 1px solid #dcdee3; color: #1d1d1f;
+    cursor: pointer; transition: all 0.15s;
+    display: inline-flex; align-items: center; gap: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+.suggestion-btn:hover { border-color: #0071e3; color: #0071e3; background: rgba(0,113,227,0.04); }
+body.dark .suggestion-btn { background: #2a2a2c; border-color: #424245; color: #f5f5f7; }
+body.dark .suggestion-btn:hover { border-color: #0a84ff; color: #0a84ff; }
+.suggestion-count {
+    background: #eef1f5; padding: 2px 8px; border-radius: 5px;
+    font-weight: 600; font-size: 11px; white-space: nowrap;
+}
+body.dark .suggestion-count { background: #3a3a3c; }
+
 /* Scrollbar styling */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
