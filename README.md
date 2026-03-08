@@ -1,8 +1,8 @@
-# HPRA Medications Browser
+# HPRA SearchPlus
 
 A fast, client-side browser for the [HPRA](https://www.hpra.ie/) (Health Products Regulatory Authority) medicines database XML export. Search, filter, and explore Ireland's authorised medications — no server required.
 
-**[Live Demo →](https://your-username.github.io/hpra-search/)** *(update this URL after deployment)*
+**[Live Demo →](https://snbyrnes.github.io/HPRA-SearchPlus/)**
 
 ---
 
@@ -13,6 +13,7 @@ A fast, client-side browser for the [HPRA](https://www.hpra.ie/) (Health Product
 - **Search highlighting** — matched terms are highlighted in results
 - **Multiselect filters** with searchable dropdowns for Dosage Form, PA Holder, Active Substance, Route of Administration, and ATC Code
 - **Single-select filters** for Market Status, Product Type, Registration Status, Legal Basis, and Dispensing Status
+- **ATC Hierarchical Browser** — drill into the ATC classification tree by therapeutic level (Anatomical → Therapeutic → Pharmacological → Chemical → Substance), with product counts at each node and click-to-filter
 - **Clear All** button to reset every filter and search in one click
 
 ### Views & Display
@@ -36,6 +37,7 @@ A fast, client-side browser for the [HPRA](https://www.hpra.ie/) (Health Product
 
 ### UX
 - **Dark mode** — toggle with the theme button (persisted via localStorage)
+- **Shareable links** — every filter, search, sort, and view state is encoded into the URL; click 🔗 Share to copy a link colleagues can open to see exactly what you see
 - **Keyboard shortcuts:**
   - `/` — focus the search bar
   - `Escape` — close modal or open dropdowns

@@ -1,5 +1,5 @@
 /**
- * HPRA Medications Browser – Application Logic
+ * HPRA SearchPlus – Application Logic
  * Vanilla JS | No build step required
  */
 (() => {
@@ -8,13 +8,35 @@
     let filteredProducts = [];
     let currentPage = 1;
     let itemsPerPage = 50;
-    let viewMode = localStorage.getItem('viewMode') || 'card'; // 'card' | 'table'
+    let viewMode = localStorage.getItem('viewMode') || 'table'; // 'card' | 'table'
     let currentSort = localStorage.getItem('sortMode') || 'name-asc';
     let searchTerm = '';
     let debounceTimer = null;
 
     // Multiselect state
     const msState = { form: [], holder: [], substance: [], route: [], atc: [] };
+
+    // ATC browser state
+    let atcBrowserFilter = '';
+    let atcBrowserVisible = false;
+
+    // ATC Level 1 names
+    const ATC_LEVEL1_NAMES = {
+        'A': 'Alimentary Tract & Metabolism',
+        'B': 'Blood & Blood Forming Organs',
+        'C': 'Cardiovascular System',
+        'D': 'Dermatologicals',
+        'G': 'Genito-Urinary & Sex Hormones',
+        'H': 'Systemic Hormonal Preparations',
+        'J': 'Anti-Infectives (Systemic)',
+        'L': 'Antineoplastic & Immunomodulating',
+        'M': 'Musculo-Skeletal System',
+        'N': 'Nervous System',
+        'P': 'Antiparasitic Products',
+        'R': 'Respiratory System',
+        'S': 'Sensory Organs',
+        'V': 'Various'
+    };
 
     // ── Table Column Definitions ───────────────────────
     const TABLE_COLUMNS = [
@@ -63,6 +85,8 @@
     const perPageSelect = $('perPageSelect');
     const exportBtn = $('exportBtn');
     const viewToggleBtn = $('viewToggleBtn');
+    const atcBrowserBtn = $('atcBrowserBtn');
+    const shareBtn = $('shareBtn');
 
     // ── Theme ──────────────────────────────────────────
     const themeToggle = $('themeToggle');
@@ -182,14 +206,22 @@
             $('statsBar').style.display = 'flex';
             exportBtn.style.display = '';
             viewToggleBtn.style.display = '';
+            atcBrowserBtn.style.display = '';
+            shareBtn.style.display = '';
             if ($('appFooter')) $('appFooter').style.display = '';
 
             populateFilters();
             buildColumnPicker();
+            applyUrlState();
+            initAtcBrowser();
+            if (atcBrowserVisible) $('atcBrowserPanel').style.display = '';
             sortSelect.value = currentSort;
+            applyFilters();
             applySort();
             updateViewToggle();
+            updateClearButton();
             renderProducts();
+            updateUrlState();
 
             console.log(`Loaded ${allProducts.length} products`);
         } catch (err) {
@@ -564,6 +596,7 @@
         applySort();
         renderProducts();
         updateClearButton();
+        updateUrlState();
     }
 
     function applyFilters() {
@@ -599,6 +632,7 @@
             if (msState.substance.length && !p.activeSubstances.some(s => msState.substance.includes(s))) return false;
             if (msState.route.length && !p.routesOfAdministration.some(r => msState.route.includes(r))) return false;
             if (msState.atc.length && !p.atcs.some(a => msState.atc.includes(a))) return false;
+            if (atcBrowserFilter && !p.atcs.some(a => a.startsWith(atcBrowserFilter))) return false;
 
             return true;
         });
@@ -889,6 +923,8 @@
         filterStatus.value = '';
         filterLegalBasis.value = '';
         filterDispensing.value = '';
+        atcBrowserFilter = '';
+        updateAtcBrowserUI();
 
         Object.keys(msState).forEach(key => {
             msState[key] = [];
@@ -905,11 +941,269 @@
     }
 
     function updateClearButton() {
-        const hasFilters = searchTerm ||
+        const hasFilters = searchTerm || atcBrowserFilter ||
             filterMarket.value || filterType.value || filterStatus.value ||
             filterLegalBasis.value || filterDispensing.value ||
             Object.values(msState).some(a => a.length > 0);
         clearFiltersBtn.style.display = hasFilters ? '' : 'none';
+    }
+
+    // ── ATC Hierarchical Browser ──────────────────────
+    let atcBrowserInitialized = false;
+
+    function buildAtcTreeData() {
+        const levels = [1, 3, 4, 5, 7];
+        const prefixProducts = {};
+        allProducts.forEach((p, idx) => {
+            p.atcs.forEach(atc => {
+                if (!atc) return;
+                for (const len of levels) {
+                    if (atc.length < len) break;
+                    const prefix = atc.substring(0, len);
+                    if (!prefixProducts[prefix]) prefixProducts[prefix] = new Set();
+                    prefixProducts[prefix].add(idx);
+                }
+            });
+        });
+
+        function buildChildren(parentPrefix, parentLevelIdx) {
+            const nextIdx = parentLevelIdx + 1;
+            if (nextIdx >= levels.length) return [];
+            const nextLen = levels[nextIdx];
+            return Object.keys(prefixProducts)
+                .filter(p => p.length === nextLen && p.startsWith(parentPrefix))
+                .sort()
+                .map(code => ({
+                    code,
+                    count: prefixProducts[code].size,
+                    children: buildChildren(code, nextIdx)
+                }));
+        }
+
+        return Object.keys(prefixProducts)
+            .filter(p => p.length === 1)
+            .sort()
+            .map(code => ({
+                code,
+                count: prefixProducts[code].size,
+                children: buildChildren(code, 0)
+            }));
+    }
+
+    function renderAtcTreeHTML(nodes, depth) {
+        if (!nodes.length) return '';
+        return nodes.map(node => {
+            const hasKids = node.children.length > 0;
+            const pad = depth * 20;
+            const activeClass = atcBrowserFilter === node.code ? ' atc-node-active' : '';
+            const levelName = node.code.length === 1 ? (ATC_LEVEL1_NAMES[node.code] || '') : '';
+            return `<div class="atc-node${activeClass}" data-code="${escHTML(node.code)}">
+                <div class="atc-node-row" style="padding-left:${pad + 10}px" data-code="${escHTML(node.code)}">
+                    ${hasKids ? '<span class="atc-toggle">\u25b6</span>' : '<span class="atc-toggle-spacer"></span>'}
+                    <span class="atc-code-label">${escHTML(node.code)}</span>
+                    ${levelName ? `<span class="atc-level-name">${escHTML(levelName)}</span>` : ''}
+                    <span class="atc-node-count">${node.count}</span>
+                </div>
+                ${hasKids ? `<div class="atc-children" style="display:none">${renderAtcTreeHTML(node.children, depth + 1)}</div>` : ''}
+            </div>`;
+        }).join('');
+    }
+
+    function initAtcBrowser() {
+        const tree = buildAtcTreeData();
+        const treeEl = $('atcBrowserTree');
+        treeEl.innerHTML = renderAtcTreeHTML(tree, 0);
+        updateAtcBrowserUI();
+        if (atcBrowserFilter) expandToNode(atcBrowserFilter);
+
+        if (!atcBrowserInitialized) {
+            atcBrowserInitialized = true;
+
+            treeEl.addEventListener('click', e => {
+                const toggle = e.target.closest('.atc-toggle');
+                if (toggle) {
+                    e.stopPropagation();
+                    const node = toggle.closest('.atc-node');
+                    const children = node.querySelector(':scope > .atc-children');
+                    if (children) {
+                        const isExpanded = children.style.display !== 'none';
+                        children.style.display = isExpanded ? 'none' : '';
+                        toggle.classList.toggle('expanded', !isExpanded);
+                    }
+                    return;
+                }
+                const row = e.target.closest('.atc-node-row');
+                if (row) {
+                    const code = row.dataset.code;
+                    if (atcBrowserFilter === code) {
+                        atcBrowserFilter = '';
+                    } else {
+                        atcBrowserFilter = code;
+                        expandToNode(code);
+                    }
+                    updateAtcBrowserUI();
+                    filterAndRender();
+                }
+            });
+
+            $('atcBrowserSearch').addEventListener('input', e => {
+                const term = e.target.value.toLowerCase().trim();
+                const nodes = treeEl.querySelectorAll('.atc-node');
+                if (!term) {
+                    nodes.forEach(n => n.style.display = '');
+                    return;
+                }
+                nodes.forEach(n => n.style.display = 'none');
+                nodes.forEach(n => {
+                    const code = (n.dataset.code || '').toLowerCase();
+                    const name = (ATC_LEVEL1_NAMES[n.dataset.code] || '').toLowerCase();
+                    if (code.includes(term) || name.includes(term)) {
+                        n.style.display = '';
+                        let el = n.parentElement;
+                        while (el && el !== treeEl) {
+                            if (el.classList.contains('atc-children')) el.style.display = '';
+                            if (el.classList.contains('atc-node')) el.style.display = '';
+                            el = el.parentElement;
+                        }
+                    }
+                });
+            });
+
+            $('atcCollapseAll').addEventListener('click', () => {
+                treeEl.querySelectorAll('.atc-children').forEach(c => c.style.display = 'none');
+                treeEl.querySelectorAll('.atc-toggle').forEach(t => t.classList.remove('expanded'));
+            });
+
+            $('clearAtcFilter').addEventListener('click', () => {
+                atcBrowserFilter = '';
+                updateAtcBrowserUI();
+                filterAndRender();
+            });
+        }
+    }
+
+    function expandToNode(code) {
+        const treeEl = $('atcBrowserTree');
+        const levels = [1, 3, 4, 5, 7];
+        for (const len of levels) {
+            if (len >= code.length) break;
+            const prefix = code.substring(0, len);
+            const parentNode = treeEl.querySelector(`.atc-node[data-code="${prefix}"]`);
+            if (parentNode) {
+                const children = parentNode.querySelector(':scope > .atc-children');
+                if (children) {
+                    children.style.display = '';
+                    const toggle = parentNode.querySelector(':scope > .atc-node-row .atc-toggle');
+                    if (toggle) toggle.classList.add('expanded');
+                }
+            }
+        }
+    }
+
+    function updateAtcBrowserUI() {
+        const filterBadge = $('atcActiveFilter');
+        const clearBtn = $('clearAtcFilter');
+        const treeEl = $('atcBrowserTree');
+        treeEl.querySelectorAll('.atc-node-active').forEach(n => n.classList.remove('atc-node-active'));
+        if (atcBrowserFilter) {
+            const active = treeEl.querySelector(`.atc-node[data-code="${atcBrowserFilter}"]`);
+            if (active) active.classList.add('atc-node-active');
+            filterBadge.textContent = `Filtering: ${atcBrowserFilter}`;
+            filterBadge.style.display = '';
+            clearBtn.style.display = '';
+        } else {
+            filterBadge.style.display = 'none';
+            clearBtn.style.display = 'none';
+        }
+        atcBrowserBtn.classList.toggle('active', atcBrowserVisible);
+    }
+
+    function toggleAtcBrowser() {
+        atcBrowserVisible = !atcBrowserVisible;
+        $('atcBrowserPanel').style.display = atcBrowserVisible ? '' : 'none';
+        atcBrowserBtn.classList.toggle('active', atcBrowserVisible);
+    }
+
+    // ── URL State (Shareable Links) ───────────────────
+    function updateUrlState() {
+        const params = new URLSearchParams();
+        if (searchTerm) params.set('q', searchTerm);
+        if (filterMarket.value) params.set('market', filterMarket.value);
+        if (filterType.value) params.set('type', filterType.value);
+        if (filterStatus.value) params.set('reg', filterStatus.value);
+        if (filterLegalBasis.value) params.set('legal', filterLegalBasis.value);
+        if (filterDispensing.value) params.set('disp', filterDispensing.value);
+        if (msState.form.length) params.set('form', msState.form.join('|'));
+        if (msState.holder.length) params.set('holder', msState.holder.join('|'));
+        if (msState.substance.length) params.set('sub', msState.substance.join('|'));
+        if (msState.route.length) params.set('route', msState.route.join('|'));
+        if (msState.atc.length) params.set('atc', msState.atc.join('|'));
+        if (atcBrowserFilter) params.set('atcTree', atcBrowserFilter);
+        if (currentSort !== 'name-asc') params.set('sort', currentSort);
+        if (viewMode !== 'table') params.set('view', viewMode);
+        if (currentPage > 1) params.set('page', String(currentPage));
+        if (itemsPerPage !== 50) params.set('pp', String(itemsPerPage));
+        const qs = params.toString();
+        history.replaceState(null, '', window.location.pathname + (qs ? '?' + qs : ''));
+    }
+
+    function applyUrlState() {
+        const params = new URLSearchParams(window.location.search);
+        if (!params.toString()) return false;
+
+        const q = params.get('q');
+        if (q) {
+            searchInput.value = q;
+            searchTerm = q;
+            searchClear.classList.add('visible');
+            searchHint.style.display = 'none';
+        }
+
+        if (params.get('market')) filterMarket.value = params.get('market');
+        if (params.get('type')) filterType.value = params.get('type');
+        if (params.get('reg')) filterStatus.value = params.get('reg');
+        if (params.get('legal')) filterLegalBasis.value = params.get('legal');
+        if (params.get('disp')) filterDispensing.value = params.get('disp');
+
+        const msParams = { form: 'form', holder: 'holder', substance: 'sub', route: 'route', atc: 'atc' };
+        Object.entries(msParams).forEach(([key, param]) => {
+            const val = params.get(param);
+            if (val) {
+                const values = val.split('|');
+                const wrapper = document.querySelector(`.multiselect-wrapper[data-ms="${key}"]`);
+                if (wrapper) {
+                    wrapper.querySelectorAll('.multiselect-options input[type="checkbox"]').forEach(cb => {
+                        const idx = parseInt(cb.dataset.idx);
+                        cb.checked = values.includes(msData[key][idx]);
+                    });
+                    msState[key] = getMsSelectedValues(key);
+                    updateMsDisplay(wrapper, key);
+                }
+            }
+        });
+
+        const atcTree = params.get('atcTree');
+        if (atcTree) {
+            atcBrowserFilter = atcTree;
+            atcBrowserVisible = true;
+        }
+
+        const sort = params.get('sort');
+        if (sort) { currentSort = sort; sortSelect.value = sort; }
+
+        const view = params.get('view');
+        if (view === 'card' || view === 'table') viewMode = view;
+
+        const pp = params.get('pp');
+        if (pp && ['25','50','100','250'].includes(pp)) {
+            itemsPerPage = parseInt(pp);
+            perPageSelect.value = pp;
+        }
+
+        const page = params.get('page');
+        if (page) currentPage = parseInt(page) || 1;
+
+        return true;
     }
 
     // ── CSV Export ─────────────────────────────────────
@@ -976,6 +1270,7 @@
         const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
         currentPage = Math.max(1, Math.min(page, totalPages));
         renderProducts();
+        updateUrlState();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
@@ -1010,6 +1305,7 @@
         applySort();
         currentPage = 1;
         renderProducts();
+        updateUrlState();
     });
 
     // Clear all
@@ -1024,6 +1320,20 @@
         localStorage.setItem('viewMode', viewMode);
         updateViewToggle();
         renderProducts();
+        updateUrlState();
+    });
+
+    // ATC browser toggle
+    atcBrowserBtn.addEventListener('click', toggleAtcBrowser);
+
+    // Share / copy link
+    shareBtn.addEventListener('click', () => {
+        updateUrlState();
+        navigator.clipboard.writeText(window.location.href).then(() => {
+            showToast('Link copied to clipboard');
+        }).catch(() => {
+            showToast('Could not copy link');
+        });
     });
 
     // Pagination
@@ -1035,6 +1345,7 @@
         itemsPerPage = parseInt(perPageSelect.value);
         currentPage = 1;
         renderProducts();
+        updateUrlState();
     });
 
     // Modal close

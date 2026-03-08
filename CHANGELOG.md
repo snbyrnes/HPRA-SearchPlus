@@ -1,6 +1,19 @@
 # Changelog
 
-All notable changes to the HPRA Medications Browser will be documented in this file.
+All notable changes to HPRA SearchPlus will be documented in this file.
+
+---
+
+## v1.4.0 — 2026-03-08
+
+### Added
+- **ATC Hierarchical Browser** — drill into the ATC classification tree across all 5 levels (Anatomical → Therapeutic → Pharmacological → Chemical → Substance) with product counts at each node; click to filter, search to find codes, collapse/expand all
+- **Shareable Links** — every filter, search, sort, view mode, and page state is encoded into URL query parameters; click 🔗 Share to copy a reproducible link for colleagues
+- **Share button** in the header toolbar to copy the current filtered view URL to clipboard
+
+### Changed
+- **Renamed to HPRA SearchPlus** — updated title, headings, footer, comments, README, and changelog references
+- **Table view is now the default** — loads in table mode when no saved preference exists
 
 ---
 

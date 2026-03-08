@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HPRA Medications Browser</title>
+    <title>HPRA SearchPlus</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
         <div class="header-content">
             <div class="header-top">
                 <div class="header-text">
-                    <h1>HPRA Medications Browser</h1>
+                    <h1>HPRA SearchPlus</h1>
                     <div class="publication-date" id="publicationDate">No data loaded</div>
                 </div>
                 <div class="header-controls">
@@ -23,6 +23,8 @@
                         <button type="button" class="btn btn-secondary" id="columnPickerBtn" title="Choose table columns">⚙️ Columns</button>
                         <div class="column-picker-dropdown" id="columnPickerDropdown"></div>
                     </div>
+                    <button type="button" class="btn btn-secondary" id="atcBrowserBtn" title="Browse ATC classification tree" style="display:none;">🌳 ATC</button>
+                    <button type="button" class="btn btn-secondary" id="shareBtn" title="Copy shareable link with current filters" style="display:none;">🔗 Share</button>
                     <button type="button" class="btn-icon" id="themeToggle" title="Toggle dark mode">🌙</button>
                 </div>
             </div>
@@ -165,6 +167,21 @@
             </div>
         </div>
 
+        <div class="atc-browser-panel" id="atcBrowserPanel" style="display:none;">
+            <div class="atc-browser-header">
+                <div class="atc-browser-title">🌳 ATC Classification Browser</div>
+                <div style="display:flex;gap:6px;align-items:center;">
+                    <span class="atc-active-filter" id="atcActiveFilter" style="display:none;"></span>
+                    <button type="button" class="btn btn-danger" id="clearAtcFilter" style="display:none;font-size:11px;padding:4px 10px;">✕ Clear</button>
+                    <button type="button" class="atc-collapse-btn" id="atcCollapseAll" title="Collapse all">⊟</button>
+                </div>
+            </div>
+            <div class="atc-browser-search">
+                <input type="text" id="atcBrowserSearch" placeholder="Search ATC codes..." />
+            </div>
+            <div class="atc-browser-tree" id="atcBrowserTree"></div>
+        </div>
+
         <div id="productsContainer" style="display:none;"></div>
 
         <div class="pagination" id="paginationControls" style="display:none;">
@@ -192,7 +209,7 @@
     <div class="toast" id="toast"></div>
 
     <footer class="app-footer" id="appFooter" style="display:none;">
-        <span>HPRA Medications Browser</span>
+        <span>HPRA SearchPlus</span>
         <span class="footer-sep">|</span>
         <span>Data sourced from <a href="https://www.hpra.ie" target="_blank" rel="noopener">HPRA</a></span>
         <span class="footer-sep">|</span>
