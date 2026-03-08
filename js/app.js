@@ -14,7 +14,7 @@
     let debounceTimer = null;
 
     // Multiselect state
-    const msState = { form: [], holder: [], substance: [], route: [], atc: [] };
+    const msState = { market: [], form: [], holder: [], substance: [], route: [], atc: [] };
 
     // ATC browser state
     let atcBrowserFilter = '';
@@ -74,7 +74,6 @@
     const searchClear = $('searchClear');
     const searchHint = $('searchHint');
     const sortSelect = $('sortSelect');
-    const filterMarket = $('filterMarket');
     const filterType = $('filterType');
     const filterStatus = $('filterStatus');
     const filterLegalBasis = $('filterLegalBasis');
@@ -313,7 +312,7 @@
 
     // Stores the actual string values for each multiselect, indexed by position.
     // This avoids putting raw values into HTML attributes where special chars break things.
-    const msData = { form: [], holder: [], substance: [], route: [], atc: [] };
+    const msData = { market: [], form: [], holder: [], substance: [], route: [], atc: [] };
 
     function populateFilters() {
         // Clear previous options from <select> elements (supports re-loading a new file)
@@ -334,6 +333,7 @@
         populateSelect(filterDispensing, allDisp);
 
         // Multiselects with counts
+        buildMultiselectOptions('market', countBy(allProducts, p => [p.marketInfo]));
         buildMultiselectOptions('form', countBy(allProducts, p => [p.dosageForm]));
         buildMultiselectOptions('holder', countBy(allProducts, p => [p.paHolder]));
         buildMultiselectOptions('substance', countBy(allProducts, p => p.activeSubstances));
@@ -601,7 +601,6 @@
 
     function applyFilters() {
         const term = searchTerm.toLowerCase();
-        const market = filterMarket.value;
         const type = filterType.value;
         const status = filterStatus.value;
         const legal = filterLegalBasis.value;
@@ -622,7 +621,7 @@
                 if (!words.every(w => haystack.includes(w))) return false;
             }
 
-            if (market && p.marketInfo !== market) return false;
+            if (msState.market.length && !msState.market.includes(p.marketInfo)) return false;
             if (type && p.productType !== type) return false;
             if (status && p.registrationStatus !== status) return false;
             if (legal && p.legalBasis !== legal) return false;
@@ -918,7 +917,6 @@
         searchTerm = '';
         searchClear.classList.remove('visible');
         searchHint.style.display = '';
-        filterMarket.value = '';
         filterType.value = '';
         filterStatus.value = '';
         filterLegalBasis.value = '';
@@ -942,7 +940,7 @@
 
     function updateClearButton() {
         const hasFilters = searchTerm || atcBrowserFilter ||
-            filterMarket.value || filterType.value || filterStatus.value ||
+            filterType.value || filterStatus.value ||
             filterLegalBasis.value || filterDispensing.value ||
             Object.values(msState).some(a => a.length > 0);
         clearFiltersBtn.style.display = hasFilters ? '' : 'none';
@@ -1128,7 +1126,7 @@
     function updateUrlState() {
         const params = new URLSearchParams();
         if (searchTerm) params.set('q', searchTerm);
-        if (filterMarket.value) params.set('market', filterMarket.value);
+        if (msState.market.length) params.set('market', msState.market.join('|'));
         if (filterType.value) params.set('type', filterType.value);
         if (filterStatus.value) params.set('reg', filterStatus.value);
         if (filterLegalBasis.value) params.set('legal', filterLegalBasis.value);
@@ -1159,13 +1157,12 @@
             searchHint.style.display = 'none';
         }
 
-        if (params.get('market')) filterMarket.value = params.get('market');
         if (params.get('type')) filterType.value = params.get('type');
         if (params.get('reg')) filterStatus.value = params.get('reg');
         if (params.get('legal')) filterLegalBasis.value = params.get('legal');
         if (params.get('disp')) filterDispensing.value = params.get('disp');
 
-        const msParams = { form: 'form', holder: 'holder', substance: 'sub', route: 'route', atc: 'atc' };
+        const msParams = { market: 'market', form: 'form', holder: 'holder', substance: 'sub', route: 'route', atc: 'atc' };
         Object.entries(msParams).forEach(([key, param]) => {
             const val = params.get(param);
             if (val) {
@@ -1294,7 +1291,7 @@
     });
 
     // Select filters
-    [filterMarket, filterType, filterStatus, filterLegalBasis, filterDispensing].forEach(sel => {
+    [filterType, filterStatus, filterLegalBasis, filterDispensing].forEach(sel => {
         sel.addEventListener('change', filterAndRender);
     });
 

@@ -52,14 +52,16 @@
             </div>
 
             <div class="filters-row" id="filtersRow" style="display:none;">
-                <div class="filter-group">
+                <div class="filter-group" id="filterMarketGroup">
                     <label class="filter-label">Market Status</label>
-                    <select id="filterMarket">
-                        <option value="">All</option>
-                        <option value="Marketed">Marketed</option>
-                        <option value="Not marketed">Not Marketed</option>
-                        <option value="Unknown">Unknown</option>
-                    </select>
+                    <div class="multiselect-wrapper" data-ms="market">
+                        <button type="button" class="multiselect-button"><span class="ms-display multiselect-placeholder">All</span><span>▼</span></button>
+                        <div class="multiselect-dropdown">
+                            <div class="multiselect-search"><input type="text" placeholder="Type to search..."></div>
+                            <div class="multiselect-actions"><button type="button" class="ms-select-all">Select Visible</button><button type="button" class="ms-clear">Clear All</button></div>
+                            <div class="multiselect-options"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="filter-group">
                     <label class="filter-label">Product Type</label>
