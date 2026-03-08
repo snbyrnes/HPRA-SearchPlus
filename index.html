@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPRA Medications Browser</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="header-top">
+                <div class="header-text">
+                    <h1>HPRA Medications Browser</h1>
+                    <div class="publication-date" id="publicationDate">No data loaded</div>
+                </div>
+                <div class="header-controls">
+                    <input type="file" id="xmlFileInput" accept=".xml" />
+                    <button type="button" class="btn btn-secondary" id="fileSelectBtn" title="Load XML file">📄 Load XML</button>
+                    <button type="button" class="btn btn-primary" id="exportBtn" title="Export filtered results to CSV" style="display:none;">📥 Export CSV</button>
+                    <button type="button" class="btn btn-secondary" id="viewToggleBtn" title="Toggle table/card view" style="display:none;">📊 Table</button>
+                    <div class="column-picker-wrapper" id="columnPickerWrapper" style="display:none;position:relative;">
+                        <button type="button" class="btn btn-secondary" id="columnPickerBtn" title="Choose table columns">⚙️ Columns</button>
+                        <div class="column-picker-dropdown" id="columnPickerDropdown"></div>
+                    </div>
+                    <button type="button" class="btn-icon" id="themeToggle" title="Toggle dark mode">🌙</button>
+                </div>
+            </div>
+
+            <div class="search-row" id="searchRow" style="display:none;">
+                <div class="search-input-wrapper">
+                    <input type="text" class="search-input" id="searchInput"
+                        placeholder="Search products, substances, ATC codes, holders, licence numbers..."
+                        autocomplete="off">
+                    <button class="search-clear" id="searchClear" title="Clear search">✕</button>
+                    <span class="search-shortcut" id="searchHint">/</span>
+                </div>
+                <div style="display:flex;gap:6px;align-items:center;">
+                    <label class="filter-label" style="white-space:nowrap;">Sort by</label>
+                    <select id="sortSelect" style="width:auto;min-width:140px;">
+                        <option value="name-asc">Name A–Z</option>
+                        <option value="name-desc">Name Z–A</option>
+                        <option value="holder-asc">Holder A–Z</option>
+                        <option value="holder-desc">Holder Z–A</option>
+                        <option value="date-desc">Date (Newest)</option>
+                        <option value="date-asc">Date (Oldest)</option>
+                        <option value="market">Market Status</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="filters-row" id="filtersRow" style="display:none;">
+                <div class="filter-group">
+                    <label class="filter-label">Market Status</label>
+                    <select id="filterMarket">
+                        <option value="">All</option>
+                        <option value="Marketed">Marketed</option>
+                        <option value="Not marketed">Not Marketed</option>
+                        <option value="Unknown">Unknown</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Product Type</label>
+                    <select id="filterType"><option value="">All</option></select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Registration</label>
+                    <select id="filterStatus"><option value="">All</option></select>
+                </div>
+                <div class="filter-group" id="filterFormGroup">
+                    <label class="filter-label">Dosage Form</label>
+                    <div class="multiselect-wrapper" data-ms="form">
+                        <button type="button" class="multiselect-button"><span class="ms-display multiselect-placeholder">All</span><span>▼</span></button>
+                        <div class="multiselect-dropdown">
+                            <div class="multiselect-search"><input type="text" placeholder="Type to search forms..."></div>
+                            <div class="multiselect-actions"><button type="button" class="ms-select-all">Select Visible</button><button type="button" class="ms-clear">Clear All</button></div>
+                            <div class="multiselect-options"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group" id="filterHolderGroup">
+                    <label class="filter-label">PA Holder</label>
+                    <div class="multiselect-wrapper" data-ms="holder">
+                        <button type="button" class="multiselect-button"><span class="ms-display multiselect-placeholder">All</span><span>▼</span></button>
+                        <div class="multiselect-dropdown">
+                            <div class="multiselect-search"><input type="text" placeholder="Type to search holders..."></div>
+                            <div class="multiselect-actions"><button type="button" class="ms-select-all">Select Visible</button><button type="button" class="ms-clear">Clear All</button></div>
+                            <div class="multiselect-options"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group" id="filterSubstancesGroup">
+                    <label class="filter-label">Active Substance</label>
+                    <div class="multiselect-wrapper" data-ms="substance">
+                        <button type="button" class="multiselect-button"><span class="ms-display multiselect-placeholder">All</span><span>▼</span></button>
+                        <div class="multiselect-dropdown">
+                            <div class="multiselect-search"><input type="text" placeholder="Type to search substances..."></div>
+                            <div class="multiselect-actions"><button type="button" class="ms-select-all">Select Visible</button><button type="button" class="ms-clear">Clear All</button></div>
+                            <div class="multiselect-options"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group" id="filterRoutesGroup">
+                    <label class="filter-label">Route</label>
+                    <div class="multiselect-wrapper" data-ms="route">
+                        <button type="button" class="multiselect-button"><span class="ms-display multiselect-placeholder">All</span><span>▼</span></button>
+                        <div class="multiselect-dropdown">
+                            <div class="multiselect-search"><input type="text" placeholder="Type to search routes..."></div>
+                            <div class="multiselect-actions"><button type="button" class="ms-select-all">Select Visible</button><button type="button" class="ms-clear">Clear All</button></div>
+                            <div class="multiselect-options"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group" id="filterATCGroup">
+                    <label class="filter-label">ATC Code</label>
+                    <div class="multiselect-wrapper" data-ms="atc">
+                        <button type="button" class="multiselect-button"><span class="ms-display multiselect-placeholder">All</span><span>▼</span></button>
+                        <div class="multiselect-dropdown">
+                            <div class="multiselect-search"><input type="text" placeholder="Type to search ATC codes..."></div>
+                            <div class="multiselect-actions"><button type="button" class="ms-select-all">Select Visible</button><button type="button" class="ms-clear">Clear All</button></div>
+                            <div class="multiselect-options"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Legal Basis</label>
+                    <select id="filterLegalBasis"><option value="">All</option></select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Dispensing</label>
+                    <select id="filterDispensing"><option value="">All</option></select>
+                </div>
+                <div class="filter-group" style="justify-content:flex-end;">
+                    <button type="button" class="btn btn-danger" id="clearFiltersBtn" style="display:none;" title="Reset all filters and search">✕ Clear All</button>
+                </div>
+            </div>
+
+            <div class="stats-bar" id="statsBar" style="display:none;">
+                <span class="stat-total" id="statTotal"></span>
+                <span class="stat-pill stat-marketed" id="statMarketed"></span>
+                <span class="stat-pill stat-not-marketed" id="statNotMarketed"></span>
+                <span class="stat-pill stat-unknown" id="statUnknown"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="loadingState">
+            <div class="loading">
+                <div class="loader"></div>
+                <p>Looking for XML data...</p>
+            </div>
+        </div>
+
+        <div id="dropZone" style="display:none;">
+            <div class="drop-zone" id="dropArea">
+                <div class="drop-zone-icon">📂</div>
+                <div class="drop-zone-title">Load HPRA Product List</div>
+                <div class="drop-zone-sub">Drag & drop your XML file here, or click to browse</div>
+                <button class="btn btn-primary" id="dropZoneBrowse">Browse Files</button>
+                <div class="drop-zone-hint">
+                    Place the latest XML file (e.g. latestHumanlist.xml) in the <code>data/</code> folder,<br>
+                    or drag and drop it directly onto this page.
+                </div>
+            </div>
+        </div>
+
+        <div id="productsContainer" style="display:none;"></div>
+
+        <div class="pagination" id="paginationControls" style="display:none;">
+            <button type="button" id="firstPageBtn" title="First page">⟪</button>
+            <button type="button" id="prevPageBtn" title="Previous page">← Prev</button>
+            <div class="page-info"><span id="pageInfo">Page 1</span></div>
+            <button type="button" id="nextPageBtn" title="Next page">Next →</button>
+            <button type="button" id="lastPageBtn" title="Last page">⟫</button>
+            <select id="perPageSelect" title="Items per page">
+                <option value="25">25</option>
+                <option value="50" selected>50</option>
+                <option value="100">100</option>
+                <option value="250">250</option>
+            </select>
+            <span style="font-size:12px;color:#86868b;">per page</span>
+        </div>
+    </div>
+
+    <div class="modal" id="detailModal">
+        <div class="modal-content" id="modalContent">
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <footer class="app-footer" id="appFooter" style="display:none;">
+        <span>HPRA Medications Browser</span>
+        <span class="footer-sep">|</span>
+        <span>Data sourced from <a href="https://www.hpra.ie" target="_blank" rel="noopener">HPRA</a></span>
+        <span class="footer-sep">|</span>
+        <a href="#" id="changelogLink">Changelog</a>
+    </footer>
+
+    <div class="changelog-overlay" id="changelogModal">
+        <div class="changelog-modal">
+            <div class="changelog-header">
+                <h3>📋 Changelog</h3>
+                <button type="button" class="changelog-close" id="closeChangelog" title="Close">✕</button>
+            </div>
+            <div class="changelog-body" id="changelogContent">
+                <div class="changelog-loading">Loading changelog...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# Auto-detect text files and normalise line endings
+* text=auto
+
+# XML data files - treat as text
+*.xml text
+
+# Web assets
+*.html text
+*.css text
+*.js text
+*.md text
+*.json text
