@@ -4,6 +4,15 @@ All notable changes to HPRA SearchPlus will be documented in this file.
 
 ---
 
+## v1.5.0 — 2026-03-11
+
+### Added
+- **Resizable table columns** — drag the right edge of any column header to adjust its width; widths persist across sessions via localStorage
+- **Reset Widths button** — new "↔ Widths" button in the ⚙️ Columns picker resets all column widths back to their natural auto-sized layout
+- **GitHub Issues link in footer** — quick link to report bugs or request features directly from the app
+
+---
+
 ## v1.4.0 — 2026-03-08
 
 ### Added
