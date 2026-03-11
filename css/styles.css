@@ -610,6 +610,22 @@ body.dark .products-table th.sort-active { color: #0a84ff; background: #2a3040; 
 .sort-arrow { font-size: 9px; vertical-align: middle; margin-left: 2px; }
 .sort-arrow-inactive { opacity: 0.25; }
 .products-table th[data-sort-field] { cursor: pointer; }
+
+/* ── Column resize handle ─────────────────────────── */
+.col-resize-handle {
+    position: absolute; top: 0; right: 0;
+    width: 6px; height: 100%;
+    cursor: col-resize; z-index: 2;
+    border-right: 2px solid transparent;
+    transition: border-color 0.15s;
+}
+.col-resize-handle:hover, .col-resize-handle.resizing {
+    border-right-color: #0071e3;
+}
+body.dark .col-resize-handle:hover,
+body.dark .col-resize-handle.resizing { border-right-color: #0a84ff; }
+body.col-resizing, body.col-resizing * { cursor: col-resize !important; user-select: none !important; }
+
 .products-table tbody tr:focus {
     outline: 2px solid #0071e3; outline-offset: -2px;
     background: rgba(0,113,227,0.05) !important;

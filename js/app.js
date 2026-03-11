@@ -79,6 +79,11 @@
         return TABLE_COLUMNS.filter(c => c.default).map(c => c.key);
     })();
 
+    // Column widths (persisted in localStorage)
+    let colWidths = (() => {
+        try { return JSON.parse(localStorage.getItem('colWidths')) || {}; } catch(e) { return {}; }
+    })();
+
     // ── DOM refs ───────────────────────────────────────
     const $ = id => document.getElementById(id);
     const searchInput = $('searchInput');
@@ -495,6 +500,16 @@
             return;
         }
 
+        // Column picker: Reset Widths
+        if (e.target.closest('.cp-reset-widths')) {
+            e.stopPropagation();
+            colWidths = {};
+            localStorage.removeItem('colWidths');
+            if (viewMode === 'table') renderProducts();
+            showToast('Column widths reset');
+            return;
+        }
+
         // Inside column picker dropdown \u2014 keep it open
         if (e.target.closest('#columnPickerDropdown')) {
             e.stopPropagation();
@@ -754,9 +769,14 @@
         const cols = TABLE_COLUMNS.filter(c => visibleColumns.includes(c.key));
         const [sortField, sortDir] = currentSort.split('-');
 
+        const colgroupHTML = `<colgroup>${cols.map(c =>
+            colWidths[c.key] ? `<col style="width:${colWidths[c.key]}px">` : '<col>'
+        ).join('')}</colgroup>`;
+
         productsContainer.innerHTML = `
             <div class="products-table-wrapper">
             <table class="products-table">
+                ${colgroupHTML}
                 <thead>
                     <tr>${cols.map(c => {
                         const sf = COLUMN_SORT_MAP[c.key];
@@ -771,7 +791,7 @@
                         }
                         const activeClass = isActive ? ' class="sort-active"' : '';
                         const sortAttr = sf ? ` data-sort-field="${sf}"` : '';
-                        return `<th${activeClass}${sortAttr}>${c.header}${arrow}</th>`;
+                        return `<th${activeClass}${sortAttr}>${c.header}${arrow}<div class="col-resize-handle"></div></th>`;
                     }).join('')}</tr>
                 </thead>
                 <tbody>
@@ -807,7 +827,8 @@
 
         // Header click-to-sort
         productsContainer.querySelectorAll('th[data-sort-field]').forEach(th => {
-            th.addEventListener('click', () => {
+            th.addEventListener('click', e => {
+                if (e.target.closest('.col-resize-handle')) return;
                 const sf = th.dataset.sortField;
                 if (sf === 'market') {
                     currentSort = 'market';
@@ -824,6 +845,9 @@
                 updateUrlState();
             });
         });
+
+        // Column resize
+        attachColResize(cols);
     }
 
     function cardHTML(p) {
@@ -1445,12 +1469,63 @@
         const dropdown = $('columnPickerDropdown');
         if (!dropdown) return;
         let html = '<div class="cp-header">Table Columns</div>';
-        html += '<div class="cp-actions"><button type="button" class="cp-show-all">Show All</button><button type="button" class="cp-defaults">Defaults</button></div>';
+        html += '<div class="cp-actions"><button type="button" class="cp-show-all">Show All</button><button type="button" class="cp-defaults">Defaults</button><button type="button" class="cp-reset-widths" title="Reset all column widths">&#8596; Widths</button></div>';
         html += TABLE_COLUMNS.map(c => {
             const checked = visibleColumns.includes(c.key) ? ' checked' : '';
             return `<label class="column-picker-option"><input type="checkbox" value="${c.key}"${checked}><span>${c.header}</span></label>`;
         }).join('');
         dropdown.innerHTML = html;
+    }
+
+    // ── Column Resize ──────────────────────────────────
+    function attachColResize(cols) {
+        const table = productsContainer.querySelector('.products-table');
+        if (!table) return;
+        const ths = [...table.querySelectorAll('thead th')];
+        const colEls = [...table.querySelectorAll('colgroup col')];
+
+        // Lock in actual rendered widths for columns without a saved width, then switch to fixed layout
+        ths.forEach((th, i) => {
+            const key = cols[i]?.key;
+            if (!key) return;
+            if (!colWidths[key]) colWidths[key] = th.offsetWidth;
+            if (colEls[i]) colEls[i].style.width = colWidths[key] + 'px';
+        });
+        table.style.tableLayout = 'fixed';
+
+        // Attach drag handlers to each resize handle
+        ths.forEach((th, i) => {
+            const handle = th.querySelector('.col-resize-handle');
+            if (!handle) return;
+            const key = cols[i]?.key;
+
+            handle.addEventListener('mousedown', e => {
+                e.preventDefault();
+                e.stopPropagation();
+                const startX = e.clientX;
+                const startWidth = parseInt(colEls[i]?.style.width) || th.offsetWidth;
+                handle.classList.add('resizing');
+                document.body.classList.add('col-resizing');
+
+                function onMove(e) {
+                    const newWidth = Math.max(40, startWidth + e.clientX - startX);
+                    if (colEls[i]) colEls[i].style.width = newWidth + 'px';
+                }
+                function onUp(e) {
+                    handle.classList.remove('resizing');
+                    document.body.classList.remove('col-resizing');
+                    document.removeEventListener('mousemove', onMove);
+                    document.removeEventListener('mouseup', onUp);
+                    const newWidth = Math.max(40, startWidth + e.clientX - startX);
+                    if (key) {
+                        colWidths[key] = newWidth;
+                        localStorage.setItem('colWidths', JSON.stringify(colWidths));
+                    }
+                }
+                document.addEventListener('mousemove', onMove);
+                document.addEventListener('mouseup', onUp);
+            });
+        });
     }
 
     // ── Pagination ─────────────────────────────────────
