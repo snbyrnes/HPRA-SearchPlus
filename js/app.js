@@ -785,16 +785,17 @@
         const cols = TABLE_COLUMNS.filter(c => visibleColumns.includes(c.key));
         const [sortField, sortDir] = currentSort.split('-');
 
-        const colgroupHTML = `<colgroup><col style="width:36px">${cols.map(c =>
+        const REVIEW_W = 36;
+        const colgroupHTML = `<colgroup><col style="width:${REVIEW_W}px">${cols.map(c =>
             colWidths[c.key] ? `<col style="width:${colWidths[c.key]}px">` : '<col>'
         ).join('')}</colgroup>`;
 
         productsContainer.innerHTML = `
             <div class="products-table-wrapper">
-            <table class="products-table">
+            <table class="products-table" style="table-layout:fixed">
                 ${colgroupHTML}
                 <thead>
-                    <tr><th class="review-col" title="Mark as reviewed">☑</th>${cols.map(c => {
+                    <tr><th class="review-col" style="width:${REVIEW_W}px;min-width:${REVIEW_W}px;max-width:${REVIEW_W}px" title="Mark as reviewed">☑</th>${cols.map(c => {
                         const sf = COLUMN_SORT_MAP[c.key];
                         const isActive = sf && sf === sortField;
                         let arrow = '';
@@ -813,7 +814,7 @@
                 <tbody>
                     ${page.map(p => `
                         <tr data-id="${escHTML(p.drugIDPK)}" tabindex="0"${reviewedIds.has(p.drugIDPK) ? ' class="row-reviewed"' : ''}>
-                            <td class="review-col"><input type="checkbox" class="review-cb" data-id="${escHTML(p.drugIDPK)}"${reviewedIds.has(p.drugIDPK) ? ' checked' : ''}></td>
+                            <td class="review-col" style="width:${REVIEW_W}px;min-width:${REVIEW_W}px;max-width:${REVIEW_W}px"><input type="checkbox" class="review-cb" data-id="${escHTML(p.drugIDPK)}"${reviewedIds.has(p.drugIDPK) ? ' checked' : ''}></td>
                             ${cols.map(c => {
                                 const style = c.style ? ` style="${c.style}"` : '';
                                 return `<td${style}>${c.render(p)}</td>`;
@@ -1569,17 +1570,16 @@
         const ths = [...table.querySelectorAll('thead th')];
         const colEls = [...table.querySelectorAll('colgroup col')];
 
-        // ths[0] / colEls[0] is the review checkbox col — skip it (i=0), offset cols index by 1
-        // Lock in actual rendered widths for columns without a saved width, then switch to fixed layout
-        if (colEls[0]) colEls[0].style.width = '36px'; // always pin review col
+        // Table is already fixed-layout (set inline on the element).
+        // ths[0]/colEls[0] = review col — always pinned to 36px, not resizable.
+        // Data cols start at index 1; cols[] is 0-based for data only.
         ths.forEach((th, i) => {
-            if (i === 0) return; // review col — keep as-is
+            if (i === 0) return; // review col — skip
             const key = cols[i - 1]?.key;
             if (!key) return;
             if (!colWidths[key]) colWidths[key] = th.offsetWidth;
             if (colEls[i]) colEls[i].style.width = colWidths[key] + 'px';
         });
-        table.style.tableLayout = 'fixed';
 
         // Attach drag handlers to each resize handle
         ths.forEach((th, i) => {
