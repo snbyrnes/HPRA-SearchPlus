@@ -785,7 +785,7 @@
         const cols = TABLE_COLUMNS.filter(c => visibleColumns.includes(c.key));
         const [sortField, sortDir] = currentSort.split('-');
 
-        const colgroupHTML = `<colgroup><col style="width:44px">${cols.map(c =>
+        const colgroupHTML = `<colgroup><col style="width:1px">${cols.map(c =>
             colWidths[c.key] ? `<col style="width:${colWidths[c.key]}px">` : '<col>'
         ).join('')}</colgroup>`;
 
