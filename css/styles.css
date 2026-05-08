@@ -280,8 +280,9 @@ body.dark .products-table tbody tr:hover { background: #36363a; }
 .review-col {
     width: 1px; white-space: nowrap;
     text-align: center; padding: 6px 8px !important;
-    vertical-align: middle;
+    vertical-align: middle !important;
 }
+.products-table td.review-col { vertical-align: middle !important; }
 .review-col input[type="checkbox"] {
     width: 16px; height: 16px; cursor: pointer;
     accent-color: #0071e3; display: block; margin: 0 auto;
