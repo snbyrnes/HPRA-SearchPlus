@@ -1728,6 +1728,31 @@
     $('fileSelectBtn').addEventListener('click', () => fileInput.click());
     $('dropZoneBrowse')?.addEventListener('click', () => fileInput.click());
 
+    // ── Online HPRA File button ────────────────────────
+    const HPRA_ONLINE_URL = 'https://www.hpra.ie/img/uploaded/swedocuments/Medicines_Download/latestHumanlist.xml';
+    $('loadOnlineBtn')?.addEventListener('click', async () => {
+        const btn = $('loadOnlineBtn');
+        btn.disabled = true;
+        btn.textContent = '⏳ Loading…';
+        $('loadingState').style.display = 'block';
+        $('loadingState').innerHTML = '<div class="loading"><div class="loader"></div><p>Fetching HPRA product list…</p></div>';
+        $('dropZone').style.display = 'none';
+        try {
+            const resp = await fetch(HPRA_ONLINE_URL);
+            if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+            const text = await resp.text();
+            if (!text.includes('<Product') && !text.includes('<Products'))
+                throw new Error('File does not appear to be a valid HPRA product list');
+            processXML(text);
+        } catch (err) {
+            $('loadingState').style.display = 'none';
+            $('dropZone').style.display = 'block';
+            btn.disabled = false;
+            btn.textContent = '🌐 Load Online HPRA File';
+            showToast(`Failed to load: ${err.message}`, 4000);
+        }
+    });
+
     fileInput.addEventListener('change', e => {
         const file = e.target.files[0];
         if (file) loadFile(file);

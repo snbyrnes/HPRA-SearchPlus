@@ -164,11 +164,14 @@
             <div class="drop-zone" id="dropArea">
                 <div class="drop-zone-icon">📂</div>
                 <div class="drop-zone-title">Load HPRA Product List</div>
-                <div class="drop-zone-sub">Drag & drop your XML file here, or click to browse</div>
-                <button class="btn btn-primary" id="dropZoneBrowse">Browse Files</button>
+                <div class="drop-zone-sub">Drag &amp; drop your XML file here, or choose an option below</div>
+                <div class="drop-zone-buttons">
+                    <button class="btn btn-primary" id="loadOnlineBtn">🌐 Load Online HPRA File</button>
+                    <button class="btn btn-secondary" id="dropZoneBrowse">📄 Browse Local File</button>
+                </div>
                 <div class="drop-zone-hint">
-                    Place the latest XML file (e.g. latestHumanlist.xml) in the <code>data/</code> folder,<br>
-                    or drag and drop it directly onto this page.
+                    <strong>Online HPRA File</strong> fetches the latest list directly from hpra.ie.<br>
+                    <strong>Browse Local File</strong> lets you load an XML file from your device.
                 </div>
             </div>
         </div>
