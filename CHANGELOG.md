@@ -4,6 +4,19 @@ All notable changes to HPRA SearchPlus will be documented in this file.
 
 ---
 
+## v1.6.0 — 2026-05-08
+
+### Added
+- **Mark as Reviewed** — each result row (table view) and product card (card view) now has a checkbox to mark it as reviewed
+  - Reviewed items are visually highlighted with a green tint for easy identification
+  - Reviewed state persists across page refreshes via localStorage
+- **Reviewed filter button** — `☑ Reviewed (N)` button in the header toolbar; click to toggle a "show reviewed only" view
+- **Reviewed stats pill** — teal pill in the statistics bar shows how many products have been marked reviewed
+- **Reviewed filter pill** — when the reviewed-only filter is active, a dismissible pill appears in the filter bar; cleared by "Clear All" as well
+- **CSV export** — exported CSV now includes a leading `Reviewed` column (Yes/No) for all rows
+
+---
+
 ## v1.5.0 — 2026-03-11
 
 ### Added

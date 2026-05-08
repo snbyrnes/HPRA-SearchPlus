@@ -19,6 +19,12 @@
     // Filter pill clear functions (populated by updateFilterPills)
     let _pillClears = [];
 
+    // Reviewed state (persisted in localStorage)
+    let reviewedIds = (() => {
+        try { return new Set(JSON.parse(localStorage.getItem('reviewedIds')) || []); } catch(e) { return new Set(); }
+    })();
+    let showOnlyReviewed = false;
+
     // ATC browser state
     let atcBrowserFilter = '';
     let atcBrowserVisible = false;
@@ -102,6 +108,7 @@
     const viewToggleBtn = $('viewToggleBtn');
     const atcBrowserBtn = $('atcBrowserBtn');
     const shareBtn = $('shareBtn');
+    const reviewedFilterBtn = $('reviewedFilterBtn');
 
     // ── Theme ──────────────────────────────────────────
     const themeToggle = $('themeToggle');
@@ -223,6 +230,7 @@
             viewToggleBtn.style.display = '';
             atcBrowserBtn.style.display = '';
             shareBtn.style.display = '';
+            if (reviewedFilterBtn) reviewedFilterBtn.style.display = '';
             if ($('appFooter')) $('appFooter').style.display = '';
 
             populateFilters();
@@ -660,6 +668,7 @@
             if (msState.route.length && !p.routesOfAdministration.some(r => msState.route.includes(r))) return false;
             if (msState.atc.length && !p.atcs.some(a => msState.atc.includes(a))) return false;
             if (atcBrowserFilter && !p.atcs.some(a => a.startsWith(atcBrowserFilter))) return false;
+            if (showOnlyReviewed && !reviewedIds.has(p.drugIDPK)) return false;
 
             return true;
         });
@@ -763,13 +772,19 @@
         productsContainer.querySelectorAll('.product-card').forEach(card => {
             card.addEventListener('click', () => showDetail(card.dataset.id));
         });
+        productsContainer.querySelectorAll('.review-cb').forEach(cb => {
+            cb.addEventListener('click', e => {
+                e.stopPropagation();
+                toggleReviewed(cb.dataset.id);
+            });
+        });
     }
 
     function renderTableView(page) {
         const cols = TABLE_COLUMNS.filter(c => visibleColumns.includes(c.key));
         const [sortField, sortDir] = currentSort.split('-');
 
-        const colgroupHTML = `<colgroup>${cols.map(c =>
+        const colgroupHTML = `<colgroup><col style="width:44px">${cols.map(c =>
             colWidths[c.key] ? `<col style="width:${colWidths[c.key]}px">` : '<col>'
         ).join('')}</colgroup>`;
 
@@ -778,7 +793,7 @@
             <table class="products-table">
                 ${colgroupHTML}
                 <thead>
-                    <tr>${cols.map(c => {
+                    <tr><th class="review-col" title="Mark as reviewed">☑</th>${cols.map(c => {
                         const sf = COLUMN_SORT_MAP[c.key];
                         const isActive = sf && sf === sortField;
                         let arrow = '';
@@ -796,7 +811,8 @@
                 </thead>
                 <tbody>
                     ${page.map(p => `
-                        <tr data-id="${escHTML(p.drugIDPK)}" tabindex="0">
+                        <tr data-id="${escHTML(p.drugIDPK)}" tabindex="0"${reviewedIds.has(p.drugIDPK) ? ' class="row-reviewed"' : ''}>
+                            <td class="review-col"><input type="checkbox" class="review-cb" data-id="${escHTML(p.drugIDPK)}"${reviewedIds.has(p.drugIDPK) ? ' checked' : ''}></td>
                             ${cols.map(c => {
                                 const style = c.style ? ` style="${c.style}"` : '';
                                 return `<td${style}>${c.render(p)}</td>`;
@@ -822,6 +838,17 @@
                     const prev = row.previousElementSibling;
                     if (prev) prev.focus();
                 }
+            });
+        });
+
+        // Review checkboxes – stop propagation so row click doesn't open the detail modal
+        productsContainer.querySelectorAll('td.review-col').forEach(td => {
+            td.addEventListener('click', e => e.stopPropagation());
+        });
+        productsContainer.querySelectorAll('.review-cb').forEach(cb => {
+            cb.addEventListener('change', e => {
+                e.stopPropagation();
+                toggleReviewed(cb.dataset.id);
             });
         });
 
@@ -851,6 +878,7 @@
     }
 
     function cardHTML(p) {
+        const isReviewed = reviewedIds.has(p.drugIDPK);
         const badge = `<span class="badge ${badgeClass(p.marketInfo)}">${p.marketInfo}</span>`;
         const subs = p.activeSubstances.length
             ? `<div class="substance-tags">
@@ -859,8 +887,13 @@
                </div>`
             : '';
         return `
-            <div class="product-card" data-id="${escHTML(p.drugIDPK)}">
-                <div class="product-name">${hl(p.productName)}</div>
+            <div class="product-card${isReviewed ? ' card-reviewed' : ''}" data-id="${escHTML(p.drugIDPK)}">
+                <div class="card-top-row">
+                    <div class="product-name" style="margin-bottom:0">${hl(p.productName)}</div>
+                    <label class="review-card-check" title="${isReviewed ? 'Reviewed \u2014 click to unmark' : 'Mark as reviewed'}">
+                        <input type="checkbox" class="review-cb" data-id="${escHTML(p.drugIDPK)}"${isReviewed ? ' checked' : ''}>
+                    </label>
+                </div>
                 <div class="product-detail"><span class="detail-label">Holder</span><span class="detail-value">${hl(p.paHolder)}</span></div>
                 <div class="product-detail"><span class="detail-label">Form</span><span class="detail-value">${hl(p.dosageForm)}</span></div>
                 <div class="product-detail"><span class="detail-label">Licence</span><span class="detail-value" style="font-family:monospace;font-size:11px;">${hl(p.licenceNumber)}</span></div>
@@ -891,6 +924,52 @@
         return d.innerHTML;
     }
 
+    // ── Reviewed ───────────────────────────────────────
+    function toggleReviewed(drugId) {
+        if (reviewedIds.has(drugId)) {
+            reviewedIds.delete(drugId);
+        } else {
+            reviewedIds.add(drugId);
+        }
+        localStorage.setItem('reviewedIds', JSON.stringify([...reviewedIds]));
+        const isReviewed = reviewedIds.has(drugId);
+        // Update table row in place
+        productsContainer.querySelectorAll('tbody tr').forEach(row => {
+            if (row.dataset.id === drugId) {
+                row.classList.toggle('row-reviewed', isReviewed);
+                const cb = row.querySelector('.review-cb');
+                if (cb) cb.checked = isReviewed;
+            }
+        });
+        // Update card in place
+        productsContainer.querySelectorAll('.product-card').forEach(card => {
+            if (card.dataset.id === drugId) {
+                card.classList.toggle('card-reviewed', isReviewed);
+                const cb = card.querySelector('.review-cb');
+                if (cb) cb.checked = isReviewed;
+            }
+        });
+        updateReviewedBadge();
+        if (showOnlyReviewed) filterAndRender();
+    }
+
+    function updateReviewedBadge() {
+        const count = reviewedIds.size;
+        if (reviewedFilterBtn) {
+            reviewedFilterBtn.textContent = count > 0 ? `☑ Reviewed (${count})` : '☑ Reviewed';
+            reviewedFilterBtn.classList.toggle('active', showOnlyReviewed);
+        }
+        const statEl = $('statReviewed');
+        if (statEl) {
+            if (count > 0) {
+                statEl.textContent = `☑ ${count} Reviewed`;
+                statEl.style.display = '';
+            } else {
+                statEl.style.display = 'none';
+            }
+        }
+    }
+
     // ── Statistics ─────────────────────────────────────
     function updateStats() {
         const total = filteredProducts.length;
@@ -902,6 +981,7 @@
         $('statMarketed').textContent = `✓ ${marketed.toLocaleString()} Marketed`;
         $('statNotMarketed').textContent = `✗ ${notMarketed.toLocaleString()} Not Marketed`;
         $('statUnknown').textContent = `? ${unknown.toLocaleString()} Unknown`;
+        updateReviewedBadge();
     }
 
     // ── Detail Modal ───────────────────────────────────
@@ -1040,6 +1120,7 @@
             updateMsDisplay(wrapper, key);
         });
 
+        showOnlyReviewed = false;
         updateFilterPills();
         filterAndRender();
     }
@@ -1083,6 +1164,7 @@
         if (filterLegalBasis.value) addPill('Legal Basis', filterLegalBasis.value, () => { filterLegalBasis.value = ''; });
         if (filterDispensing.value) addPill('Dispensing', filterDispensing.value, () => { filterDispensing.value = ''; });
         if (atcBrowserFilter) addPill('ATC Tree', atcBrowserFilter, () => { atcBrowserFilter = ''; if (atcBrowserInitialized) updateAtcBrowserUI(); });
+        if (showOnlyReviewed) addPill('Reviewed', 'Showing reviewed only', () => { showOnlyReviewed = false; });
 
         if (!pills.length) { bar.style.display = 'none'; return; }
         bar.style.display = 'flex';
@@ -1157,7 +1239,8 @@
         const hasFilters = searchTerm || atcBrowserFilter ||
             filterType.value || filterStatus.value ||
             filterLegalBasis.value || filterDispensing.value ||
-            Object.values(msState).some(a => a.length > 0);
+            Object.values(msState).some(a => a.length > 0) ||
+            showOnlyReviewed;
         clearFiltersBtn.style.display = hasFilters ? '' : 'none';
     }
 
@@ -1423,7 +1506,7 @@
         if (!filteredProducts.length) { showToast('No results to export'); return; }
 
         const headers = [
-            'Product Name', 'Licence Number', 'Drug ID', 'PA Holder',
+            'Reviewed', 'Product Name', 'Licence Number', 'Drug ID', 'PA Holder',
             'Authorised Date', 'Product Type', 'Market Info', 'Registration Status',
             'Dosage Form', 'Active Substances', 'Routes of Administration', 'ATC Codes',
             'Legal Basis', 'Dispensing Legal Status', 'Supply Legal Status',
@@ -1431,6 +1514,7 @@
         ];
 
         const rows = filteredProducts.map(p => [
+            reviewedIds.has(p.drugIDPK) ? 'Yes' : 'No',
             p.productName, p.licenceNumber, p.drugIDPK, p.paHolder,
             p.authorisedDate, p.productType, p.marketInfo, p.registrationStatus,
             p.dosageForm, p.activeSubstances.join('; '), p.routesOfAdministration.join('; '),
@@ -1588,6 +1672,13 @@
 
     // ATC browser toggle
     atcBrowserBtn.addEventListener('click', toggleAtcBrowser);
+
+    // Reviewed filter toggle
+    reviewedFilterBtn?.addEventListener('click', () => {
+        showOnlyReviewed = !showOnlyReviewed;
+        currentPage = 1;
+        filterAndRender();
+    });
 
     // Share / copy link
     shareBtn.addEventListener('click', () => {

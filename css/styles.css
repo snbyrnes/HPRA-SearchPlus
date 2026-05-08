@@ -164,6 +164,8 @@ body.dark .stat-marketed { background: #1b4620; color: #81c784; }
 body.dark .stat-not-marketed { background: #4c1419; color: #ef5350; }
 .stat-unknown { background: #f3e5f5; color: #4a148c; }
 body.dark .stat-unknown { background: #3d1a47; color: #ce93d8; }
+.stat-reviewed { background: #e0f2f1; color: #004d40; }
+body.dark .stat-reviewed { background: #003d33; color: #4db6ac; }
 
 /* Container */
 .container { max-width: 1600px; margin: 0 auto; padding: 20px 24px; }
@@ -272,6 +274,49 @@ body.dark .products-table tbody tr:hover { background: #36363a; }
     display: inline-block; padding: 2px 6px; border-radius: 4px;
     font-size: 10px; font-weight: 600; text-transform: uppercase;
 }
+
+/* Reviewed column */
+.review-col {
+    width: 44px !important; min-width: 44px;
+    text-align: center; padding: 0 6px !important;
+    vertical-align: middle;
+}
+.review-col input[type="checkbox"] {
+    width: 16px; height: 16px; cursor: pointer;
+    accent-color: #0071e3; display: block; margin: 0 auto;
+}
+body.dark .review-col input[type="checkbox"] { accent-color: #0a84ff; }
+
+/* Reviewed row highlight */
+.products-table tbody tr.row-reviewed { background: #f0faf3 !important; }
+body.dark .products-table tbody tr.row-reviewed { background: #1a3320 !important; }
+.products-table tbody tr.row-reviewed td { border-bottom-color: #c3e6cb !important; }
+body.dark .products-table tbody tr.row-reviewed td { border-bottom-color: #2d5e3a !important; }
+
+/* Reviewed card highlight */
+.product-card.card-reviewed {
+    border-color: #34c759 !important;
+    background: #f0faf3;
+}
+body.dark .product-card.card-reviewed {
+    border-color: #30d158 !important;
+    background: #1a3320;
+}
+
+/* Card top row (name + review checkbox) */
+.card-top-row {
+    display: flex; justify-content: space-between;
+    align-items: flex-start; gap: 8px; margin-bottom: 10px;
+}
+.card-top-row .product-name { flex: 1; }
+.review-card-check {
+    display: flex; align-items: flex-start;
+    cursor: pointer; flex-shrink: 0; padding-top: 2px;
+}
+.review-card-check input[type="checkbox"] {
+    width: 16px; height: 16px; cursor: pointer; accent-color: #0071e3;
+}
+body.dark .review-card-check input[type="checkbox"] { accent-color: #0a84ff; }
 
 /* No results */
 .no-results { text-align: center; padding: 60px 24px; color: #86868b; }

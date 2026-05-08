@@ -33,7 +33,14 @@ A fast, client-side browser for the [HPRA](https://www.hpra.ie/) (Health Product
 - **Drag & drop** — drop any HPRA XML file directly onto the page
 - **File picker** — manual XML loading via the "Load XML" button
 - **Hot-reload** — load a new XML file at any time without refreshing
-- **CSV export** — export filtered results with all 17 fields, UTF-8 BOM for Excel compatibility
+- **CSV export** — export filtered results with all 17 fields plus a `Reviewed` status column, UTF-8 BOM for Excel compatibility
+
+### Review Workflow
+- **Mark as Reviewed** — tick the checkbox on any row (table view) or card (card view) to flag it as reviewed
+- **Visual highlight** — reviewed items are highlighted with a green tint so they stand out at a glance
+- **Reviewed filter** — `☑ Reviewed (N)` button in the toolbar filters the view to show only reviewed items
+- **Reviewed stats pill** — teal counter in the statistics bar shows total reviewed count at a glance
+- **Persistent** — reviewed marks survive page refreshes (stored in localStorage)
 
 ### UX
 - **Dark mode** — toggle with the theme button (persisted via localStorage)
