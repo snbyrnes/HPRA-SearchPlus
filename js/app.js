@@ -163,11 +163,11 @@
     async function tryAutoLoad() {
         for (const fname of XML_FILENAMES) {
             try {
-                const resp = await fetch(fname);
+                const resp = await fetch(encodeURI(fname));
                 if (resp.ok) {
                     const text = await resp.text();
                     if (text.includes('<Product') || text.includes('<Products')) {
-                        const displayName = fname.split('/').pop();
+                        const displayName = decodeURI(fname.split('/').pop());
                         showToast(`Auto-loaded ${displayName}`);
                         return text;
                     }
