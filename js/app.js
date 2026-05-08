@@ -785,7 +785,7 @@
         const cols = TABLE_COLUMNS.filter(c => visibleColumns.includes(c.key));
         const [sortField, sortDir] = currentSort.split('-');
 
-        const colgroupHTML = `<colgroup><col class="review-col-size">${cols.map(c =>
+        const colgroupHTML = `<colgroup><col style="width:36px">${cols.map(c =>
             colWidths[c.key] ? `<col style="width:${colWidths[c.key]}px">` : '<col>'
         ).join('')}</colgroup>`;
 
@@ -1571,6 +1571,7 @@
 
         // ths[0] / colEls[0] is the review checkbox col — skip it (i=0), offset cols index by 1
         // Lock in actual rendered widths for columns without a saved width, then switch to fixed layout
+        if (colEls[0]) colEls[0].style.width = '36px'; // always pin review col
         ths.forEach((th, i) => {
             if (i === 0) return; // review col — keep as-is
             const key = cols[i - 1]?.key;
