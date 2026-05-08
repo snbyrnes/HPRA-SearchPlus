@@ -277,8 +277,9 @@ body.dark .products-table tbody tr:hover { background: #36363a; }
 }
 
 /* Reviewed column */
+col.review-col-size { width: 36px; }
 .review-col {
-    width: 1px; white-space: nowrap;
+    width: 36px; min-width: 36px; max-width: 36px; white-space: nowrap;
     text-align: center; padding: 6px 8px !important;
     vertical-align: middle !important;
 }
