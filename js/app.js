@@ -1569,9 +1569,11 @@
         const ths = [...table.querySelectorAll('thead th')];
         const colEls = [...table.querySelectorAll('colgroup col')];
 
+        // ths[0] / colEls[0] is the review checkbox col — skip it (i=0), offset cols index by 1
         // Lock in actual rendered widths for columns without a saved width, then switch to fixed layout
         ths.forEach((th, i) => {
-            const key = cols[i]?.key;
+            if (i === 0) return; // review col — keep as-is
+            const key = cols[i - 1]?.key;
             if (!key) return;
             if (!colWidths[key]) colWidths[key] = th.offsetWidth;
             if (colEls[i]) colEls[i].style.width = colWidths[key] + 'px';
@@ -1580,9 +1582,10 @@
 
         // Attach drag handlers to each resize handle
         ths.forEach((th, i) => {
+            if (i === 0) return; // review col — not resizable
             const handle = th.querySelector('.col-resize-handle');
             if (!handle) return;
-            const key = cols[i]?.key;
+            const key = cols[i - 1]?.key;
 
             handle.addEventListener('mousedown', e => {
                 e.preventDefault();
