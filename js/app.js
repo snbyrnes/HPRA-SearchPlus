@@ -109,6 +109,7 @@
     const atcBrowserBtn = $('atcBrowserBtn');
     const shareBtn = $('shareBtn');
     const reviewedFilterBtn = $('reviewedFilterBtn');
+    const clearChecklistBtn = $('clearChecklistBtn');
 
     // ── Theme ──────────────────────────────────────────
     const themeToggle = $('themeToggle');
@@ -961,6 +962,9 @@
             reviewedFilterBtn.textContent = count > 0 ? `☑ Reviewed (${count})` : '☑ Reviewed';
             reviewedFilterBtn.classList.toggle('active', showOnlyReviewed);
         }
+        if (clearChecklistBtn) {
+            clearChecklistBtn.style.display = count > 0 ? '' : 'none';
+        }
         const statEl = $('statReviewed');
         if (statEl) {
             if (count > 0) {
@@ -1682,6 +1686,15 @@
     reviewedFilterBtn?.addEventListener('click', () => {
         showOnlyReviewed = !showOnlyReviewed;
         currentPage = 1;
+        filterAndRender();
+    });
+
+    // Clear checklist
+    clearChecklistBtn?.addEventListener('click', () => {
+        reviewedIds.clear();
+        localStorage.setItem('reviewedIds', JSON.stringify([]));
+        showOnlyReviewed = false;
+        updateReviewedBadge();
         filterAndRender();
     });
 
