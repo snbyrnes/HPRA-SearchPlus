@@ -46,9 +46,15 @@ A fast, client-side browser for the [HPRA](https://www.hpra.ie/) (Health Product
 - **Dark mode** — toggle with the theme button (persisted via localStorage)
 - **Resizable table columns** — drag the right edge of any column header to adjust its width; widths are saved per-column in localStorage and restored on next visit; reset all widths via the ⚙️ Columns picker
 - **Shareable links** — every filter, search, sort, and view state is encoded into the URL; click 🔗 Share to copy a link colleagues can open to see exactly what you see
-- **Keyboard shortcuts:**
+- **Keyboard shortcuts** — press `?` or the `?` toolbar button to open a full reference; available shortcuts:
   - `/` — focus the search bar
-  - `Escape` — close modal or open dropdowns
+  - `Escape` — close modal or dismiss open dropdowns
+  - `n` / `p` — next / previous page
+  - `e` — export current results to CSV
+  - `t` — toggle Table / Cards view
+  - `?` — open the keyboard shortcuts help modal
+  - `↑` / `↓` — navigate table rows (existing)
+  - `Enter` — open detail for focused row (existing)
 - **Responsive** — works on desktop and mobile
 - **Zero dependencies** — pure vanilla HTML/CSS/JS, no build step
 - **Feedback** — footer link to [GitHub Issues](https://github.com/snbyrnes/snbyrnes.github.io/issues/new/choose) for bug reports and feature requests

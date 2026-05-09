@@ -27,6 +27,7 @@
                     <button type="button" class="btn btn-secondary" id="shareBtn" title="Copy shareable link with current filters" style="display:none;">🔗 Share</button>
                     <button type="button" class="btn btn-secondary" id="reviewedFilterBtn" title="Filter to show only reviewed items" style="display:none;">☑ Reviewed</button>
                     <button type="button" class="btn btn-secondary" id="clearChecklistBtn" title="Clear all checklist selections" style="display:none;">✕ Clear Checklist</button>
+                    <button type="button" class="btn-icon" id="helpBtn" title="Keyboard shortcuts &amp; help (?)" aria-label="Help">?</button>
                     <button type="button" class="btn-icon" id="themeToggle" title="Toggle dark mode">🌙</button>
                 </div>
             </div>
@@ -236,6 +237,33 @@
             </div>
             <div class="changelog-body" id="changelogContent">
                 <div class="changelog-loading">Loading changelog...</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="help-overlay" id="helpModal" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts">
+        <div class="help-modal">
+            <div class="help-header">
+                <h3>⌨️ Keyboard Shortcuts</h3>
+                <button type="button" class="changelog-close" id="closeHelp" title="Close">✕</button>
+            </div>
+            <div class="help-body">
+                <div class="help-section">
+                    <div class="help-section-title">Navigation</div>
+                    <div class="help-row"><kbd>/</kbd><span>Focus search bar</span></div>
+                    <div class="help-row"><kbd>Esc</kbd><span>Close modal or dismiss open dropdowns</span></div>
+                    <div class="help-row"><kbd>n</kbd><span>Next page</span></div>
+                    <div class="help-row"><kbd>p</kbd><span>Previous page</span></div>
+                    <div class="help-row"><kbd>↑</kbd><kbd>↓</kbd><span>Move between table rows</span></div>
+                    <div class="help-row"><kbd>Enter</kbd><span>Open detail for the focused row</span></div>
+                </div>
+                <div class="help-section">
+                    <div class="help-section-title">Actions</div>
+                    <div class="help-row"><kbd>e</kbd><span>Export current results to CSV</span></div>
+                    <div class="help-row"><kbd>t</kbd><span>Toggle Table / Cards view</span></div>
+                    <div class="help-row"><kbd>?</kbd><span>Show this help</span></div>
+                </div>
+                <div class="help-tip">Shortcuts are disabled while typing in a search or filter field.</div>
             </div>
         </div>
     </div>

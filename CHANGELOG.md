@@ -4,6 +4,18 @@ All notable changes to HPRA SearchPlus will be documented in this file.
 
 ---
 
+## v1.7.0 — 2026-05-09
+
+### Added
+- **Keyboard Shortcuts Help Modal** — press `?` or click the new `?` button in the header toolbar to open a shortcuts reference overlay
+- **`n` / `p` shortcuts** — jump to the next or previous page without using the mouse
+- **`e` shortcut** — trigger a CSV export of the current filtered results
+- **`t` shortcut** — toggle between Table and Cards view
+- **`?` shortcut** — open the keyboard shortcuts help modal
+- All new shortcuts are disabled while the cursor is inside any input or filter field to avoid conflicts
+
+---
+
 ## v1.6.0 — 2026-05-08
 
 ### Added

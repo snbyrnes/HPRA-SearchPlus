@@ -1724,19 +1724,71 @@
     // Modal close
     $('detailModal').addEventListener('click', e => { if (e.target.id === 'detailModal') closeModal(); });
 
+    // ── Help Modal ─────────────────────────────────────
+    function openHelpModal() {
+        $('helpModal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeHelpModal() {
+        $('helpModal').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    $('helpBtn').addEventListener('click', openHelpModal);
+    $('closeHelp').addEventListener('click', closeHelpModal);
+    $('helpModal').addEventListener('click', e => { if (e.target === $('helpModal')) closeHelpModal(); });
+
     // Keyboard shortcuts
     document.addEventListener('keydown', e => {
+        const inInput = ['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName);
+
         if (e.key === 'Escape') {
-            if ($('detailModal').classList.contains('active')) {
+            if ($('helpModal').classList.contains('active')) {
+                closeHelpModal();
+            } else if ($('detailModal').classList.contains('active')) {
                 closeModal();
             } else {
                 closeAllMultiselects();
             }
+            return;
         }
-        // / to focus search (when not already in an input)
-        if (e.key === '/' && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) {
+
+        // All remaining shortcuts are disabled when typing in a field
+        if (inInput) return;
+
+        if (e.key === '/') {
             e.preventDefault();
             searchInput.focus();
+            return;
+        }
+        if (e.key === '?') {
+            e.preventDefault();
+            openHelpModal();
+            return;
+        }
+        if (e.key === 'n') {
+            e.preventDefault();
+            const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+            if (currentPage < totalPages) goToPage(currentPage + 1);
+            return;
+        }
+        if (e.key === 'p') {
+            e.preventDefault();
+            if (currentPage > 1) goToPage(currentPage - 1);
+            return;
+        }
+        if (e.key === 'e' && exportBtn.style.display !== 'none') {
+            e.preventDefault();
+            exportCSV();
+            return;
+        }
+        if (e.key === 't' && viewToggleBtn.style.display !== 'none') {
+            e.preventDefault();
+            viewMode = viewMode === 'card' ? 'table' : 'card';
+            localStorage.setItem('viewMode', viewMode);
+            updateViewToggle();
+            renderProducts();
+            updateUrlState();
+            return;
         }
     });
 
