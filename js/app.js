@@ -233,6 +233,7 @@
             atcBrowserBtn.style.display = '';
             shareBtn.style.display = '';
             if (reviewedFilterBtn) reviewedFilterBtn.style.display = '';
+            updateReviewedBadge();
             if ($('appFooter')) $('appFooter').style.display = '';
 
             populateFilters();
@@ -963,7 +964,7 @@
             reviewedFilterBtn.classList.toggle('active', showOnlyReviewed);
         }
         if (clearChecklistBtn) {
-            clearChecklistBtn.style.display = count > 0 ? '' : 'none';
+            clearChecklistBtn.style.display = count > 0 ? 'inline-flex' : 'none';
         }
         const statEl = $('statReviewed');
         if (statEl) {
