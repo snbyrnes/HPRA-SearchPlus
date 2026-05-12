@@ -1,0 +1,31 @@
+name: Update HPRA XML Data
+
+on:
+  schedule:
+    - cron: '0 5 * * *'  # Runs daily at 05:00 UTC
+  workflow_dispatch:       # Allows manual trigger from GitHub Actions UI
+
+jobs:
+  update-xml:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download latest XML
+        run: |
+          curl -fsSL "https://assets.hpra.ie/products/xml/latestHumanlist.xml" \
+            -o "data/latestHumanlist.xml"
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/latestHumanlist.xml
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update HPRA XML data [$(date -u +'%Y-%m-%d')]"
+            git push
+          fi
