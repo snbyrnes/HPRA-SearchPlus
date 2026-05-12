@@ -11,6 +11,8 @@ env:
 jobs:
   update-xml:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
