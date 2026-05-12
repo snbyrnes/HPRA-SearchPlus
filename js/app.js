@@ -161,9 +161,10 @@
     ];
 
     async function tryAutoLoad() {
+        const cacheBust = `?v=${Date.now()}`;
         for (const fname of XML_FILENAMES) {
             try {
-                const resp = await fetch(encodeURI(fname));
+                const resp = await fetch(encodeURI(fname) + cacheBust, { cache: 'no-store' });
                 if (resp.ok) {
                     const text = await resp.text();
                     if (text.includes('<Product') || text.includes('<Products')) {
