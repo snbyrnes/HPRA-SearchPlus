@@ -4,6 +4,14 @@ All notable changes to HPRA SearchPlus will be documented in this file.
 
 ---
 
+## v1.8.0 — 2026-05-12
+
+### Added
+- **Automated daily data updates** — GitHub Actions workflow downloads the latest HPRA XML from `assets.hpra.ie` at 05:00 UTC every day and commits it to the `data/` folder automatically; can also be triggered manually from the GitHub Actions tab
+- **Cache-busting on XML fetch** — the auto-load now appends a timestamp query string and sets `cache: 'no-store'` to ensure the browser always loads the freshest data rather than a cached copy
+
+---
+
 ## v1.7.0 — 2026-05-09
 
 ### Added

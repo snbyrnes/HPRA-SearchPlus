@@ -97,7 +97,10 @@ hpra-search/
 ├── js/
 │   └── app.js              # Application logic (parsing, filtering, rendering)
 ├── data/
-│   └── latestHumanlist.xml  # ← Drop the latest XML here
+│   └── latestHumanlist.xml  # ← Auto-updated daily by GitHub Actions
+├── .github/
+│   └── workflows/
+│       └── update-xml.yml  # Scheduled workflow to refresh XML data
 ├── .nojekyll               # Prevents GitHub Pages Jekyll processing
 ├── .gitattributes          # Line-ending normalisation
 └── README.md               # This file
@@ -135,13 +138,11 @@ hpra-search/
 
 ### Updating the Data
 
-To update the product database:
+The XML data is updated **automatically** — a GitHub Actions workflow runs daily at 05:00 UTC, downloads the latest file from `assets.hpra.ie`, and commits it to the `data/` folder. No manual steps required.
 
-1. Download the latest XML export from [HPRA](https://www.hpra.ie/)
-2. Replace the file in the `data/` folder (keep the name `latestHumanlist.xml`)
-3. Commit and push — GitHub Pages will serve the updated data automatically
+You can also trigger a manual update at any time from the **Actions** tab in GitHub → select **Update HPRA XML Data** → **Run workflow**.
 
-The app also accepts these filename variants: `latestHumanList.xml`, `LatestHumanList.xml`, `humanlist.xml`, `HumanList.xml`, `products.xml`.
+If you need to load a different XML file manually, use the drag-and-drop or **Load XML** button in the app. The app also accepts these filename variants as fallbacks: `latestHumanList.xml`, `LatestHumanList.xml`, `humanlist.xml`, `HumanList.xml`, `products.xml`.
 
 ---
 
@@ -153,7 +154,7 @@ This project deliberately uses **vanilla JavaScript** with no frameworks or buil
 - **Zero dependencies** — nothing to update, no supply-chain risk
 - **Fast loading** — ~25KB total (HTML + CSS + JS) before the XML data
 - **Easy maintenance** — a single JS file with clear sections, no abstraction layers
-- **GitHub Pages compatible** — pure static files, no CI/CD pipeline needed
+- **GitHub Pages compatible** — pure static files with a single lightweight GitHub Actions workflow for automated data updates
 
 The XML data (~13MB) is parsed client-side using the browser's native `DOMParser`, which handles it in ~1–2 seconds on modern hardware.
 
