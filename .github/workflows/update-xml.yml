@@ -5,6 +5,9 @@ on:
     - cron: '0 5 * * *'  # Runs daily at 05:00 UTC
   workflow_dispatch:       # Allows manual trigger from GitHub Actions UI
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   update-xml:
     runs-on: ubuntu-latest
@@ -12,8 +15,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        env:
-          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
       - name: Download latest XML
         run: |
