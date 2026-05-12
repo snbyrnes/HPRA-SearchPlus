@@ -146,7 +146,6 @@
     // ── XML Loading ────────────────────────────────────
     // Try data/ subfolder first (GitHub Pages layout), then root (local use)
     const XML_FILENAMES = [
-        'data/latestHumanlist (3).xml',
         'data/latestHumanlist.xml',
         'data/latestHumanList.xml',
         'data/LatestHumanList.xml',
