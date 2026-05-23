@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-05-22T02:30:15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-05-23T02:30:23" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -3741,7 +3741,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>Fresenius Kabi Deutschland GmbH</PAHolder>
     <AuthorisedDate>27/03/2015</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Concentrate for solution for infusion</DosageForm>
     <ATCs>
@@ -10335,7 +10335,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0711/138/002</LicenceNumber>
     <InterchangeableListCode>IC0045-002-008</InterchangeableListCode>
     <ProductName>Amlode 10 mg Tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>01/06/2007</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -10364,7 +10364,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0711/138/001</LicenceNumber>
     <InterchangeableListCode>IC0045-001-008</InterchangeableListCode>
     <ProductName>Amlode 5 mg tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>01/06/2007</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -11180,11 +11180,11 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA25291/001/002</DrugIDPK>
-    <LicenceNumber>PA25291/001/002</LicenceNumber>
+    <DrugIDPK>PA25441/001/002</DrugIDPK>
+    <LicenceNumber>PA25441/001/002</LicenceNumber>
     <InterchangeableListCode>IC0045-002-008</InterchangeableListCode>
     <ProductName>Amlodipine Masuu 10 mg tablets</ProductName>
-    <PAHolder>Pharmsol Europe Limited</PAHolder>
+    <PAHolder>Masuu Pharma Europe Limited</PAHolder>
     <AuthorisedDate>28/02/2014</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -11209,11 +11209,11 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA25291/001/001</DrugIDPK>
-    <LicenceNumber>PA25291/001/001</LicenceNumber>
+    <DrugIDPK>PA25441/001/001</DrugIDPK>
+    <LicenceNumber>PA25441/001/001</LicenceNumber>
     <InterchangeableListCode>IC0045-001-008</InterchangeableListCode>
     <ProductName>Amlodipine Masuu 5 mg tablets</ProductName>
-    <PAHolder>Pharmsol Europe Limited</PAHolder>
+    <PAHolder>Masuu Pharma Europe Limited</PAHolder>
     <AuthorisedDate>28/02/2014</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -15384,7 +15384,7 @@ Characteristics, section 4.2)</SupplyComments>
     <PAHolder>KRKA, d.d., Novo mesto</PAHolder>
     <AuthorisedDate>14/06/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Film-coated tablet</DosageForm>
     <ATCs>
@@ -25245,7 +25245,7 @@ Characteristics, section 4.2)</SupplyComments>
     <DrugIDPK>PA0711/297/001</DrugIDPK>
     <LicenceNumber>PA0711/297/001</LicenceNumber>
     <ProductName>Azacitidine Rowex 25 mg/ml Powder for suspension for injection</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>12/06/2020</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -59433,7 +59433,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA23490/028/002</DrugIDPK>
     <LicenceNumber>PA23490/028/002</LicenceNumber>
     <ProductName>Daktarin 2% w/w Cutaneous Powder</ProductName>
-    <PAHolder>JNTL Consumer Health I (Ireland) Limited</PAHolder>
+    <PAHolder>JNTL Consumer Health (Ireland) Limited</PAHolder>
     <AuthorisedDate>01/04/1977</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -172582,7 +172582,7 @@ For use in adults and children over 12 years.</SupplyComments>
     <DrugIDPK>PA0979/085/001</DrugIDPK>
     <LicenceNumber>PA0979/085/001</LicenceNumber>
     <ProductName>Nurofen Rapid Relief Max 400 mg soft capsules</ProductName>
-    <PAHolder>Reckitt Benckiser Ireland Ltd,</PAHolder>
+    <PAHolder>Reckitt Benckiser Ireland Limited</PAHolder>
     <AuthorisedDate>25/08/2023</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -180088,7 +180088,7 @@ Characteristics, section 4.2)</SupplyComments>
     <PAHolder>Fresenius Kabi Deutschland GmbH</PAHolder>
     <AuthorisedDate>06/07/2007</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Solution for injection</DosageForm>
     <ATCs>
@@ -186759,7 +186759,7 @@ Prescription only: Pack size exceeding 12 unit dosage forms. Product not supplie
     <PAHolder>Fresenius Kabi Deutschland GmbH</PAHolder>
     <AuthorisedDate>28/10/2016</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Solution for injection</DosageForm>
     <ATCs>
@@ -190112,6 +190112,60 @@ Prescription only: Pack size greater than 24. Product not supplied in blister pa
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>EU/1/25/1909/002</DrugIDPK>
+    <LicenceNumber>EU/1/25/1909/002</LicenceNumber>
+    <ProductName>PAVBLU 40 mg/mL solution for injection in a vial</ProductName>
+    <PAHolder>Amgen Technology (Ireland) Unlimited Company</PAHolder>
+    <AuthorisedDate>04/04/2025</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Solution for injection in vial</DosageForm>
+    <ATCs>
+      <ATC>S01LA05</ATC>
+    </ATCs>
+    <LegalBasis>Similar biological application (Article 10(4) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Intravitreal use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Aflibercept</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
+  </Product>
+  <Product>
+    <DrugIDPK>EU/1/25/1909/001</DrugIDPK>
+    <LicenceNumber>EU/1/25/1909/001</LicenceNumber>
+    <ProductName>PAVBLU 40 mg/mL solution for injection in pre-filled syringe</ProductName>
+    <PAHolder>Amgen Technology (Ireland) Unlimited Company</PAHolder>
+    <AuthorisedDate>04/04/2025</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Solution for injection in pre-filled syringe</DosageForm>
+    <ATCs>
+      <ATC>S01LA05</ATC>
+    </ATCs>
+    <LegalBasis>Similar biological application (Article 10(4) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Intravitreal use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Aflibercept</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>EU/1/22/1625/001</DrugIDPK>
@@ -205844,6 +205898,33 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>PPA1463/165/002</DrugIDPK>
+    <LicenceNumber>PPA1463/165/002</LicenceNumber>
+    <ProductName>Prograf 5 mg hard capsules</ProductName>
+    <PAHolder>IMED Healthcare Ltd.,</PAHolder>
+    <AuthorisedDate>22/05/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Capsule, hard</DosageForm>
+    <ATCs>
+      <ATC>L04AD02</ATC>
+    </ATCs>
+    <LegalBasis>Parallel importation notified in accordance with Article 76(3) of Directive 2001/83/EC</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Tacrolimus</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
     <DrugIDPK>PA0788/001/002</DrugIDPK>
     <LicenceNumber>PA0788/001/002</LicenceNumber>
     <ProductName>ProHance, 279.3 mg/ml, Solution for Injection, 10 ml vial</ProductName>
@@ -217759,7 +217840,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>Product Not Subject to Medical Prescription
 
-The following pack sizes are subject to medical prescription which may be renewed: 2 bottles containing 18.0 g nasal spray, suspension, corresponding to 140 sprays each, 3 bottles containing 18.0 g nasal spray</SupplyComments>
+The following pack sizes are subject to medical prescription which may be renewed: 2 bottles containing 18.0 g nasal spray, suspension, corresponding to 140 sprays each, 3 bottles containing 18.0 g nasal spray, suspension, corresponding to 140 sprays each.</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA25506/006/001</DrugIDPK>
@@ -223566,7 +223647,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>KRKA, d.d., Novo mesto</PAHolder>
     <AuthorisedDate>28/11/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Film-coated tablet</DosageForm>
     <ATCs>
@@ -227057,7 +227138,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PPA1463/212/001</DrugIDPK>
     <LicenceNumber>PPA1463/212/001</LicenceNumber>
     <ProductName>Salofalk 1g Suppositories</ProductName>
-    <PAHolder>IMED Healthcare Ltd.</PAHolder>
+    <PAHolder>IMED Healthcare Ltd.,</PAHolder>
     <AuthorisedDate>14/08/2023</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -233330,34 +233411,6 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments>Medicinal product subject to restricted medical prescription (Summary of Product Characteristics, section 4.2)</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>PA0126/379/001</DrugIDPK>
-    <LicenceNumber>PA0126/379/001</LicenceNumber>
-    <InterchangeableListCode>IC0063-022-007</InterchangeableListCode>
-    <ProductName>Sildenafil Clonmel 25 mg Chewable tablets</ProductName>
-    <PAHolder>Clonmel Healthcare Ltd</PAHolder>
-    <AuthorisedDate>13/12/2024</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Chewable tablet</DosageForm>
-    <ATCs>
-      <ATC>G04BE03</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Sildenafil citrate</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>PA0126/199/001</DrugIDPK>
     <LicenceNumber>PA0126/199/001</LicenceNumber>
     <InterchangeableListCode>IC0063-022-014</InterchangeableListCode>
@@ -233387,62 +233440,6 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA0126/382/001</DrugIDPK>
-    <LicenceNumber>PA0126/382/001</LicenceNumber>
-    <InterchangeableListCode>IC0063-022-014</InterchangeableListCode>
-    <ProductName>Sildenafil Clonmel 25 mg film-coated tablets</ProductName>
-    <PAHolder>Clonmel Healthcare Ltd</PAHolder>
-    <AuthorisedDate>15/12/2023</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>G04BE03</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Sildenafil citrate</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA0126/379/002</DrugIDPK>
-    <LicenceNumber>PA0126/379/002</LicenceNumber>
-    <InterchangeableListCode>IC0063-023-007</InterchangeableListCode>
-    <ProductName>Sildenafil Clonmel 50 mg Chewable tablets</ProductName>
-    <PAHolder>Clonmel Healthcare Ltd</PAHolder>
-    <AuthorisedDate>13/12/2024</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Chewable tablet</DosageForm>
-    <ATCs>
-      <ATC>G04BE03</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Sildenafil citrate</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>PA0126/199/002</DrugIDPK>
     <LicenceNumber>PA0126/199/002</LicenceNumber>
     <InterchangeableListCode>IC0063-023-003</InterchangeableListCode>
@@ -233463,34 +233460,6 @@ Characteristics, section 4.2).</SupplyComments>
     </RoutesOfAdministration>
     <ActiveSubstances>
       <ActiveSubstance>Sildenafil</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA0126/382/002</DrugIDPK>
-    <LicenceNumber>PA0126/382/002</LicenceNumber>
-    <InterchangeableListCode>IC0063-023-003</InterchangeableListCode>
-    <ProductName>Sildenafil Clonmel 50 mg film-coated tablets</ProductName>
-    <PAHolder>Clonmel Healthcare Ltd</PAHolder>
-    <AuthorisedDate>15/12/2023</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>G04BE03</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Sildenafil citrate</ActiveSubstance>
     </ActiveSubstances>
     <DispensingLegalStatus>
       <Status>Product subject to prescription which may not be renewed (A)</Status>
@@ -237524,60 +237493,6 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA2059/058/001</DrugIDPK>
-    <LicenceNumber>PA2059/058/001</LicenceNumber>
-    <ProductName>SmofKabiven Central emulsion for infusion, Excel bags</ProductName>
-    <PAHolder>Fresenius Kabi Deutschland GmbH</PAHolder>
-    <AuthorisedDate>28/08/2009</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Emulsion for infusion</DosageForm>
-    <ATCs>
-      <ATC>B05BA</ATC>
-      <ATC>B05BA10</ATC>
-    </ATCs>
-    <LegalBasis>Well-established use application (Article 10a of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>L-alanine</ActiveSubstance>
-      <ActiveSubstance>L-arginine</ActiveSubstance>
-      <ActiveSubstance>Glycine</ActiveSubstance>
-      <ActiveSubstance>L-histidine</ActiveSubstance>
-      <ActiveSubstance>L-isoleucine</ActiveSubstance>
-      <ActiveSubstance>L-leucine</ActiveSubstance>
-      <ActiveSubstance>L-lysine</ActiveSubstance>
-      <ActiveSubstance>L-methionine</ActiveSubstance>
-      <ActiveSubstance>L-phenylalanine</ActiveSubstance>
-      <ActiveSubstance>L-proline</ActiveSubstance>
-      <ActiveSubstance>L-serine</ActiveSubstance>
-      <ActiveSubstance>Taurine</ActiveSubstance>
-      <ActiveSubstance>L-threonine</ActiveSubstance>
-      <ActiveSubstance>L-tryptophan</ActiveSubstance>
-      <ActiveSubstance>L-tyrosine</ActiveSubstance>
-      <ActiveSubstance>L-valine</ActiveSubstance>
-      <ActiveSubstance>Calcium chloride</ActiveSubstance>
-      <ActiveSubstance>Sodium glycerophophate hydrate</ActiveSubstance>
-      <ActiveSubstance>Magnesium sulphate heptahydrate </ActiveSubstance>
-      <ActiveSubstance>Potassium chloride</ActiveSubstance>
-      <ActiveSubstance>Sodium acetate trihydrate </ActiveSubstance>
-      <ActiveSubstance>Zinc sulphate heptahydrate</ActiveSubstance>
-      <ActiveSubstance>Glucose monohydrate</ActiveSubstance>
-      <ActiveSubstance>Soya bean oil, refined</ActiveSubstance>
-      <ActiveSubstance>Triglycerides, medium chain</ActiveSubstance>
-      <ActiveSubstance>Olive oil, refined</ActiveSubstance>
-      <ActiveSubstance>Fish oil, rich in omega-3 acids</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>PA2059/059/002</DrugIDPK>
     <LicenceNumber>PA2059/059/002</LicenceNumber>
     <ProductName>SmofKabiven Electrolyte Free Central emulsion for infusion</ProductName>
@@ -238712,7 +238627,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PPA1463/205/001</LicenceNumber>
     <InterchangeableListCode>IC0056-123-043</InterchangeableListCode>
     <ProductName>Solaraze 3% gel</ProductName>
-    <PAHolder>IMED Healthcare Ltd.</PAHolder>
+    <PAHolder>IMED Healthcare Ltd.,</PAHolder>
     <AuthorisedDate>03/03/2023</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
