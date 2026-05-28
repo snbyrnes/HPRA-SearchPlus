@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-05-27T02:30:20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-05-28T02:30:25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -26650,7 +26650,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA1186/008/001</DrugIDPK>
     <LicenceNumber>PA1186/008/001</LicenceNumber>
     <ProductName>Beconase Hayfever nasal spray 50 micrograms per spray</ProductName>
-    <PAHolder>Chefaro Ireland DAC</PAHolder>
+    <PAHolder>Chefaro Ireland DAC,</PAHolder>
     <AuthorisedDate>17/09/1999</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -45291,6 +45291,31 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>EU/1/06/360/003</DrugIDPK>
+    <LicenceNumber>EU/1/06/360/003</LicenceNumber>
+    <ProductName>Champix 0.5mg &amp; 1mg Film-coated tablets</ProductName>
+    <PAHolder>Pfizer Europe MA EEIG</PAHolder>
+    <AuthorisedDate>25/09/2006</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>N07BA03</ATC>
+    </ATCs>
+    <LegalBasis>Not Currently Available</LegalBasis>
+    <RoutesOfAdministration xsi:nil="true" />
+    <ActiveSubstances>
+      <ActiveSubstance>Varenicline</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
     <DrugIDPK>EU/1/06/360/02</DrugIDPK>
     <LicenceNumber>EU/1/06/360/02</LicenceNumber>
     <ProductName>Champix 1 mg Film-coated tablet</ProductName>
@@ -48142,7 +48167,10 @@ For pack sizes of more than 30 tablets:
 Product subject to medical prescription
 
 
-Supply through pharmaci</SupplyComments>
+Supply through pharmacies only. 
+
+Pack sizes not exceeding 30 tablets: Promotion to the public. 
+Pack sizes exceeding 30 tablets: Promotion to healthcare professionals.</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PPA0465/510/001</DrugIDPK>
@@ -50175,7 +50203,7 @@ Supply through phar</SupplyComments>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doct</SupplyComments>
+    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doctor and pharmacist concerned must be registered with this service. (See SmPC for full details).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA23355/022/002</DrugIDPK>
@@ -50203,7 +50231,7 @@ Supply through phar</SupplyComments>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doct</SupplyComments>
+    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doctor and pharmacist concerned must be registered with this service. (See SmPC for full details).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA23355/022/004</DrugIDPK>
@@ -50230,7 +50258,7 @@ Supply through phar</SupplyComments>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doct</SupplyComments>
+    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doctor and pharmacist concerned must be registered with this service. (See SmPC for full details).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA23355/022/003</DrugIDPK>
@@ -50257,7 +50285,7 @@ Supply through phar</SupplyComments>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doct</SupplyComments>
+    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doctor and pharmacist concerned must be registered with this service. (See SmPC for full details).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA23355/022/005</DrugIDPK>
@@ -50284,7 +50312,7 @@ Supply through phar</SupplyComments>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doct</SupplyComments>
+    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doctor and pharmacist concerned must be registered with this service. (See SmPC for full details).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA23355/022/001</DrugIDPK>
@@ -50312,7 +50340,7 @@ Supply through phar</SupplyComments>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doct</SupplyComments>
+    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doctor and pharmacist concerned must be registered with this service. (See SmPC for full details).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA2220/002/002</DrugIDPK>
@@ -137567,7 +137595,7 @@ and expertise with the use of inotropic agents are available.</SupplyComments>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doct</SupplyComments>
+    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doctor and pharmacist concerned must be registered with this service. (See SmPC for full details).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA2241/001/001</DrugIDPK>
@@ -137595,7 +137623,7 @@ and expertise with the use of inotropic agents are available.</SupplyComments>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doct</SupplyComments>
+    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doctor and pharmacist concerned must be registered with this service. (See SmPC for full details).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA2241/001/005</DrugIDPK>
@@ -137623,7 +137651,7 @@ and expertise with the use of inotropic agents are available.</SupplyComments>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doct</SupplyComments>
+    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doctor and pharmacist concerned must be registered with this service. (See SmPC for full details).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA2241/001/002</DrugIDPK>
@@ -137651,7 +137679,7 @@ and expertise with the use of inotropic agents are available.</SupplyComments>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doct</SupplyComments>
+    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doctor and pharmacist concerned must be registered with this service. (See SmPC for full details).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA2241/001/003</DrugIDPK>
@@ -137679,7 +137707,7 @@ and expertise with the use of inotropic agents are available.</SupplyComments>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doct</SupplyComments>
+    <SupplyComments>To be dispensed under strict medical supervision in accordance with official recommendations. Use of clozapine is restricted to patients who are registered with a monitoring service to manage the risk of agranulocytosis associated with treatment. Both doctor and pharmacist concerned must be registered with this service. (See SmPC for full details).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA2219/002/002</DrugIDPK>
@@ -212162,7 +212190,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA2315/005/001</DrugIDPK>
     <LicenceNumber>PA2315/005/001</LicenceNumber>
     <InterchangeableListCode>IC0021-009-024</InterchangeableListCode>
-    <ProductName>Raporsin 8mg prolonged release tablets</ProductName>
+    <ProductName>Raporsin 8 mg prolonged-release tablets</ProductName>
     <PAHolder>Accord Healthcare Ireland Ltd.</PAHolder>
     <AuthorisedDate>30/11/2012</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -224804,7 +224832,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA0074/065/001</DrugIDPK>
     <LicenceNumber>PA0074/065/001</LicenceNumber>
     <ProductName>Rowalief 500 mg Film-coated tablets</ProductName>
-    <PAHolder>Rowa Pharmaceuticals Limited</PAHolder>
+    <PAHolder>Rowa Pharmaceuticals Limited,</PAHolder>
     <AuthorisedDate>14/12/2012</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -224828,13 +224856,15 @@ Characteristics, section 4.2).</SupplyComments>
     <PromotionLegalStatus>Advertising to the general public</PromotionLegalStatus>
     <SupplyComments>General Sale: MAXIMUM PACK SIZE 12. Contains only paracetamol as analgesic. Maximum one pack per sale.
 Pharmacy only: MAXIMUM PACK SIZE 24. Maximum two packs per sale.
-Prescription only: Pack size greater than 24. Product not supplied in blister packs.</SupplyComments>
+Prescription only: Pack size greater than 24. Product not supplied in blister packs.
+Promotion to Public: Pack size not more than 24
+Promotion to Healthcare professionals: Pack size greater than 24</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA0074/065/002</DrugIDPK>
     <LicenceNumber>PA0074/065/002</LicenceNumber>
     <ProductName>Rowalief Max 1000 mg film-coated tablets</ProductName>
-    <PAHolder>Rowa Pharmaceuticals Limited</PAHolder>
+    <PAHolder>Rowa Pharmaceuticals Limited,</PAHolder>
     <AuthorisedDate>14/12/2012</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -224858,7 +224888,9 @@ Prescription only: Pack size greater than 24. Product not supplied in blister pa
     <PromotionLegalStatus>Advertising to the general public</PromotionLegalStatus>
     <SupplyComments>General Sale: MAXIMUM PACK SIZE 6. Contains only paracetamol as analgesic. Maximum one pack per sale.
 Pharmacy only: MAXIMUM PACK SIZE 12. Maximum two packs per sale.
-Prescription only: Pack size exceeding 12 unit dosage forms. Product not supplied in bl</SupplyComments>
+Prescription only: Pack size exceeding 12 unit dosage forms. Product not supplied in blister packs.
+Promotion to Public: Pack size not more than 12
+Promotion to Healthcare professionals: Pack size greater than 12</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA0074/046/001</DrugIDPK>
@@ -278920,7 +278952,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>Medicinal product subject to restricted medical prescription (See Summary of Product Characteristics, section 4.2).
 
-Batches of human albumin in medicinal products marketed in Ireland shall be subject to control authority batch release in accordance with</SupplyComments>
+Batches of human albumin in medicinal products marketed in Ireland shall be subject to control authority batch release in accordance with Article 114.2 of Directive 2001/83/EC as amended.</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA1907/001/003</DrugIDPK>
@@ -278980,7 +279012,7 @@ Batches of human albumin in medicinal products marketed in Ireland shall be subj
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>Medicinal product subject to restricted medical prescription (See Summary of Product Characteristics, section 4.2).
 
-Batches of human albumin in medicinal products marketed in Ireland shall be subject to control authority batch release in accordance with</SupplyComments>
+Batches of human albumin in medicinal products marketed in Ireland shall be subject to control authority batch release in accordance with Article 114.2 of Directive 2001/83/EC as amended.</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>EU/1/11/672/004</DrugIDPK>
