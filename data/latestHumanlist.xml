@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-05-28T02:30:25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-05-29T02:30:14" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -13014,34 +13014,6 @@ Promotion to the general public only for indications appropriat</SupplyComments>
     </RoutesOfAdministration>
     <ActiveSubstances>
       <ActiveSubstance>Cyproterone acetate</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA1054/001/001</DrugIDPK>
-    <LicenceNumber>PA1054/001/001</LicenceNumber>
-    <ProductName>Androgel 25 mg, transdermal gel in sachet</ProductName>
-    <PAHolder>Laboratoires Besins International</PAHolder>
-    <AuthorisedDate>03/06/2003</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Transdermal gel in sachet</DosageForm>
-    <ATCs>
-      <ATC>G03BA</ATC>
-      <ATC>G03BA03</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Topical use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Testosterone</ActiveSubstance>
     </ActiveSubstances>
     <DispensingLegalStatus>
       <Status>Product subject to prescription which may not be renewed (A)</Status>
@@ -83657,7 +83629,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>EU/1/11/667/007-008</LicenceNumber>
     <InterchangeableListCode>IC0127-173-009</InterchangeableListCode>
     <ProductName>Esbriet 267 mg film-coated tablets</ProductName>
-    <PAHolder>Roche Registration GmbH</PAHolder>
+    <PAHolder>H.A.C Pharma</PAHolder>
     <AuthorisedDate xsi:nil="true" />
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -83715,7 +83687,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>EU/1/11/667/009-010</LicenceNumber>
     <InterchangeableListCode>IC0127-174-003</InterchangeableListCode>
     <ProductName>Esbriet 534 mg film-coated tablets</ProductName>
-    <PAHolder>Roche Registration GmbH</PAHolder>
+    <PAHolder>H.A.C Pharma</PAHolder>
     <AuthorisedDate xsi:nil="true" />
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -83744,7 +83716,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>EU/1/11/667/011</LicenceNumber>
     <InterchangeableListCode>IC0127-175-003</InterchangeableListCode>
     <ProductName>Esbriet 801 mg film-coated tablets</ProductName>
-    <PAHolder>Roche Registration GmbH</PAHolder>
+    <PAHolder>H.A.C Pharma</PAHolder>
     <AuthorisedDate xsi:nil="true" />
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -134185,7 +134157,7 @@ Packs containi</SupplyComments>
     <LicenceNumber>PPA1463/198/001</LicenceNumber>
     <InterchangeableListCode>IC0178-017-003</InterchangeableListCode>
     <ProductName>Lercaril 10 mg/10 mg film-coated tablets</ProductName>
-    <PAHolder>IMED Healthcare Ltd.</PAHolder>
+    <PAHolder>IMED Healthcare Ltd.,</PAHolder>
     <AuthorisedDate>18/11/2022</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -140461,7 +140433,7 @@ For use in adults and children over 12 years.</SupplyComments>
     <DrugIDPK>PA0711/047/003</DrugIDPK>
     <LicenceNumber>PA0711/047/003</LicenceNumber>
     <ProductName>Lispril 10 mg Tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>02/05/2003</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -140489,7 +140461,7 @@ For use in adults and children over 12 years.</SupplyComments>
     <DrugIDPK>PA0711/047/004</DrugIDPK>
     <LicenceNumber>PA0711/047/004</LicenceNumber>
     <ProductName>Lispril 20 mg Tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>02/05/2003</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -140517,7 +140489,7 @@ For use in adults and children over 12 years.</SupplyComments>
     <DrugIDPK>PA0711/047/002</DrugIDPK>
     <LicenceNumber>PA0711/047/002</LicenceNumber>
     <ProductName>Lispril 5 mg Tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>02/05/2003</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -143492,6 +143464,62 @@ For pack sizes of more than 30 tablets: Product su</SupplyComments>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characterististics, section 4.2)</SupplyComments>
+  </Product>
+  <Product>
+    <DrugIDPK>EU/1/22/1649/004</DrugIDPK>
+    <LicenceNumber>EU/1/22/1649/004</LicenceNumber>
+    <ProductName>Lunsumio 45 mg solution for injection</ProductName>
+    <PAHolder>Roche Registration GmbH</PAHolder>
+    <AuthorisedDate>17/11/2025</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Solution for injection</DosageForm>
+    <ATCs>
+      <ATC>L01FX25</ATC>
+    </ATCs>
+    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Mosunetuzumab</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product
+Characteristics, section 4.2).</SupplyComments>
+  </Product>
+  <Product>
+    <DrugIDPK>EU/1/22/1649/003</DrugIDPK>
+    <LicenceNumber>EU/1/22/1649/003</LicenceNumber>
+    <ProductName>Lunsumio 5 mg solution for injection</ProductName>
+    <PAHolder>Roche Registration GmbH</PAHolder>
+    <AuthorisedDate>17/11/2025</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Solution for injection</DosageForm>
+    <ATCs>
+      <ATC>L01FX25</ATC>
+    </ATCs>
+    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Mosunetuzumab</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product
+Characteristics, section 4.2).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>EU/1/22/1678/001</DrugIDPK>
@@ -146519,6 +146547,38 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
+  </Product>
+  <Product>
+    <DrugIDPK>EU/1/26/2028/001-002</DrugIDPK>
+    <LicenceNumber>EU/1/26/2028/001-002</LicenceNumber>
+    <ProductName>mCOMBRIAX dispersion for injection in pre-filled syringe. Influenza and COVID-19, mRNA vaccine.</ProductName>
+    <PAHolder>Moderna Biotech Spain S.L.</PAHolder>
+    <AuthorisedDate>20/04/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Dispersion for injection in pre-filled syringe</DosageForm>
+    <ATCs>
+      <ATC>J07B</ATC>
+    </ATCs>
+    <LegalBasis>Known active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Intramuscular use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>mRNA encoding Influenza A, H1N1 strain, hemagglutinin glycoprotein</ActiveSubstance>
+      <ActiveSubstance>mRNA encoding Influenza A, H3N2 strain, hemagglutinin glycoprotein</ActiveSubstance>
+      <ActiveSubstance>mRNA encoding Influenza B/Victoria, hemagglutinin glycoprotein</ActiveSubstance>
+      <ActiveSubstance>mRNA-1283</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Official batch release 
+In accordance with Article 114 of Directive 2001/83/EC, the official batch release will be undertaken 
+by a state laboratory or a laboratory designated for that purpose.</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA22871/006/001</DrugIDPK>
@@ -189027,7 +189087,8 @@ Promotion to the public: Pack size not more than 24</SupplyComments>
     <SupplyComments>General Sale: Max pack size 12, in blister packaging, Max 1 pack per sale. 
 Pharmacy only: Max pack size 24, in blister packaging, Max 2 packs per sale.
 Prescription only: Pack size greater than 24. 
-Promotion to the public: pack size not more than 24.</SupplyComments>
+Promotion to the public: pack size not more than 24.
+Promotion to healthcare professionals: pack size greater than 24.</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA1113/004/003</DrugIDPK>
@@ -192413,7 +192474,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PPA1463/190/003</DrugIDPK>
     <LicenceNumber>PPA1463/190/003</LicenceNumber>
     <ProductName>Pentasa 1 g Suppositories</ProductName>
-    <PAHolder>IMED Healthcare Ltd.</PAHolder>
+    <PAHolder>IMED Healthcare Ltd.,</PAHolder>
     <AuthorisedDate>02/05/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -239140,7 +239201,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0711/280/002</LicenceNumber>
     <InterchangeableListCode>IC0116-002-003</InterchangeableListCode>
     <ProductName>Solifenacin succinate Rowex 10 mg film-coated tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>13/04/2018</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -239169,7 +239230,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0711/280/001</LicenceNumber>
     <InterchangeableListCode>IC0116-001-003</InterchangeableListCode>
     <ProductName>Solifenacin succinate Rowex 5 mg film-coated tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>13/04/2018</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -247654,13 +247715,13 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>EU/1/15/1085/007</LicenceNumber>
     <ProductName>Taltz 40mg Solution for injection</ProductName>
     <PAHolder>Eli Lilly Kinsale Limited</PAHolder>
-    <AuthorisedDate xsi:nil="true" />
+    <AuthorisedDate>25/04/2016</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Solution for injection</DosageForm>
     <ATCs>
-      <ATC>L04AC</ATC>
+      <ATC>L04AC13</ATC>
     </ATCs>
     <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
     <RoutesOfAdministration>
@@ -247670,11 +247731,11 @@ Characteristics, section 4.2).</SupplyComments>
       <ActiveSubstance>Ixekizumab</ActiveSubstance>
     </ActiveSubstances>
     <DispensingLegalStatus>
-      <Status>Product subject to Restricted Prescription (C)</Status>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
+    <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product  Characteristics, section 4.2).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>EU/1/15/1085/001-003</DrugIDPK>
@@ -253844,34 +253905,6 @@ Characteristics, section 4.2).</SupplyComments>
     <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Gel</DosageForm>
-    <ATCs>
-      <ATC>G03BA</ATC>
-      <ATC>G03BA03</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Cutaneous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Testosterone</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA1054/002/001</DrugIDPK>
-    <LicenceNumber>PA1054/002/001</LicenceNumber>
-    <ProductName>Testogel 25 mg transdermal gel in sachet</ProductName>
-    <PAHolder>Laboratoires Besins International</PAHolder>
-    <AuthorisedDate>03/06/2003</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Transdermal gel in sachet</DosageForm>
     <ATCs>
       <ATC>G03BA</ATC>
       <ATC>G03BA03</ATC>
@@ -286111,7 +286144,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0711/039/001</LicenceNumber>
     <InterchangeableListCode>IC0135-002-003</InterchangeableListCode>
     <ProductName>Zolnod 10 mg film-coated tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>08/03/2002</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
