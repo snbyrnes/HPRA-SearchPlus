@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-05-29T02:30:14" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-05-30T02:30:14" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -12793,35 +12793,6 @@ Promotion to the general public only for indications appropriat</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA1436/010/001</DrugIDPK>
-    <LicenceNumber>PA1436/010/001</LicenceNumber>
-    <InterchangeableListCode>IC0011-039-003</InterchangeableListCode>
-    <ProductName>Anastrozole Bluefish 1 mg film-coated tablets</ProductName>
-    <PAHolder>Bluefish Pharmaceuticals AB</PAHolder>
-    <AuthorisedDate>25/03/2011</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>L02BG</ATC>
-      <ATC>L02BG03</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Anastrozole</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>PA0840/004/001</DrugIDPK>
     <LicenceNumber>PA0840/004/001</LicenceNumber>
     <InterchangeableListCode>IC0011-039-003</InterchangeableListCode>
@@ -14042,68 +14013,12 @@ Supply through pharmacies only for pack sizes in excess of 25g.</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA0436/052/001</DrugIDPK>
-    <LicenceNumber>PA0436/052/001</LicenceNumber>
-    <InterchangeableListCode>IC0124-018-003</InterchangeableListCode>
-    <ProductName>Apixaban 2.5 mg Film-coated Tablets</ProductName>
-    <PAHolder>Norton Waterford</PAHolder>
-    <AuthorisedDate>04/11/2022</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>B01AF02</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Apixaban</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>PA22865/009/002</DrugIDPK>
     <LicenceNumber>PA22865/009/002</LicenceNumber>
     <InterchangeableListCode>IC0124-001-003</InterchangeableListCode>
     <ProductName>Apixaban 5 mg film-coated tablets</ProductName>
     <PAHolder>Renata Pharmaceuticals (Ireland) Limited</PAHolder>
     <AuthorisedDate>24/11/2023</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>B01AF02</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Apixaban</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA0436/052/002</DrugIDPK>
-    <LicenceNumber>PA0436/052/002</LicenceNumber>
-    <InterchangeableListCode>IC0124-001-003</InterchangeableListCode>
-    <ProductName>Apixaban 5 mg Film-coated Tablets</ProductName>
-    <PAHolder>Norton Waterford</PAHolder>
-    <AuthorisedDate>04/11/2022</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
@@ -47238,93 +47153,6 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA1436/018/001</DrugIDPK>
-    <LicenceNumber>PA1436/018/001</LicenceNumber>
-    <InterchangeableListCode>IC0073-002-003</InterchangeableListCode>
-    <ProductName>Citalopram Bluefish 10 mg film-coated tablets</ProductName>
-    <PAHolder>Bluefish Pharmaceuticals AB</PAHolder>
-    <AuthorisedDate>09/04/2010</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>N06AB</ATC>
-      <ATC>N06AB04</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Citalopram hydrobromide</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA1436/018/002</DrugIDPK>
-    <LicenceNumber>PA1436/018/002</LicenceNumber>
-    <InterchangeableListCode>IC0073-003-003</InterchangeableListCode>
-    <ProductName>Citalopram Bluefish 20 mg film-coated tablets</ProductName>
-    <PAHolder>Bluefish Pharmaceuticals AB</PAHolder>
-    <AuthorisedDate>09/04/2010</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>N06AB</ATC>
-      <ATC>N06AB04</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Citalopram hydrobromide</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA1436/018/003</DrugIDPK>
-    <LicenceNumber>PA1436/018/003</LicenceNumber>
-    <InterchangeableListCode>IC0073-004-003</InterchangeableListCode>
-    <ProductName>Citalopram Bluefish 40 mg film-coated tablets</ProductName>
-    <PAHolder>Bluefish Pharmaceuticals AB</PAHolder>
-    <AuthorisedDate>09/04/2010</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>N06AB</ATC>
-      <ATC>N06AB04</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Citalopram hydrobromide</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>PA0749/019/001</DrugIDPK>
     <LicenceNumber>PA0749/019/001</LicenceNumber>
     <InterchangeableListCode>IC0073-002-003</InterchangeableListCode>
@@ -49626,35 +49454,6 @@ Supply through phar</SupplyComments>
     </RoutesOfAdministration>
     <ActiveSubstances>
       <ActiveSubstance>Clopidogrel</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA1436/026/001</DrugIDPK>
-    <LicenceNumber>PA1436/026/001</LicenceNumber>
-    <InterchangeableListCode>IC0005-028-003</InterchangeableListCode>
-    <ProductName>Clopidogrel Bluefish 75 mg Film-coated Tablets</ProductName>
-    <PAHolder>Bluefish Pharmaceuticals AB</PAHolder>
-    <AuthorisedDate>09/04/2010</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>B01AC</ATC>
-      <ATC>B01AC04</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Clopidogrel besilate</ActiveSubstance>
     </ActiveSubstances>
     <DispensingLegalStatus>
       <Status>Product subject to prescription which may be renewed (B)</Status>
@@ -69234,64 +69033,6 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA1436/015/002</DrugIDPK>
-    <LicenceNumber>PA1436/015/002</LicenceNumber>
-    <InterchangeableListCode>IC0062-002-015</InterchangeableListCode>
-    <ProductName>Donepezil Hydrochloride Bluefish 10mg Film-coated Tablet</ProductName>
-    <PAHolder>Bluefish Pharmaceuticals AB</PAHolder>
-    <AuthorisedDate>09/07/2010</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>N06DA</ATC>
-      <ATC>N06DA02</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Donepezil hydrochloride</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA1436/015/001</DrugIDPK>
-    <LicenceNumber>PA1436/015/001</LicenceNumber>
-    <InterchangeableListCode>IC0062-001-015</InterchangeableListCode>
-    <ProductName>Donepezil Hydrochloride Bluefish 5mg Film-coated Tablet</ProductName>
-    <PAHolder>Bluefish Pharmaceuticals AB</PAHolder>
-    <AuthorisedDate>09/07/2010</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>N06DA</ATC>
-      <ATC>N06DA02</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Donepezil hydrochloride</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>PA1347/014/004</DrugIDPK>
     <LicenceNumber>PA1347/014/004</LicenceNumber>
     <InterchangeableListCode>IC0062-002-015</InterchangeableListCode>
@@ -78003,6 +77744,118 @@ If you have any unusual symptoms such as unexplained pains in the chest, abdomen
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>PA1347/122/004</DrugIDPK>
+    <LicenceNumber>PA1347/122/004</LicenceNumber>
+    <ProductName>Empagliflozin/Metformin Krka 12.5 mg/1000 mg film-coated tablets</ProductName>
+    <PAHolder>KRKA, d.d., Novo mesto</PAHolder>
+    <AuthorisedDate>29/05/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>A10BD20</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Empagliflozin</ActiveSubstance>
+      <ActiveSubstance>Metformin Hydrochloride</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>PA1347/122/003</DrugIDPK>
+    <LicenceNumber>PA1347/122/003</LicenceNumber>
+    <ProductName>Empagliflozin/Metformin Krka 12.5 mg/850 mg film-coated tablets</ProductName>
+    <PAHolder>KRKA, d.d., Novo mesto</PAHolder>
+    <AuthorisedDate>29/05/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>A10BD20</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Empagliflozin</ActiveSubstance>
+      <ActiveSubstance>Metformin Hydrochloride</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>PA1347/122/002</DrugIDPK>
+    <LicenceNumber>PA1347/122/002</LicenceNumber>
+    <ProductName>Empagliflozin/Metformin Krka 5 mg/1000 mg film-coated tablets</ProductName>
+    <PAHolder>KRKA, d.d., Novo mesto</PAHolder>
+    <AuthorisedDate>29/05/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>A10BD20</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Empagliflozin</ActiveSubstance>
+      <ActiveSubstance>Metformin Hydrochloride</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>PA1347/122/001</DrugIDPK>
+    <LicenceNumber>PA1347/122/001</LicenceNumber>
+    <ProductName>Empagliflozin/Metformin Krka 5 mg/850 mg film-coated tablets</ProductName>
+    <PAHolder>KRKA, d.d., Novo mesto</PAHolder>
+    <AuthorisedDate>29/05/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>A10BD20</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Empagliflozin</ActiveSubstance>
+      <ActiveSubstance>Metformin Hydrochloride</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
     <DrugIDPK>EU/1/16/1088/001</DrugIDPK>
     <LicenceNumber>EU/1/16/1088/001</LicenceNumber>
     <ProductName>Empliciti 300 mg powder for concentrate for solution for infusion.</ProductName>
@@ -81846,64 +81699,6 @@ Characteristics, section 4.2).</SupplyComments>
     <ProductName>Eplerenone 50 mg film-coated tablets</ProductName>
     <PAHolder>Accord Healthcare Ireland Ltd.</PAHolder>
     <AuthorisedDate>23/10/2015</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>C03DA</ATC>
-      <ATC>C03DA04</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Eplerenone</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA1436/022/001</DrugIDPK>
-    <LicenceNumber>PA1436/022/001</LicenceNumber>
-    <InterchangeableListCode>IC0115-022-003</InterchangeableListCode>
-    <ProductName>Eplerenone Bluefish 25 mg film-coated tablets</ProductName>
-    <PAHolder>Bluefish Pharmaceuticals AB</PAHolder>
-    <AuthorisedDate>29/11/2013</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>C03DA</ATC>
-      <ATC>C03DA04</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Eplerenone</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA1436/022/002</DrugIDPK>
-    <LicenceNumber>PA1436/022/002</LicenceNumber>
-    <InterchangeableListCode>IC0115-023-003</InterchangeableListCode>
-    <ProductName>Eplerenone Bluefish 50 mg film-coated tablets</ProductName>
-    <PAHolder>Bluefish Pharmaceuticals AB</PAHolder>
-    <AuthorisedDate>29/11/2013</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
@@ -99818,6 +99613,60 @@ Characteristics, section 4.2).</SupplyComments>
     <DosageForm>Tablet</DosageForm>
     <ATCs>
       <ATC>C03CA</ATC>
+      <ATC>C03CA01</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Furosemide </ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>PA0126/421/001</DrugIDPK>
+    <LicenceNumber>PA0126/421/001</LicenceNumber>
+    <ProductName>Furosemide Clonmel 20 mg tablets</ProductName>
+    <PAHolder>Clonmel Healthcare Ltd</PAHolder>
+    <AuthorisedDate>29/05/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Tablet</DosageForm>
+    <ATCs>
+      <ATC>C03CA01</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Furosemide </ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>PA0126/421/002</DrugIDPK>
+    <LicenceNumber>PA0126/421/002</LicenceNumber>
+    <ProductName>Furosemide Clonmel 40 mg tablets</ProductName>
+    <PAHolder>Clonmel Healthcare Ltd</PAHolder>
+    <AuthorisedDate>29/05/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Tablet</DosageForm>
+    <ATCs>
       <ATC>C03CA01</ATC>
     </ATCs>
     <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
@@ -135147,90 +134996,6 @@ Packs containi</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA1436/020/003</DrugIDPK>
-    <LicenceNumber>PA1436/020/003</LicenceNumber>
-    <ProductName>Levetiracetam Bluefish 1000 mg film-coated tablets</ProductName>
-    <PAHolder>Bluefish Pharmaceuticals AB</PAHolder>
-    <AuthorisedDate>28/10/2011</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>N03AX</ATC>
-      <ATC>N03AX14</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Levetiracetam</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA1436/020/001</DrugIDPK>
-    <LicenceNumber>PA1436/020/001</LicenceNumber>
-    <ProductName>Levetiracetam Bluefish 250 mg Film-coated tablets</ProductName>
-    <PAHolder>Bluefish Pharmaceuticals AB</PAHolder>
-    <AuthorisedDate>28/10/2011</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>N03AX</ATC>
-      <ATC>N03AX14</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Levetiracetam</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA1436/020/002</DrugIDPK>
-    <LicenceNumber>PA1436/020/002</LicenceNumber>
-    <ProductName>Levetiracetam Bluefish 500 mg film-coated tablets</ProductName>
-    <PAHolder>Bluefish Pharmaceuticals AB</PAHolder>
-    <AuthorisedDate>28/10/2011</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>N03AX</ATC>
-      <ATC>N03AX14</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Levetiracetam</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>PA22749/019/001</DrugIDPK>
     <LicenceNumber>PA22749/019/001</LicenceNumber>
     <InterchangeableListCode>IC0119-171-019</InterchangeableListCode>
@@ -139228,10 +138993,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/017/006</DrugIDPK>
-    <LicenceNumber>PA23055/017/006</LicenceNumber>
+    <DrugIDPK>PA23355/047/006</DrugIDPK>
+    <LicenceNumber>PA23355/047/006</LicenceNumber>
     <ProductName>Lipitor 10 mg chewable tablets</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>12/11/2010</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -139256,11 +139021,11 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/017/001</DrugIDPK>
-    <LicenceNumber>PA23055/017/001</LicenceNumber>
+    <DrugIDPK>PA23355/047/001</DrugIDPK>
+    <LicenceNumber>PA23355/047/001</LicenceNumber>
     <InterchangeableListCode>IC0001-002-003</InterchangeableListCode>
     <ProductName>Lipitor 10 mg film-coated tablets</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>14/11/1997</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -139314,10 +139079,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/017/007</DrugIDPK>
-    <LicenceNumber>PA23055/017/007</LicenceNumber>
+    <DrugIDPK>PA23355/047/007</DrugIDPK>
+    <LicenceNumber>PA23355/047/007</LicenceNumber>
     <ProductName>Lipitor 20 mg chewable tablets</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>12/11/2010</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -139342,11 +139107,11 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/017/002</DrugIDPK>
-    <LicenceNumber>PA23055/017/002</LicenceNumber>
+    <DrugIDPK>PA23355/047/002</DrugIDPK>
+    <LicenceNumber>PA23355/047/002</LicenceNumber>
     <InterchangeableListCode>IC0001-003-003</InterchangeableListCode>
     <ProductName>Lipitor 20 mg film-coated tablets</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>14/11/1997</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -139400,10 +139165,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/017/008</DrugIDPK>
-    <LicenceNumber>PA23055/017/008</LicenceNumber>
+    <DrugIDPK>PA23355/047/008</DrugIDPK>
+    <LicenceNumber>PA23355/047/008</LicenceNumber>
     <ProductName>Lipitor 40 mg chewable tablets</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>12/11/2010</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -139428,11 +139193,11 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/017/003</DrugIDPK>
-    <LicenceNumber>PA23055/017/003</LicenceNumber>
+    <DrugIDPK>PA23355/047/003</DrugIDPK>
+    <LicenceNumber>PA23355/047/003</LicenceNumber>
     <InterchangeableListCode>IC0001-004-003</InterchangeableListCode>
     <ProductName>Lipitor 40 mg film-coated tablets</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>14/11/1997</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -139486,10 +139251,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/017/005</DrugIDPK>
-    <LicenceNumber>PA23055/017/005</LicenceNumber>
+    <DrugIDPK>PA23355/047/005</DrugIDPK>
+    <LicenceNumber>PA23355/047/005</LicenceNumber>
     <ProductName>Lipitor 5 mg chewable tablets</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>12/11/2010</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -139514,11 +139279,11 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/017/004</DrugIDPK>
-    <LicenceNumber>PA23055/017/004</LicenceNumber>
+    <DrugIDPK>PA23355/047/004</DrugIDPK>
+    <LicenceNumber>PA23355/047/004</LicenceNumber>
     <InterchangeableListCode>IC0001-005-003</InterchangeableListCode>
     <ProductName>Lipitor 80 mg film-coated tablets</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>14/11/1997</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -164219,7 +163984,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>Teva Pharma B.V.</PAHolder>
     <AuthorisedDate>26/09/2008</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Capsule, hard</DosageForm>
     <ATCs>
@@ -164247,7 +164012,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>Teva Pharma B.V.</PAHolder>
     <AuthorisedDate>26/09/2008</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Capsule, hard</DosageForm>
     <ATCs>
@@ -164275,7 +164040,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>Teva Pharma B.V.</PAHolder>
     <AuthorisedDate>26/09/2008</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Capsule, hard</DosageForm>
     <ATCs>
@@ -167127,7 +166892,7 @@ characteristics, section 4.2).</SupplyComments>
     <PAHolder>TEVA GmbH</PAHolder>
     <AuthorisedDate>08/11/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Capsule, soft</DosageForm>
     <ATCs>
@@ -167154,7 +166919,7 @@ characteristics, section 4.2).</SupplyComments>
     <PAHolder>TEVA GmbH</PAHolder>
     <AuthorisedDate>08/11/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Capsule, soft</DosageForm>
     <ATCs>
@@ -172640,7 +172405,7 @@ For ibuprofen: maximum strength 200 mg, maximum dose: 400 mg, maximum daily dose
     <DrugIDPK>PA0979/032/012</DrugIDPK>
     <LicenceNumber>PA0979/032/012</LicenceNumber>
     <ProductName>Nurofen Rapid Relief 200mg Liquid Capsules</ProductName>
-    <PAHolder>Reckitt Benckiser Ireland Ltd,</PAHolder>
+    <PAHolder>Reckitt Benckiser Ireland Limited</PAHolder>
     <AuthorisedDate>24/07/2009</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -181744,7 +181509,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA0979/079/001</DrugIDPK>
     <LicenceNumber>PA0979/079/001</LicenceNumber>
     <ProductName>Optrex Clear Eyes Eye Drops Solution Hamamelis Water 12.5% v/v Naphazoline Hydrochloride 0.01% w/v</ProductName>
-    <PAHolder>Reckitt Benckiser Ireland Ltd,</PAHolder>
+    <PAHolder>Reckitt Benckiser Ireland Limited</PAHolder>
     <AuthorisedDate>01/04/1980</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -208459,7 +208224,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA2307/005/001</DrugIDPK>
     <LicenceNumber>PA2307/005/001</LicenceNumber>
     <ProductName>Pulmozyme 2500 U/ 2.5ml, nebuliser solution</ProductName>
-    <PAHolder>Roche Products (Ireland) Ltd</PAHolder>
+    <PAHolder>Roche Products (Ireland) Limited</PAHolder>
     <AuthorisedDate>14/03/1994</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -212289,34 +212054,6 @@ Characteristics, section 4.2).</SupplyComments>
     <DosageForm>Tablet</DosageForm>
     <ATCs>
       <ATC>N04BD</ATC>
-      <ATC>N04BD02</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Rasagiline</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA1436/028/001</DrugIDPK>
-    <LicenceNumber>PA1436/028/001</LicenceNumber>
-    <InterchangeableListCode>IC0112-039-002</InterchangeableListCode>
-    <ProductName>Rasagiline Bluefish 1 mg tablets</ProductName>
-    <PAHolder>Bluefish Pharmaceuticals AB</PAHolder>
-    <AuthorisedDate>14/02/2020</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
       <ATC>N04BD02</ATC>
     </ATCs>
     <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
@@ -235274,34 +235011,6 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA22835/001/001</DrugIDPK>
-    <LicenceNumber>PA22835/001/001</LicenceNumber>
-    <ProductName>Sinora 0.08 mg/ml solution for infusion</ProductName>
-    <PAHolder>Sintetica GmbH</PAHolder>
-    <AuthorisedDate>24/04/2020</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Solution for infusion</DosageForm>
-    <ATCs>
-      <ATC>C01CA</ATC>
-      <ATC>C01CA03</ATC>
-    </ATCs>
-    <LegalBasis>Well-established use application (Article 10a of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>NOREPINEPHRINE BITARTRATE</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>PA22835/004/002</DrugIDPK>
     <LicenceNumber>PA22835/004/002</LicenceNumber>
     <ProductName>Sinora 0.1 mg/ml solution for infusion</ProductName>
@@ -235324,34 +235033,6 @@ Characteristics, section 4.2).</SupplyComments>
     </ActiveSubstances>
     <DispensingLegalStatus>
       <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA22835/001/002</DrugIDPK>
-    <LicenceNumber>PA22835/001/002</LicenceNumber>
-    <ProductName>Sinora 0.16 mg/ml solution for infusion</ProductName>
-    <PAHolder>Sintetica GmbH</PAHolder>
-    <AuthorisedDate>24/04/2020</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Solution for infusion</DosageForm>
-    <ATCs>
-      <ATC>C01CA</ATC>
-      <ATC>C01CA03</ATC>
-    </ATCs>
-    <LegalBasis>Well-established use application (Article 10a of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>NOREPINEPHRINE BITARTRATE</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
@@ -240530,34 +240211,6 @@ Retail sale through pharmacies only in blister packs containing not more than 24
     <SupplyComments>Medicinal products on restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>PA1436/038/001</DrugIDPK>
-    <LicenceNumber>PA1436/038/001</LicenceNumber>
-    <InterchangeableListCode>IC0186-067-003</InterchangeableListCode>
-    <ProductName>Sorafenib Bluefish 200 mg film-coated tablets</ProductName>
-    <PAHolder>Bluefish Pharmaceuticals AB</PAHolder>
-    <AuthorisedDate>26/08/2022</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>L01XE05</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Sorafenib Tosilate</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Summary of Product Characteristics, section 4.2)</SupplyComments>
-  </Product>
-  <Product>
     <DrugIDPK>PA23266/051/001</DrugIDPK>
     <LicenceNumber>PA23266/051/001</LicenceNumber>
     <ProductName>Sormon 60 mg Prolonged-release Tablets</ProductName>
@@ -240780,10 +240433,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA2010/043/001</DrugIDPK>
-    <LicenceNumber>PA2010/043/001</LicenceNumber>
+    <DrugIDPK>PA23355/033/001</DrugIDPK>
+    <LicenceNumber>PA23355/033/001</LicenceNumber>
     <ProductName>Spasmonal 60mg hard Capsules</ProductName>
-    <PAHolder>Mylan IRE Healthcare Limited</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>18/10/1993</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
