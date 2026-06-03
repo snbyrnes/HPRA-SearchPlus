@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-02T02:30:03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-03T02:30:10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -14381,7 +14381,7 @@ Supply through pharmacies only for pack sizes in excess of 25g.</SupplyComments>
     <LicenceNumber>PA0281/259/001</LicenceNumber>
     <InterchangeableListCode>IC0124-018-003</InterchangeableListCode>
     <ProductName>Apixaban Pinewood 2.5 mg film-coated tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>10/02/2023</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -14409,7 +14409,7 @@ Supply through pharmacies only for pack sizes in excess of 25g.</SupplyComments>
     <LicenceNumber>PA0281/259/002</LicenceNumber>
     <InterchangeableListCode>IC0124-001-003</InterchangeableListCode>
     <ProductName>Apixaban Pinewood 5 mg film-coated tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>10/02/2023</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -96608,34 +96608,6 @@ undertaken by a state laboratory or a laboratory designated for that purpose.</S
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA1441/001/001</DrugIDPK>
-    <LicenceNumber>PA1441/001/001</LicenceNumber>
-    <ProductName>Fluimucil 200 mg granules for oral solution</ProductName>
-    <PAHolder>Zambon S.p.A.</PAHolder>
-    <AuthorisedDate>20/07/1983</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Granules for oral solution</DosageForm>
-    <ATCs>
-      <ATC>R05CB</ATC>
-      <ATC>R05CB01</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Acetylcysteine</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>PA2273/001/001</DrugIDPK>
     <LicenceNumber>PA2273/001/001</LicenceNumber>
     <ProductName>Fluorescein 100 mg/ml solution for injection</ProductName>
@@ -119466,7 +119438,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>Essential Pharma Limited</PAHolder>
     <AuthorisedDate>21/04/1995</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Eye drops, solution</DosageForm>
     <ATCs>
@@ -152071,35 +152043,6 @@ Characteristics, section 4.2</SupplyComments>
 Promotion to the professions for use in adults and children</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>PA1410/007/001</DrugIDPK>
-    <LicenceNumber>PA1410/007/001</LicenceNumber>
-    <ProductName>Microlite 100/20 microgram Tablets</ProductName>
-    <PAHolder>Bayer Limited</PAHolder>
-    <AuthorisedDate>03/04/1998</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>G03AA</ATC>
-      <ATC>G03AA07</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Ethinylestradiol</ActiveSubstance>
-      <ActiveSubstance>Levonorgestrel</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>PA1410/090/001</DrugIDPK>
     <LicenceNumber>PA1410/090/001</LicenceNumber>
     <ProductName>Microlite 100 microgram/20 microgram coated tablets</ProductName>
@@ -156709,7 +156652,7 @@ by a state laboratory or a laboratory designated for that purpose.</SupplyCommen
     <LicenceNumber>PA0281/261/003</LicenceNumber>
     <InterchangeableListCode>IC0023-002-014</InterchangeableListCode>
     <ProductName>Montelukast Pinewood 10 mg Tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>28/06/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -156737,7 +156680,7 @@ by a state laboratory or a laboratory designated for that purpose.</SupplyCommen
     <LicenceNumber>PA0281/261/001</LicenceNumber>
     <InterchangeableListCode>IC0023-008-007</InterchangeableListCode>
     <ProductName>Montelukast Pinewood 4mg Chewable Tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>28/06/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -156765,7 +156708,7 @@ by a state laboratory or a laboratory designated for that purpose.</SupplyCommen
     <LicenceNumber>PA0281/261/002</LicenceNumber>
     <InterchangeableListCode>IC0023-001-007</InterchangeableListCode>
     <ProductName>Montelukast Pinewood 5 mg Chewable Tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>28/06/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -192736,7 +192679,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA23490/027/001</DrugIDPK>
     <LicenceNumber>PA23490/027/001</LicenceNumber>
     <ProductName>Pepcid Duo Chewable Tablets Famotidine 10 mg Magnesium Hydroxide 165 mg Calcium Carbonate 800 mg</ProductName>
-    <PAHolder>JNTL Consumer Health I (Ireland) Limited</PAHolder>
+    <PAHolder>JNTL Consumer Health (Ireland) Limited</PAHolder>
     <AuthorisedDate>29/09/2000</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
