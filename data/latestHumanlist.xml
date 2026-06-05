@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-04T02:30:18" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-05T02:30:13" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -1637,90 +1637,6 @@
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/24/1880/003</DrugIDPK>
-    <LicenceNumber>EU/1/24/1880/003</LicenceNumber>
-    <ProductName>Absimky 130 mg Concentrate for solution for infusion</ProductName>
-    <PAHolder>Accord Healthcare S.L.U.</PAHolder>
-    <AuthorisedDate>12/12/2024</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Concentrate for solution for infusion</DosageForm>
-    <ATCs>
-      <ATC>L04AC05</ATC>
-    </ATCs>
-    <LegalBasis>Similar biological application (Article 10(4) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Ustekinumab</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/24/1880/001</DrugIDPK>
-    <LicenceNumber>EU/1/24/1880/001</LicenceNumber>
-    <ProductName>Absimky 45 mg Solution for injection</ProductName>
-    <PAHolder>Accord Healthcare S.L.U.</PAHolder>
-    <AuthorisedDate>12/12/2024</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Solution for injection in pre-filled syringe</DosageForm>
-    <ATCs>
-      <ATC>L04AC05</ATC>
-    </ATCs>
-    <LegalBasis>Similar biological application (Article 10(4) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Ustekinumab</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/24/1880/002</DrugIDPK>
-    <LicenceNumber>EU/1/24/1880/002</LicenceNumber>
-    <ProductName>Absimky 90 mg Solution for injection</ProductName>
-    <PAHolder>Accord Healthcare S.L.U.</PAHolder>
-    <AuthorisedDate>12/12/2024</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Solution for injection in pre-filled syringe</DosageForm>
-    <ATCs>
-      <ATC>L04AC05</ATC>
-    </ATCs>
-    <LegalBasis>Similar biological application (Article 10(4) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Ustekinumab</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA2242/019/001</DrugIDPK>
@@ -28581,90 +28497,6 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>EU/1/95/003/002</DrugIDPK>
-    <LicenceNumber>EU/1/95/003/002</LicenceNumber>
-    <ProductName>Betaferon</ProductName>
-    <PAHolder>Schering AG</PAHolder>
-    <AuthorisedDate xsi:nil="true" />
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder and solvent for solution for injection</DosageForm>
-    <ATCs>
-      <ATC>L03AB</ATC>
-      <ATC>L03AB08</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Interferon beta-1b</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/95/003/003</DrugIDPK>
-    <LicenceNumber>EU/1/95/003/003</LicenceNumber>
-    <ProductName>Betaferon</ProductName>
-    <PAHolder>Bayer AG</PAHolder>
-    <AuthorisedDate xsi:nil="true" />
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder and solvent for solution for injection</DosageForm>
-    <ATCs>
-      <ATC>L03AB</ATC>
-      <ATC>L03AB08</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Interferon beta-1b</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/95/003/004</DrugIDPK>
-    <LicenceNumber>EU/1/95/003/004</LicenceNumber>
-    <ProductName>Betaferon</ProductName>
-    <PAHolder>Schering AG</PAHolder>
-    <AuthorisedDate xsi:nil="true" />
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder and solvent for solution for injection</DosageForm>
-    <ATCs>
-      <ATC>L03AB</ATC>
-      <ATC>L03AB08</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Interferon beta-1b</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
-  </Product>
-  <Product>
     <DrugIDPK>EU/1/95/003/005-012</DrugIDPK>
     <LicenceNumber>EU/1/95/003/005-012</LicenceNumber>
     <ProductName>Betaferon  250 microgram/ml, powder and solvent for solution for injection</ProductName>
@@ -35822,7 +35654,7 @@ For use in adults and children over 12 years.</SupplyComments>
     <DrugIDPK>PA0281/267/001</DrugIDPK>
     <LicenceNumber>PA0281/267/001</LicenceNumber>
     <ProductName>Bulexin 2 mg/0.5 mg sublingual tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>20/12/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -35851,7 +35683,7 @@ This product contains a substance listed in Schedule 2 to the Misuse of Drugs Re
     <DrugIDPK>PA0281/267/002</DrugIDPK>
     <LicenceNumber>PA0281/267/002</LicenceNumber>
     <ProductName>Bulexin 4 mg/1 mg sublingual tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>20/12/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -35880,7 +35712,7 @@ This product contains a substance listed in Schedule 2 to the Misuse of Drugs Re
     <DrugIDPK>PA0281/267/003</DrugIDPK>
     <LicenceNumber>PA0281/267/003</LicenceNumber>
     <ProductName>Bulexin 8 mg/2 mg sublingual tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>20/12/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -39150,7 +38982,7 @@ Pharmacy only: MAXIMUM PACK SIZE 140ml for product for children aged 6 – 12 ye
     <PAHolder>Clonmel Healthcare Ltd</PAHolder>
     <AuthorisedDate>31/01/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Tablet</DosageForm>
     <ATCs>
@@ -39206,7 +39038,7 @@ Pharmacy only: MAXIMUM PACK SIZE 140ml for product for children aged 6 – 12 ye
     <PAHolder>Clonmel Healthcare Ltd</PAHolder>
     <AuthorisedDate>31/01/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Tablet</DosageForm>
     <ATCs>
@@ -39470,7 +39302,7 @@ Pharmacy only: MAXIMUM PACK SIZE 140ml for product for children aged 6 – 12 ye
     <PAHolder>Clonmel Healthcare Ltd</PAHolder>
     <AuthorisedDate>23/09/2011</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Tablet</DosageForm>
     <ATCs>
@@ -39528,7 +39360,7 @@ Pharmacy only: MAXIMUM PACK SIZE 140ml for product for children aged 6 – 12 ye
     <PAHolder>Clonmel Healthcare Ltd</PAHolder>
     <AuthorisedDate>23/09/2011</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Tablet</DosageForm>
     <ATCs>
@@ -43542,33 +43374,6 @@ Characteristics, section 4.2).</SupplyComments>
     </RoutesOfAdministration>
     <ActiveSubstances>
       <ActiveSubstance>Sugemalimab</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/22/1666/001-004</DrugIDPK>
-    <LicenceNumber>EU/1/22/1666/001-004</LicenceNumber>
-    <ProductName>Celdoxome pegylated liposomal 2 mg/mL concentrate for dispersion for infusion</ProductName>
-    <PAHolder>Yes Pharmaceutical Development Services GmbH</PAHolder>
-    <AuthorisedDate>15/09/2022</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Concentrate for dispersion for infusion</DosageForm>
-    <ATCs>
-      <ATC>L01DB01</ATC>
-    </ATCs>
-    <LegalBasis>Hybrid application (Article 10(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>DOXORUBICIN HYDROCHLORIDE</ActiveSubstance>
     </ActiveSubstances>
     <DispensingLegalStatus>
       <Status>Product subject to prescription which may not be renewed (A)</Status>
@@ -53392,125 +53197,6 @@ by a state laboratory or a laboratory designated for that purpose.</SupplyCommen
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>EU/1/98/081/001</DrugIDPK>
-    <LicenceNumber>EU/1/98/081/001</LicenceNumber>
-    <ProductName>Comtan</ProductName>
-    <PAHolder>Orion Corporation</PAHolder>
-    <AuthorisedDate>22/09/1998</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>N04BX</ATC>
-      <ATC>N04BX02</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances xsi:nil="true" />
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/98/081/002</DrugIDPK>
-    <LicenceNumber>EU/1/98/081/002</LicenceNumber>
-    <ProductName>Comtan</ProductName>
-    <PAHolder>Orion Corporation</PAHolder>
-    <AuthorisedDate>22/09/1998</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>N04BX</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances xsi:nil="true" />
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/98/081/003</DrugIDPK>
-    <LicenceNumber>EU/1/98/081/003</LicenceNumber>
-    <ProductName>Comtan</ProductName>
-    <PAHolder>Orion Corporation</PAHolder>
-    <AuthorisedDate xsi:nil="true" />
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>N04BX</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances xsi:nil="true" />
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/98/081/004</DrugIDPK>
-    <LicenceNumber>EU/1/98/081/004</LicenceNumber>
-    <ProductName>Comtan</ProductName>
-    <PAHolder>Orion Corporation</PAHolder>
-    <AuthorisedDate xsi:nil="true" />
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>N04BX</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances xsi:nil="true" />
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/98/082/004</DrugIDPK>
-    <LicenceNumber>EU/1/98/082/004</LicenceNumber>
-    <ProductName>Comtess</ProductName>
-    <PAHolder>Orion Corporation</PAHolder>
-    <AuthorisedDate xsi:nil="true" />
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>N04BX</ATC>
-      <ATC>N04BX02</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances xsi:nil="true" />
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>EU/1/98/082/001</DrugIDPK>
     <LicenceNumber>EU/1/98/082/001</LicenceNumber>
     <ProductName>COMTESS 200 mg Film-coated tablet</ProductName>
@@ -61873,7 +61559,7 @@ Characteristics, section 4.2).</SupplyComments>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Solution for injection in pre-filled pen</DosageForm>
     <ATCs>
-      <ATC>B06AC</ATC>
+      <ATC>B06AC09</ATC>
     </ATCs>
     <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
     <RoutesOfAdministration>
@@ -72508,115 +72194,6 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>EU/1/02/209/001</DrugIDPK>
-    <LicenceNumber>EU/1/02/209/001</LicenceNumber>
-    <ProductName>Dynastat</ProductName>
-    <PAHolder>Pfizer Europe MA EEIG</PAHolder>
-    <AuthorisedDate>22/03/2002</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder for solution for injection</DosageForm>
-    <ATCs>
-      <ATC>M01AH</ATC>
-      <ATC>M01AH04</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Parecoxib Sodium</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/02/209/002</DrugIDPK>
-    <LicenceNumber>EU/1/02/209/002</LicenceNumber>
-    <ProductName>Dynastat</ProductName>
-    <PAHolder>Pfizer Europe MA EEIG</PAHolder>
-    <AuthorisedDate xsi:nil="true" />
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder and solvent for solution for injection</DosageForm>
-    <ATCs>
-      <ATC>M01AH04</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Parecoxib Sodium</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/02/209/003</DrugIDPK>
-    <LicenceNumber>EU/1/02/209/003</LicenceNumber>
-    <ProductName>Dynastat</ProductName>
-    <PAHolder>Pfizer Europe MA EEIG</PAHolder>
-    <AuthorisedDate xsi:nil="true" />
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder and solvent for solution for injection</DosageForm>
-    <ATCs>
-      <ATC>M01AH04</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Parecoxib Sodium</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/02/209/004</DrugIDPK>
-    <LicenceNumber>EU/1/02/209/004</LicenceNumber>
-    <ProductName>Dynastat</ProductName>
-    <PAHolder>Pfizer Europe MA EEIG</PAHolder>
-    <AuthorisedDate xsi:nil="true" />
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder and solvent for solution for injection</DosageForm>
-    <ATCs>
-      <ATC>M01AH04</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Parecoxib Sodium</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>EU/1/02/209/006</DrugIDPK>
     <LicenceNumber>EU/1/02/209/006</LicenceNumber>
     <ProductName>Dynastat 40 mg Powder and solvent for solution for injection</ProductName>
@@ -73446,34 +73023,6 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/07/416/001</DrugIDPK>
-    <LicenceNumber>EU/1/07/416/001</LicenceNumber>
-    <ProductName>Ecalta</ProductName>
-    <PAHolder>Pfizer Europe MA EEIG</PAHolder>
-    <AuthorisedDate xsi:nil="true" />
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder and solvent for concentrate for solution for infusion</DosageForm>
-    <ATCs>
-      <ATC>J02AX</ATC>
-      <ATC>J02AX06</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Anidulafungin</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>EU/1/07/416/002</DrugIDPK>
@@ -80057,7 +79606,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>19/07/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Film-coated tablet</DosageForm>
     <ATCs>
@@ -88231,31 +87780,6 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>EU/1/09/520/1-6</DrugIDPK>
-    <LicenceNumber>EU/1/09/520/1-6</LicenceNumber>
-    <ProductName>Exalief</ProductName>
-    <PAHolder>BIAL-Portela &amp; Ca, S.A.</PAHolder>
-    <AuthorisedDate>21/04/2009</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>N03A</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances>
-      <ActiveSubstance>Eslicarbazepine acetate</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>EU/1/24/1794/001</DrugIDPK>
     <LicenceNumber>EU/1/24/1794/001</LicenceNumber>
     <ProductName>EXBLIFEP 2 g/0.5 g powder for concentrate for solution for infusion</ProductName>
@@ -90341,35 +89865,6 @@ Characteristics, section 4.2)</SupplyComments>
     <AuthorisedDate>28/07/2017</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>C10AX</ATC>
-      <ATC>C10AX09</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Ezetimibe</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA1986/012/001</DrugIDPK>
-    <LicenceNumber>PA1986/012/001</LicenceNumber>
-    <InterchangeableListCode>IC0104-002-002</InterchangeableListCode>
-    <ProductName>Ezetimibe Teva 10 mg tablets</ProductName>
-    <PAHolder>Teva B.V.</PAHolder>
-    <AuthorisedDate>03/06/2016</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Tablet</DosageForm>
     <ATCs>
@@ -100467,90 +99962,6 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA1986/128/001</DrugIDPK>
-    <LicenceNumber>PA1986/128/001</LicenceNumber>
-    <InterchangeableListCode>IC0109-024-001</InterchangeableListCode>
-    <ProductName>Gabapentin Teva 100 mg hard capsules</ProductName>
-    <PAHolder>Teva B.V.</PAHolder>
-    <AuthorisedDate>10/01/2025</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Capsule, hard</DosageForm>
-    <ATCs>
-      <ATC>N02BF01</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Gabapentin</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA1986/128/002</DrugIDPK>
-    <LicenceNumber>PA1986/128/002</LicenceNumber>
-    <InterchangeableListCode>IC0109-029-001</InterchangeableListCode>
-    <ProductName>Gabapentin Teva 300 mg hard capsules</ProductName>
-    <PAHolder>Teva B.V.</PAHolder>
-    <AuthorisedDate>10/01/2025</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Capsule, hard</DosageForm>
-    <ATCs>
-      <ATC>N02BF01</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Gabapentin</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA1986/128/003</DrugIDPK>
-    <LicenceNumber>PA1986/128/003</LicenceNumber>
-    <InterchangeableListCode>IC0109-068-001</InterchangeableListCode>
-    <ProductName>Gabapentin Teva 400 mg hard capsules</ProductName>
-    <PAHolder>Teva B.V.</PAHolder>
-    <AuthorisedDate>10/01/2025</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Capsule, hard</DosageForm>
-    <ATCs>
-      <ATC>N02BF01</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Gabapentin</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>PA22697/025/001</DrugIDPK>
     <LicenceNumber>PA22697/025/001</LicenceNumber>
     <InterchangeableListCode>IC0109-126-019</InterchangeableListCode>
@@ -101403,33 +100814,6 @@ Characteristics, section 4.2).</SupplyComments>
     </RoutesOfAdministration>
     <ActiveSubstances>
       <ActiveSubstance>Mesalazine</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/07/414/11-17</DrugIDPK>
-    <LicenceNumber>EU/1/07/414/11-17</LicenceNumber>
-    <ProductName>Galvus</ProductName>
-    <PAHolder>Novartis Europharm Limited</PAHolder>
-    <AuthorisedDate xsi:nil="true" />
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>A10BH02</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Vildagliptin</ActiveSubstance>
     </ActiveSubstances>
     <DispensingLegalStatus>
       <Status>Product subject to prescription which may be renewed (B)</Status>
@@ -118476,60 +117860,6 @@ This product contains a substance listed in schedule 2 to the Misuse of Drugs Re
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>EU/1/99/109/001</DrugIDPK>
-    <LicenceNumber>EU/1/99/109/001</LicenceNumber>
-    <ProductName>INTEGRILIN 0.75 mg/ml solution for infusion</ProductName>
-    <PAHolder>GlaxoSmithKline (Ireland) Limited</PAHolder>
-    <AuthorisedDate>01/07/1999</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Solution for infusion</DosageForm>
-    <ATCs>
-      <ATC>B01AC16</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances>
-      <ActiveSubstance>Eptifibatide</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product
-Characteristics, 4.2)</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/99/109/002</DrugIDPK>
-    <LicenceNumber>EU/1/99/109/002</LicenceNumber>
-    <ProductName>INTEGRILIN 2 mg/ml solution for injection</ProductName>
-    <PAHolder>GlaxoSmithKline (Ireland) Limited</PAHolder>
-    <AuthorisedDate>01/07/1999</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Solution for injection</DosageForm>
-    <ATCs>
-      <ATC>B01AC</ATC>
-      <ATC>B01AC16</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Eptifibatide</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
-  </Product>
-  <Product>
     <DrugIDPK>EU/1/08/468/1</DrugIDPK>
     <LicenceNumber>EU/1/08/468/1</LicenceNumber>
     <ProductName>Intelence 100 mg tablets</ProductName>
@@ -118752,81 +118082,6 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>Batches marketed in Ireland shall be subject to official control authority batch release in accordance with Article 114 of Directive 2001/83/EC.</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/99/127/001</DrugIDPK>
-    <LicenceNumber>EU/1/99/127/001</LicenceNumber>
-    <ProductName>IntronA</ProductName>
-    <PAHolder>Schering Plough Europe</PAHolder>
-    <AuthorisedDate>09/03/2000</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder and solvent for solution for injection</DosageForm>
-    <ATCs>
-      <ATC>L03AB</ATC>
-      <ATC>L03AB05</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Interferon alfa-2b</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/99/127/036</DrugIDPK>
-    <LicenceNumber>EU/1/99/127/036</LicenceNumber>
-    <ProductName>IntronA</ProductName>
-    <PAHolder>Schering Plough Europe</PAHolder>
-    <AuthorisedDate>09/03/2000</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Solution for injection</DosageForm>
-    <ATCs xsi:nil="true" />
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances>
-      <ActiveSubstance>Interferon alfa-2b</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/99/127/038</DrugIDPK>
-    <LicenceNumber>EU/1/99/127/038</LicenceNumber>
-    <ProductName>IntronA</ProductName>
-    <PAHolder>Schering Plough Europe</PAHolder>
-    <AuthorisedDate>09/03/2000</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Solution for injection</DosageForm>
-    <ATCs xsi:nil="true" />
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances>
-      <ActiveSubstance>Interferon alfa-2b</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>EU/1/15/1040/001-002</DrugIDPK>
@@ -121936,34 +121191,6 @@ Requires ECG monitoring during use, see section 4.4 of the SPC Precautions for u
     </ActiveSubstances>
     <DispensingLegalStatus>
       <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/07/437/001-2</DrugIDPK>
-    <LicenceNumber>EU/1/07/437/001-2</LicenceNumber>
-    <ProductName>IVEMEND</ProductName>
-    <PAHolder>Merck Sharp &amp; Dohme BV,</PAHolder>
-    <AuthorisedDate xsi:nil="true" />
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder for solution for infusion</DosageForm>
-    <ATCs>
-      <ATC>A04AD</ATC>
-      <ATC>A04AD12</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Fosaprepitant dimeglumine</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
@@ -142246,7 +141473,7 @@ For pack sizes of more than 30 tablets: Product su</SupplyComments>
     <LicenceNumber>PA0281/154/003</LicenceNumber>
     <InterchangeableListCode>IC0003-024-003</InterchangeableListCode>
     <ProductName>Losartan Potassium Pinewood 100 mg film-coated tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>12/10/2007</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -142275,7 +141502,7 @@ For pack sizes of more than 30 tablets: Product su</SupplyComments>
     <LicenceNumber>PA0281/154/002</LicenceNumber>
     <InterchangeableListCode>IC0003-023-003</InterchangeableListCode>
     <ProductName>Losartan Potassium Pinewood 50 mg film-coated tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>12/10/2007</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -149362,33 +148589,6 @@ In accordance with Article 114 of Directive 2001/83/EC, the official batch relea
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/00/169/004</DrugIDPK>
-    <LicenceNumber>EU/1/00/169/004</LicenceNumber>
-    <ProductName>Metalyse</ProductName>
-    <PAHolder>Boehringer Ingelheim International GmbH</PAHolder>
-    <AuthorisedDate>23/02/2001</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder and solvent for solution for injection</DosageForm>
-    <ATCs>
-      <ATC>B01AD</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Tenecteplase</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>EU/1/00/169/006</DrugIDPK>
@@ -158969,33 +158169,6 @@ by a state laboratory or a laboratory designated for that purpose.</SupplyCommen
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>EU/1/20/1445/001</DrugIDPK>
-    <LicenceNumber>EU/1/20/1445/001</LicenceNumber>
-    <ProductName>Mvabea suspension for injection</ProductName>
-    <PAHolder>Janssen-Cilag International NV</PAHolder>
-    <AuthorisedDate>01/07/2020</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Suspension for injection</DosageForm>
-    <ATCs>
-      <ATC>J07BX02</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intramuscular use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>MVA-BN-FILO</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>EU/1/17/1246/001-002</DrugIDPK>
     <LicenceNumber>EU/1/17/1246/001-002</LicenceNumber>
     <ProductName>MVASI 25 mg/mL Concentrate for solution for infusion</ProductName>
@@ -163948,6 +163121,34 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>PA1986/128/001</DrugIDPK>
+    <LicenceNumber>PA1986/128/001</LicenceNumber>
+    <InterchangeableListCode>IC0109-024-001</InterchangeableListCode>
+    <ProductName>Neurostil 100 mg hard capsules</ProductName>
+    <PAHolder>Teva B.V.</PAHolder>
+    <AuthorisedDate>10/01/2025</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Capsule, hard</DosageForm>
+    <ATCs>
+      <ATC>N02BF01</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Gabapentin</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
     <DrugIDPK>PA0749/164/002</DrugIDPK>
     <LicenceNumber>PA0749/164/002</LicenceNumber>
     <InterchangeableListCode>IC0109-029-001</InterchangeableListCode>
@@ -163976,12 +163177,68 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>PA1986/128/002</DrugIDPK>
+    <LicenceNumber>PA1986/128/002</LicenceNumber>
+    <InterchangeableListCode>IC0109-029-001</InterchangeableListCode>
+    <ProductName>Neurostil 300 mg hard capsules</ProductName>
+    <PAHolder>Teva B.V.</PAHolder>
+    <AuthorisedDate>10/01/2025</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Capsule, hard</DosageForm>
+    <ATCs>
+      <ATC>N02BF01</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Gabapentin</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
     <DrugIDPK>PA0749/164/003</DrugIDPK>
     <LicenceNumber>PA0749/164/003</LicenceNumber>
     <InterchangeableListCode>IC0109-068-001</InterchangeableListCode>
     <ProductName>Neurostil 400 mg capsules, hard</ProductName>
     <PAHolder>Teva Pharma B.V.</PAHolder>
     <AuthorisedDate>26/09/2008</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Capsule, hard</DosageForm>
+    <ATCs>
+      <ATC>N02BF01</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Gabapentin</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>PA1986/128/003</DrugIDPK>
+    <LicenceNumber>PA1986/128/003</LicenceNumber>
+    <InterchangeableListCode>IC0109-068-001</InterchangeableListCode>
+    <ProductName>Neurostil 400 mg hard capsules</ProductName>
+    <PAHolder>Teva B.V.</PAHolder>
+    <AuthorisedDate>10/01/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
@@ -166781,7 +166038,7 @@ characteristics, section 4.2).</SupplyComments>
     <PAHolder>Clonmel Healthcare Ltd</PAHolder>
     <AuthorisedDate>17/04/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Capsule, soft</DosageForm>
     <ATCs>
@@ -166808,7 +166065,7 @@ characteristics, section 4.2).</SupplyComments>
     <PAHolder>Clonmel Healthcare Ltd</PAHolder>
     <AuthorisedDate>17/04/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Capsule, soft</DosageForm>
     <ATCs>
@@ -169942,234 +169199,6 @@ Not more than one pack of pseudoephedrine containing medicinal products should b
     </RoutesOfAdministration>
     <ActiveSubstances>
       <ActiveSubstance>Insulin aspart</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/98/076/002</DrugIDPK>
-    <LicenceNumber>EU/1/98/076/002</LicenceNumber>
-    <ProductName>NovoNorm</ProductName>
-    <PAHolder>Novo Nordisk A/S</PAHolder>
-    <AuthorisedDate>17/08/1998</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>A10BG</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances>
-      <ActiveSubstance>Repaglinide</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/98/076/003</DrugIDPK>
-    <LicenceNumber>EU/1/98/076/003</LicenceNumber>
-    <ProductName>NovoNorm</ProductName>
-    <PAHolder>Novo Nordisk A/S</PAHolder>
-    <AuthorisedDate>17/08/1998</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>A10BG</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances>
-      <ActiveSubstance>Repaglinide</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/98/076/008</DrugIDPK>
-    <LicenceNumber>EU/1/98/076/008</LicenceNumber>
-    <ProductName>NovoNorm</ProductName>
-    <PAHolder>Novo Nordisk A/S</PAHolder>
-    <AuthorisedDate>17/08/1998</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>A10BG</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances>
-      <ActiveSubstance>Repaglinide</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/98/076/009</DrugIDPK>
-    <LicenceNumber>EU/1/98/076/009</LicenceNumber>
-    <ProductName>NovoNorm</ProductName>
-    <PAHolder>Novo Nordisk A/S</PAHolder>
-    <AuthorisedDate>17/08/1998</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>A10BG</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances>
-      <ActiveSubstance>Repaglinide</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/98/076/010</DrugIDPK>
-    <LicenceNumber>EU/1/98/076/010</LicenceNumber>
-    <ProductName>NovoNorm</ProductName>
-    <PAHolder>Novo Nordisk A/S</PAHolder>
-    <AuthorisedDate>17/08/1998</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>A10BG</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances>
-      <ActiveSubstance>Repaglinide</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/98/076/015</DrugIDPK>
-    <LicenceNumber>EU/1/98/076/015</LicenceNumber>
-    <ProductName>NovoNorm</ProductName>
-    <PAHolder>Novo Nordisk A/S</PAHolder>
-    <AuthorisedDate>17/08/1998</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>A10BG</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances>
-      <ActiveSubstance>Repaglinide</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/98/076/016</DrugIDPK>
-    <LicenceNumber>EU/1/98/076/016</LicenceNumber>
-    <ProductName>NovoNorm</ProductName>
-    <PAHolder>Novo Nordisk A/S</PAHolder>
-    <AuthorisedDate>17/08/1998</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>A10BG</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances>
-      <ActiveSubstance>Repaglinide</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/98/076/017</DrugIDPK>
-    <LicenceNumber>EU/1/98/076/017</LicenceNumber>
-    <ProductName>NovoNorm</ProductName>
-    <PAHolder>Novo Nordisk A/S</PAHolder>
-    <AuthorisedDate>17/08/1998</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>A10BG</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances>
-      <ActiveSubstance>Repaglinide</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/98/076/001</DrugIDPK>
-    <LicenceNumber>EU/1/98/076/001</LicenceNumber>
-    <ProductName>NOVONORM</ProductName>
-    <PAHolder>Novo Nordisk A/S</PAHolder>
-    <AuthorisedDate>17/08/1998</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Tablet</DosageForm>
-    <ATCs>
-      <ATC>A10BX</ATC>
-      <ATC>A10BX02</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Repaglinide</ActiveSubstance>
     </ActiveSubstances>
     <DispensingLegalStatus>
       <Status>Product subject to prescription which may be renewed (B)</Status>
@@ -183610,169 +182639,6 @@ Characteristics, section 4.2)</SupplyComments>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/00/165/001</DrugIDPK>
-    <LicenceNumber>EU/1/00/165/001</LicenceNumber>
-    <ProductName>Ovitrelle</ProductName>
-    <PAHolder>Merck Europe B.V.</PAHolder>
-    <AuthorisedDate xsi:nil="true" />
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder and solvent for solution for injection</DosageForm>
-    <ATCs>
-      <ATC>G03GA</ATC>
-      <ATC>G03GA01</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Choriogonadotropin alfa</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/00/165/002</DrugIDPK>
-    <LicenceNumber>EU/1/00/165/002</LicenceNumber>
-    <ProductName>Ovitrelle</ProductName>
-    <PAHolder>Merck Europe B.V.</PAHolder>
-    <AuthorisedDate>07/02/2001</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder and solvent for solution for infusion</DosageForm>
-    <ATCs>
-      <ATC>G03GA08</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Choriogonadotropin alfa</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/00/165/003</DrugIDPK>
-    <LicenceNumber>EU/1/00/165/003</LicenceNumber>
-    <ProductName>Ovitrelle</ProductName>
-    <PAHolder>Merck Europe B.V.</PAHolder>
-    <AuthorisedDate>07/02/2001</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder and solvent for solution for infusion</DosageForm>
-    <ATCs>
-      <ATC>G03GA08</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Choriogonadotropin alfa</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/00/165/004</DrugIDPK>
-    <LicenceNumber>EU/1/00/165/004</LicenceNumber>
-    <ProductName>Ovitrelle</ProductName>
-    <PAHolder>Merck Europe B.V.</PAHolder>
-    <AuthorisedDate>07/02/2001</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder and solvent for solution for injection</DosageForm>
-    <ATCs>
-      <ATC>G03GA08</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Choriogonadotropin alfa</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/00/165/005</DrugIDPK>
-    <LicenceNumber>EU/1/00/165/005</LicenceNumber>
-    <ProductName>Ovitrelle</ProductName>
-    <PAHolder>Merck Europe B.V.</PAHolder>
-    <AuthorisedDate>07/02/2001</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder and solvent for solution for injection</DosageForm>
-    <ATCs>
-      <ATC>G03GA08</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Choriogonadotropin alfa</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/00/165/006</DrugIDPK>
-    <LicenceNumber>EU/1/00/165/006</LicenceNumber>
-    <ProductName>Ovitrelle</ProductName>
-    <PAHolder>Merck Europe B.V.</PAHolder>
-    <AuthorisedDate>07/02/2001</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Powder and solvent for solution for injection</DosageForm>
-    <ATCs>
-      <ATC>G03GA08</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Choriogonadotropin alfa</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>EU/1/00/165/007</DrugIDPK>
@@ -203854,173 +202720,6 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>EU/1/00/167/002</DrugIDPK>
-    <LicenceNumber>EU/1/00/167/002</LicenceNumber>
-    <ProductName>Prevenar</ProductName>
-    <PAHolder>Wyeth Lederle Vaccines S.A.</PAHolder>
-    <AuthorisedDate>02/02/2001</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Suspension for injection</DosageForm>
-    <ATCs>
-      <ATC>J07AL</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intramuscular use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Pneumococcal polysaccharide type 23 (23f)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal type 6b</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 19 (19f)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 4 (4)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 9v</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 56 (18c)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 14 (14)</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/00/167/003</DrugIDPK>
-    <LicenceNumber>EU/1/00/167/003</LicenceNumber>
-    <ProductName>Prevenar</ProductName>
-    <PAHolder>Wyeth Lederle Vaccines S.A.</PAHolder>
-    <AuthorisedDate>02/02/2001</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Suspension for injection in pre-filled syringe</DosageForm>
-    <ATCs>
-      <ATC>J07AL</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intramuscular use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Pneumococcal polysaccharide type 23 (23f)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal type 6b</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 19 (19f)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 4 (4)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 9v</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 56 (18c)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 14 (14)</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/00/167/008</DrugIDPK>
-    <LicenceNumber>EU/1/00/167/008</LicenceNumber>
-    <ProductName>Prevenar</ProductName>
-    <PAHolder>Wyeth Lederle Vaccines S.A.</PAHolder>
-    <AuthorisedDate>31/08/2007</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Suspension for injection in pre-filled syringe</DosageForm>
-    <ATCs>
-      <ATC>J07AL</ATC>
-      <ATC>J07AL02</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intramuscular use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Pneumococcal oligosaccharide serotype 18c</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide serotype 9v</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide serotype 6b</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide serotype 19f</ActiveSubstance>
-      <ActiveSubstance>Crm197 carrier protein</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide serotype 23f</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide serotype 14</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide serotype 4</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/00/167/4-7</DrugIDPK>
-    <LicenceNumber>EU/1/00/167/4-7</LicenceNumber>
-    <ProductName>Prevenar</ProductName>
-    <PAHolder>Wyeth Lederle Vaccines S.A.</PAHolder>
-    <AuthorisedDate>02/02/2001</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Suspension for injection</DosageForm>
-    <ATCs>
-      <ATC>J07AL</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intramuscular use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Pneumococcal polysaccharide type 23 (23f)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal type 6b</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 19 (19f)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 4 (4)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 9v</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 56 (18c)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 14 (14)</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/00/167/001</DrugIDPK>
-    <LicenceNumber>EU/1/00/167/001</LicenceNumber>
-    <ProductName>PREVENAR</ProductName>
-    <PAHolder>Wyeth Lederle Vaccines S.A.</PAHolder>
-    <AuthorisedDate>02/02/2001</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Suspension for injection</DosageForm>
-    <ATCs>
-      <ATC>J07AL</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intramuscular use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Pneumococcal polysaccharide type 23 (23f)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal type 6b</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 19 (19f)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 4 (4)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 9v</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 56 (18c)</ActiveSubstance>
-      <ActiveSubstance>Pneumococcal polysaccharide type 14 (14)</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>EU/1/09/590/1-6</DrugIDPK>
     <LicenceNumber>EU/1/09/590/1-6</LicenceNumber>
     <ProductName>Prevenar 13 suspension for injection pneumococcal polysaccharide conjugate vaccine (13-valent, adsorbed)</ProductName>
@@ -209238,7 +207937,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/23/1731/001</DrugIDPK>
     <LicenceNumber>EU/1/23/1731/001</LicenceNumber>
     <ProductName>Qaialdo 10 mg/ml oral suspension</ProductName>
-    <PAHolder>Nova Laboratories Ireland Limited</PAHolder>
+    <PAHolder>Lipomed GmbH</PAHolder>
     <AuthorisedDate>26/05/2023</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -211635,33 +210334,6 @@ Medicinal product subject to restricted medical prescription (See Summary of Pro
       <ATC>L04AA10</ATC>
     </ATCs>
     <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Sirolimus</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/1/171/11-12</DrugIDPK>
-    <LicenceNumber>EU/1/1/171/11-12</LicenceNumber>
-    <ProductName>Rapamune</ProductName>
-    <PAHolder>Pfizer Europe MA EEIG</PAHolder>
-    <AuthorisedDate>24/01/2005</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Coated tablet</DosageForm>
-    <ATCs>
-      <ATC>L04AH01</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
     <RoutesOfAdministration>
       <RoutesOfAdministration>Oral use</RoutesOfAdministration>
     </RoutesOfAdministration>
@@ -217868,7 +216540,7 @@ The following pack sizes are subject to medical prescription which may be renewe
     <PAHolder>Sanofi-Aventis Ireland Limited T/A SANOFI</PAHolder>
     <AuthorisedDate>23/02/1977</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Oral suspension</DosageForm>
     <ATCs>
@@ -230394,14 +229066,13 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PPA1463/204/001</DrugIDPK>
     <LicenceNumber>PPA1463/204/001</LicenceNumber>
     <ProductName>Serevent Evohaler 25 micrograms per actuation pressurised inhalation suspension</ProductName>
-    <PAHolder>IMED Healthcare Ltd.</PAHolder>
+    <PAHolder>IMED Healthcare Ltd.,</PAHolder>
     <AuthorisedDate>20/01/2023</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Pressurised inhalation, suspension</DosageForm>
     <ATCs>
-      <ATC>R03AC</ATC>
       <ATC>R03AC12</ATC>
     </ATCs>
     <LegalBasis>Parallel importation notified in accordance with Article 76(3) of Directive 2001/83/EC</LegalBasis>
@@ -242141,33 +240812,6 @@ Characteristics, section 4.2)</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>EU/1/08/494/002</DrugIDPK>
-    <LicenceNumber>EU/1/08/494/002</LicenceNumber>
-    <ProductName>STELARA</ProductName>
-    <PAHolder>Janssen-Cilag International NV</PAHolder>
-    <AuthorisedDate>16/01/2009</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Solution for injection</DosageForm>
-    <ATCs>
-      <ATC>L04AC05</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Ustekinumab</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
-  </Product>
-  <Product>
     <DrugIDPK>EU/1/08/494/005</DrugIDPK>
     <LicenceNumber>EU/1/08/494/005</LicenceNumber>
     <ProductName>STELARA 130 mg Concentrate for solution for infusion</ProductName>
@@ -243152,6 +241796,29 @@ Characteristics, section 4.2).</SupplyComments>
     <MarketInfo>Unknown</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Pastille</DosageForm>
+    <ATCs xsi:nil="true" />
+    <LegalBasis>Traditional use registration for herbal medicinal product application (Article 16a of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances xsi:nil="true" />
+    <DispensingLegalStatus>
+      <Status>Product not subject to medical prescription</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through non-pharmacy outlets and pharmacies</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to the general public</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>TR0979/088/001</DrugIDPK>
+    <LicenceNumber>TR0979/088/001</LicenceNumber>
+    <ProductName>Strepsils Herbal Dry Cough Syrup</ProductName>
+    <PAHolder>Reckitt Benckiser Ireland Limited</PAHolder>
+    <AuthorisedDate>29/05/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Syrup</DosageForm>
     <ATCs xsi:nil="true" />
     <LegalBasis>Traditional use registration for herbal medicinal product application (Article 16a of Directive No 2001/83/EC)</LegalBasis>
     <RoutesOfAdministration>
@@ -248042,34 +246709,6 @@ Characteristics, section 4.2).</SupplyComments>
     <ProductName>Tamsulosin Rowa 400 microgram modified-release hard capsules</ProductName>
     <PAHolder>Rowa Pharmaceuticals Limited,</PAHolder>
     <AuthorisedDate>10/01/2025</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Modified-release capsule, hard</DosageForm>
-    <ATCs>
-      <ATC>G04CA02</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Tamsulosin hydrochloride</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA23266/070/001</DrugIDPK>
-    <LicenceNumber>PA23266/070/001</LicenceNumber>
-    <InterchangeableListCode>IC0024-066-044</InterchangeableListCode>
-    <ProductName>Tamsulosin Viatris 400 microgram  hard modified-release capsules</ProductName>
-    <PAHolder>Viatris Limited</PAHolder>
-    <AuthorisedDate>14/11/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
@@ -261528,35 +260167,6 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>EU/1/00/156/001</DrugIDPK>
-    <LicenceNumber>EU/1/00/156/001</LicenceNumber>
-    <ProductName>Trizivir</ProductName>
-    <PAHolder>ViiV Healthcare BV</PAHolder>
-    <AuthorisedDate>28/12/2000</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>J05A</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Lamivudine</ActiveSubstance>
-      <ActiveSubstance>Abacavir sulfate</ActiveSubstance>
-      <ActiveSubstance>Zidovudine</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
-  </Product>
-  <Product>
     <DrugIDPK>EU/1/00/156/002</DrugIDPK>
     <LicenceNumber>EU/1/00/156/002</LicenceNumber>
     <ProductName>Trizivir 300 mg/150 mg/300 mg film-coated tablets</ProductName>
@@ -271391,7 +270001,7 @@ HCP consultation required for OTC supply</SupplyComments>
     <PAHolder>Clonmel Healthcare Ltd</PAHolder>
     <AuthorisedDate>15/12/2023</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Film-coated tablet</DosageForm>
     <ATCs>
@@ -282485,6 +281095,34 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
+  </Product>
+  <Product>
+    <DrugIDPK>PA23266/070/001</DrugIDPK>
+    <LicenceNumber>PA23266/070/001</LicenceNumber>
+    <InterchangeableListCode>IC0024-066-044</InterchangeableListCode>
+    <ProductName>Zeliravel 400 microgram hard modified-release capsules</ProductName>
+    <PAHolder>Viatris Limited</PAHolder>
+    <AuthorisedDate>14/11/2025</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Modified-release capsule, hard</DosageForm>
+    <ATCs>
+      <ATC>G04CA02</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Tamsulosin hydrochloride</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
     <DrugIDPK>EU/1/25/1960/001</DrugIDPK>
