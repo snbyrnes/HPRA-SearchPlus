@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-06T02:30:14" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-07T02:30:07" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -89238,6 +89238,118 @@ Characteristics, section 4.2)</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>PA2244/003/001</DrugIDPK>
+    <LicenceNumber>PA2244/003/001</LicenceNumber>
+    <ProductName>Ezetimibe/Atorvastatin DOC Generici 10 mg/ 10 mg film-coated tablet</ProductName>
+    <PAHolder>DOC Generici S.r.l.</PAHolder>
+    <AuthorisedDate>05/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>C10BA05</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Ezetimibe</ActiveSubstance>
+      <ActiveSubstance>Atorvastatin calcium trihydrate</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>PA2244/003/002</DrugIDPK>
+    <LicenceNumber>PA2244/003/002</LicenceNumber>
+    <ProductName>Ezetimibe/Atorvastatin DOC Generici 10 mg/ 20 mg film-coated tablet</ProductName>
+    <PAHolder>DOC Generici S.r.l.</PAHolder>
+    <AuthorisedDate>05/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>C10BA05</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Ezetimibe</ActiveSubstance>
+      <ActiveSubstance>Atorvastatin calcium trihydrate</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>PA2244/003/003</DrugIDPK>
+    <LicenceNumber>PA2244/003/003</LicenceNumber>
+    <ProductName>Ezetimibe/Atorvastatin DOC Generici 10 mg/ 40 mg film-coated tablet</ProductName>
+    <PAHolder>DOC Generici S.r.l.</PAHolder>
+    <AuthorisedDate>05/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>C10BA05</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Ezetimibe</ActiveSubstance>
+      <ActiveSubstance>Atorvastatin calcium trihydrate</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>PA2244/003/004</DrugIDPK>
+    <LicenceNumber>PA2244/003/004</LicenceNumber>
+    <ProductName>Ezetimibe/Atorvastatin DOC Generici 10 mg/ 80 mg film-coated tablets</ProductName>
+    <PAHolder>DOC Generici S.r.l.</PAHolder>
+    <AuthorisedDate>05/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>C10BA05</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Ezetimibe</ActiveSubstance>
+      <ActiveSubstance>Atorvastatin calcium trihydrate</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
     <DrugIDPK>PA1347/116/001</DrugIDPK>
     <LicenceNumber>PA1347/116/001</LicenceNumber>
     <InterchangeableListCode>IC0118-017-003</InterchangeableListCode>
@@ -142157,6 +142269,33 @@ For pack sizes of more than 30 tablets: Product su</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>PPA0465/524/001</DrugIDPK>
+    <LicenceNumber>PPA0465/524/001</LicenceNumber>
+    <ProductName>Lubion 25 mg solution for injection in pre-filled syringe</ProductName>
+    <PAHolder>PCO Manufacturing Ltd.</PAHolder>
+    <AuthorisedDate>05/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Solution for injection in pre-filled syringe</DosageForm>
+    <ATCs>
+      <ATC>G03DA04</ATC>
+    </ATCs>
+    <LegalBasis>Parallel importation notified in accordance with Article 76(3) of Directive 2001/83/EC</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Progesterone</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
     <DrugIDPK>EU/1/06/374/002-004</DrugIDPK>
     <LicenceNumber>EU/1/06/374/002-004</LicenceNumber>
     <ProductName>Lucentis 10 mg/ml solution for injection</ProductName>
@@ -159653,6 +159792,34 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>PA23250/025/001</DrugIDPK>
+    <LicenceNumber>PA23250/025/001</LicenceNumber>
+    <ProductName>Naproxen/Esomeprazole MSN 500 mg/20 mg modified-release tablets</ProductName>
+    <PAHolder>MSN Labs Europe Limited</PAHolder>
+    <AuthorisedDate>05/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Modified-release tablet</DosageForm>
+    <ATCs>
+      <ATC>M01AE52</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Naproxen</ActiveSubstance>
+      <ActiveSubstance>Esomeprazole magnesium trihydrate</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
     <DrugIDPK>PA0711/326/001</DrugIDPK>
     <LicenceNumber>PA0711/326/001</LicenceNumber>
     <InterchangeableListCode>IC0027-049-021</InterchangeableListCode>
@@ -166084,6 +166251,60 @@ characteristics, section 4.2).</SupplyComments>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>Medicinal product subject to restricted medical prescription (Summary of Product Characteristics, section 4.2).</SupplyComments>
+  </Product>
+  <Product>
+    <DrugIDPK>PA0436/060/001</DrugIDPK>
+    <LicenceNumber>PA0436/060/001</LicenceNumber>
+    <ProductName>Nintedanib Norton 100 mg soft capsules</ProductName>
+    <PAHolder>Norton Waterford</PAHolder>
+    <AuthorisedDate>05/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Capsule, soft</DosageForm>
+    <ATCs>
+      <ATC>L01EX09</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Nintedanib esylate</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Medicinal product subject to restricted medical prescription (see Summary of Product Characteristics, section 4.2).</SupplyComments>
+  </Product>
+  <Product>
+    <DrugIDPK>PA0436/060/002</DrugIDPK>
+    <LicenceNumber>PA0436/060/002</LicenceNumber>
+    <ProductName>Nintedanib Norton 150 mg soft capsules</ProductName>
+    <PAHolder>Norton Waterford</PAHolder>
+    <AuthorisedDate>05/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Capsule, soft</DosageForm>
+    <ATCs>
+      <ATC>L01EX09</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Nintedanib esylate</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Medicinal product subject to restricted medical prescription (see Summary of Product Characteristics, section 4.2).</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA22579/007/001</DrugIDPK>
@@ -187948,7 +188169,7 @@ Reta</SupplyComments>
     <PromotionLegalStatus>Advertising to the general public</PromotionLegalStatus>
     <SupplyComments>General sale in blister packs containing not more than 12 unit dosage forms.   The product concerned should contain paracetamol as its only active analgesic substance and only one pack should be supplied in the course of any one retail transaction.
   
-Re</SupplyComments>
+Retail sale through pharmacies only in blister</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA0678/151/001</DrugIDPK>
@@ -234938,7 +235159,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0711/050/001</LicenceNumber>
     <InterchangeableListCode>IC0018-002-003</InterchangeableListCode>
     <ProductName>Sivatin 10 mg film-coated tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>19/04/2002</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -258810,6 +259031,34 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>PPA0465/308/003</DrugIDPK>
+    <LicenceNumber>PPA0465/308/003</LicenceNumber>
+    <ProductName>Trileptal 60 mg/ml oral suspension</ProductName>
+    <PAHolder>PCO Manufacturing Ltd.</PAHolder>
+    <AuthorisedDate>22/07/2016</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Oral suspension</DosageForm>
+    <ATCs>
+      <ATC>N03AF</ATC>
+      <ATC>N03AF02</ATC>
+    </ATCs>
+    <LegalBasis>Parallel importation notified in accordance with Article 76(3) of Directive 2001/83/EC</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Oxcarbazepine</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
     <DrugIDPK>PA0896/033/004</DrugIDPK>
     <LicenceNumber>PA0896/033/004</LicenceNumber>
     <ProductName>Trileptal 60 mg/ml Oral Suspension</ProductName>
@@ -258870,34 +259119,6 @@ Characteristics, section 4.2).</SupplyComments>
     <ProductName>Trileptal 60 mg/ml Oral Suspension</ProductName>
     <PAHolder>IMED Healthcare Ltd.,</PAHolder>
     <AuthorisedDate>15/01/2021</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Oral suspension</DosageForm>
-    <ATCs>
-      <ATC>N03AF</ATC>
-      <ATC>N03AF02</ATC>
-    </ATCs>
-    <LegalBasis>Parallel importation notified in accordance with Article 76(3) of Directive 2001/83/EC</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Oxcarbazepine</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PPA0465/308/003</DrugIDPK>
-    <LicenceNumber>PPA0465/308/003</LicenceNumber>
-    <ProductName>Trileptal 60 mg/ml oral suspension.</ProductName>
-    <PAHolder>PCO Manufacturing Ltd.</PAHolder>
-    <AuthorisedDate>22/07/2016</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
@@ -281457,11 +281678,11 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments>Medicinal product subject to restricted medical prescription (See Summary of Product Characteristics, section 4.2)</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>PA22871/011/001</DrugIDPK>
-    <LicenceNumber>PA22871/011/001</LicenceNumber>
+    <DrugIDPK>PA1963/020/001</DrugIDPK>
+    <LicenceNumber>PA1963/020/001</LicenceNumber>
     <InterchangeableListCode>IC0081-136-052</InterchangeableListCode>
     <ProductName>Zerseos 0.5 mg/2.5 mg per 2.5 ml nebuliser solution</ProductName>
-    <PAHolder>Azure Pharmaceuticals Ltd.</PAHolder>
+    <PAHolder>Cipla Europe</PAHolder>
     <AuthorisedDate>10/03/2017</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
