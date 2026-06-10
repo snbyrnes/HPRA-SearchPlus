@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-09T02:30:13" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-10T02:30:11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -40251,7 +40251,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/11/749/001</DrugIDPK>
     <LicenceNumber>EU/1/11/749/001</LicenceNumber>
     <ProductName>Caprelsa 100 mg film-coated tablets</ProductName>
-    <PAHolder>Genzyme Europe B.V.</PAHolder>
+    <PAHolder>Esteve Pharmaceuticals S.A.</PAHolder>
     <AuthorisedDate>17/02/2012</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -40279,7 +40279,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/11/749/002</DrugIDPK>
     <LicenceNumber>EU/1/11/749/002</LicenceNumber>
     <ProductName>Caprelsa 300 mg film-coated tablets</ProductName>
-    <PAHolder>Genzyme Europe B.V.</PAHolder>
+    <PAHolder>Esteve Pharmaceuticals S.A.</PAHolder>
     <AuthorisedDate xsi:nil="true" />
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -59486,7 +59486,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0711/250/002</LicenceNumber>
     <InterchangeableListCode>IC0102-016-024</InterchangeableListCode>
     <ProductName>Dancex SR Plus 10 mg/5 mg Prolonged-release tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>15/04/2016</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -59516,7 +59516,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0711/250/003</LicenceNumber>
     <InterchangeableListCode>IC0102-061-024</InterchangeableListCode>
     <ProductName>Dancex SR Plus 20 mg/10 mg Prolonged-release tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>15/04/2016</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -59576,7 +59576,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0711/250/001</LicenceNumber>
     <InterchangeableListCode>IC0102-159-024</InterchangeableListCode>
     <ProductName>Dancex SR Plus 5 mg/2.5 mg Prolonged-release tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>15/04/2016</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -66758,7 +66758,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>Clonmel Healthcare Ltd</PAHolder>
     <AuthorisedDate>06/06/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Gastro-resistant capsule, hard</DosageForm>
     <ATCs>
@@ -66786,7 +66786,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>Clonmel Healthcare Ltd</PAHolder>
     <AuthorisedDate>06/06/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Gastro-resistant capsule, hard</DosageForm>
     <ATCs>
@@ -66867,7 +66867,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>EU/1/24/1814/001-004</LicenceNumber>
     <InterchangeableListCode>IC0165-167-006</InterchangeableListCode>
     <ProductName>Dimethyl fumarate Mylan 120 mg gastro-resistant hard capsules</ProductName>
-    <PAHolder>Mylan Ireland Limited</PAHolder>
+    <PAHolder>Mylan Pharmaceuticals Limited</PAHolder>
     <AuthorisedDate>22/04/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -66895,7 +66895,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>EU/1/24/1814/005-010</LicenceNumber>
     <InterchangeableListCode>IC0165-203-006</InterchangeableListCode>
     <ProductName>Dimethyl fumarate Mylan 240 mg gastro-resistant hard capsules</ProductName>
-    <PAHolder>Mylan Ireland Limited</PAHolder>
+    <PAHolder>Mylan Pharmaceuticals Limited</PAHolder>
     <AuthorisedDate>22/04/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -90088,7 +90088,7 @@ Characteristics, section 4.2)</SupplyComments>
     <DrugIDPK>EU/1/25/1950/001-002</DrugIDPK>
     <LicenceNumber>EU/1/25/1950/001-002</LicenceNumber>
     <ProductName>Ezmekly 1 mg dispersible tablets</ProductName>
-    <PAHolder>Springworks Therapeutics Ireland Limited</PAHolder>
+    <PAHolder>Merck Europe B.V.</PAHolder>
     <AuthorisedDate>17/07/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -90116,7 +90116,7 @@ Characteristics, section 4.2.</SupplyComments>
     <DrugIDPK>EU/1/25/1950/003</DrugIDPK>
     <LicenceNumber>EU/1/25/1950/003</LicenceNumber>
     <ProductName>Ezmekly 1 mg hard capsules</ProductName>
-    <PAHolder>Springworks Therapeutics Ireland Limited</PAHolder>
+    <PAHolder>Merck Europe B.V.</PAHolder>
     <AuthorisedDate>17/07/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -90144,7 +90144,7 @@ Characteristics, section 4.2.</SupplyComments>
     <DrugIDPK>EU/1/25/1950/004-005</DrugIDPK>
     <LicenceNumber>EU/1/25/1950/004-005</LicenceNumber>
     <ProductName>Ezmekly 2 mg hard capsules</ProductName>
-    <PAHolder>Springworks Therapeutics Ireland Limited</PAHolder>
+    <PAHolder>Merck Europe B.V.</PAHolder>
     <AuthorisedDate>17/07/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -96272,7 +96272,7 @@ undertaken by a state laboratory or a laboratory designated for that purpose.</S
   <Product>
     <DrugIDPK>PA2315/091/001</DrugIDPK>
     <LicenceNumber>PA2315/091/001</LicenceNumber>
-    <ProductName>Fluorouracil 50 mg/ml solution for injection or infusion</ProductName>
+    <ProductName>Fluorouracil 50 mg/ml Solution for Injection or Infusion</ProductName>
     <PAHolder>Accord Healthcare Ireland Ltd.</PAHolder>
     <AuthorisedDate>26/02/2010</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -126986,7 +126986,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/08/481/004</DrugIDPK>
     <LicenceNumber>EU/1/08/481/004</LicenceNumber>
     <ProductName>Kuvan 100 mg powder for oral solution</ProductName>
-    <PAHolder>BioMarin International Limited</PAHolder>
+    <PAHolder>Biomarin International Limited</PAHolder>
     <AuthorisedDate>13/07/2017</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -127013,7 +127013,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/08/481/1-3</DrugIDPK>
     <LicenceNumber>EU/1/08/481/1-3</LicenceNumber>
     <ProductName>Kuvan 100 mg soluble tablets</ProductName>
-    <PAHolder>BioMarin International Limited</PAHolder>
+    <PAHolder>Biomarin International Limited</PAHolder>
     <AuthorisedDate>02/12/2008</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -127040,7 +127040,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/08/481/005</DrugIDPK>
     <LicenceNumber>EU/1/08/481/005</LicenceNumber>
     <ProductName>Kuvan 500 mg powder for oral solution</ProductName>
-    <PAHolder>BioMarin International Limited</PAHolder>
+    <PAHolder>Biomarin International Limited</PAHolder>
     <AuthorisedDate>13/07/2017</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -173560,7 +173560,7 @@ Characteristics, section 4.2).</SupplyComments>
   <Product>
     <DrugIDPK>EU/1/25/1932/003</DrugIDPK>
     <LicenceNumber>EU/1/25/1932/003</LicenceNumber>
-    <ProductName>Ogsiveo 100 mg film-coated tablets</ProductName>
+    <ProductName>Ogsiveo 100 mg film‑coated tablets</ProductName>
     <PAHolder>Springworks Therapeutics Ireland Limited</PAHolder>
     <AuthorisedDate>14/08/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -173587,7 +173587,7 @@ Characteristics, section 4.2).</SupplyComments>
   <Product>
     <DrugIDPK>EU/1/25/1932/004</DrugIDPK>
     <LicenceNumber>EU/1/25/1932/004</LicenceNumber>
-    <ProductName>Ogsiveo 150 mg film-coated tablets</ProductName>
+    <ProductName>Ogsiveo 150 mg film‑coated tablets</ProductName>
     <PAHolder>Springworks Therapeutics Ireland Limited</PAHolder>
     <AuthorisedDate>14/08/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -173614,7 +173614,7 @@ Characteristics, section 4.2).</SupplyComments>
   <Product>
     <DrugIDPK>EU/1/25/1932/001-002</DrugIDPK>
     <LicenceNumber>EU/1/25/1932/001-002</LicenceNumber>
-    <ProductName>Ogsiveo 50 mg film-coated tablets</ProductName>
+    <ProductName>Ogsiveo 50 mg film‑coated tablets</ProductName>
     <PAHolder>Springworks Therapeutics Ireland Limited</PAHolder>
     <AuthorisedDate>14/08/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -239497,7 +239497,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/22/1688/002</DrugIDPK>
     <LicenceNumber>EU/1/22/1688/002</LicenceNumber>
     <ProductName>Spevigo 150 mg solution for injection in pre-filled syringe</ProductName>
-    <PAHolder>Boehringer Ingelheim GmbH</PAHolder>
+    <PAHolder>LEO Pharma A/S</PAHolder>
     <AuthorisedDate>25/09/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -239525,7 +239525,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/22/1688/003</DrugIDPK>
     <LicenceNumber>EU/1/22/1688/003</LicenceNumber>
     <ProductName>Spevigo 300 mg solution for injection in pre-filled syringe</ProductName>
-    <PAHolder>Boehringer Ingelheim International GmbH</PAHolder>
+    <PAHolder>LEO Pharma A/S</PAHolder>
     <AuthorisedDate>14/08/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -239553,7 +239553,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/22/1688/001</DrugIDPK>
     <LicenceNumber>EU/1/22/1688/001</LicenceNumber>
     <ProductName>Spevigo 450 mg concentrate for solution for infusion</ProductName>
-    <PAHolder>Boehringer Ingelheim International GmbH</PAHolder>
+    <PAHolder>LEO Pharma A/S</PAHolder>
     <AuthorisedDate>09/12/2022</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -263853,7 +263853,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/25/1973/004</DrugIDPK>
     <LicenceNumber>EU/1/25/1973/004</LicenceNumber>
     <ProductName>Usrenty 130 mg concentrate for solution for infusion</ProductName>
-    <PAHolder>Biosimilar Collaborations Ireland Limited</PAHolder>
+    <PAHolder>Biocon Biologics Ireland Limited</PAHolder>
     <AuthorisedDate>17/09/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -263880,7 +263880,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/25/1973/001</DrugIDPK>
     <LicenceNumber>EU/1/25/1973/001</LicenceNumber>
     <ProductName>Usrenty 45 mg solution for injection</ProductName>
-    <PAHolder>Biosimilar Collaborations Ireland Limited</PAHolder>
+    <PAHolder>Biocon Biologics Ireland Limited</PAHolder>
     <AuthorisedDate>17/09/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -263907,7 +263907,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/25/1973/002</DrugIDPK>
     <LicenceNumber>EU/1/25/1973/002</LicenceNumber>
     <ProductName>Usrenty 45 mg solution for injection in pre-filled syringe</ProductName>
-    <PAHolder>Biosimilar Collaborations Ireland Limited</PAHolder>
+    <PAHolder>Biocon Biologics Ireland Limited</PAHolder>
     <AuthorisedDate>17/09/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -263934,7 +263934,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/25/1973/003</DrugIDPK>
     <LicenceNumber>EU/1/25/1973/003</LicenceNumber>
     <ProductName>Usrenty 90 mg solution for injection in pre-filled syringe</ProductName>
-    <PAHolder>Biosimilar Collaborations Ireland Limited</PAHolder>
+    <PAHolder>Biocon Biologics Ireland Limited</PAHolder>
     <AuthorisedDate>17/09/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -267061,7 +267061,7 @@ Batches of Vaccine marketed in Ireland shall be subject to control authority bat
     <DrugIDPK>EU/1/20/1524/001-002</DrugIDPK>
     <LicenceNumber>EU/1/20/1524/001-002</LicenceNumber>
     <ProductName>Vazkepa 998 mg soft capsules</ProductName>
-    <PAHolder>Amarin Pharmaceuticals Ireland Limited</PAHolder>
+    <PAHolder>Recordati Industria Chimica e Farmaceutica SpA</PAHolder>
     <AuthorisedDate>26/03/2021</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -272734,7 +272734,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/08/451/003-004</DrugIDPK>
     <LicenceNumber>EU/1/08/451/003-004</LicenceNumber>
     <ProductName>Volibris 10 mg film-coated tablets</ProductName>
-    <PAHolder>GlaxoSmithKline (Ireland) Limited</PAHolder>
+    <PAHolder>GlaxoSmithKline Trading Services Limited</PAHolder>
     <AuthorisedDate>21/04/2008</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -272761,7 +272761,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/08/451/005</DrugIDPK>
     <LicenceNumber>EU/1/08/451/005</LicenceNumber>
     <ProductName>Volibris 2.5 mg film-coated tablet</ProductName>
-    <PAHolder>GlaxoSmithKline (Ireland) Limited</PAHolder>
+    <PAHolder>GlaxoSmithKline Trading Services Limited</PAHolder>
     <AuthorisedDate>22/09/2021</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -272788,7 +272788,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>EU/1/08/451/001-002</DrugIDPK>
     <LicenceNumber>EU/1/08/451/001-002</LicenceNumber>
     <ProductName>Volibris 5 mg film-coated tablets</ProductName>
-    <PAHolder>GlaxoSmithKline (Ireland) Limited</PAHolder>
+    <PAHolder>GlaxoSmithKline Trading Services Limited</PAHolder>
     <AuthorisedDate xsi:nil="true" />
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -274548,7 +274548,7 @@ Characteristics, section 4.2).</SupplyComments>
   <Product>
     <DrugIDPK>EU/1/25/1918/001</DrugIDPK>
     <LicenceNumber>EU/1/25/1918/001</LicenceNumber>
-    <ProductName>Vyjuvek 5 x 10? PFU/ml Suspension and gel for gel</ProductName>
+    <ProductName>Vyjuvek 5 x 10⁹ PFU/ml Suspension and gel for gel</ProductName>
     <PAHolder>Krystal Biotech Netherlands B.V.</PAHolder>
     <AuthorisedDate>23/04/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
