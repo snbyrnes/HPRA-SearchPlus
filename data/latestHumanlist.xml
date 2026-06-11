@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-10T02:30:11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-11T02:30:17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -14794,9 +14794,36 @@ Supply through pharmacies only for pack sizes in excess of 25g.</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>EU/1/24/1796/005</DrugIDPK>
+    <LicenceNumber>EU/1/24/1796/005</LicenceNumber>
+    <ProductName>Apremilast Accord 10 mg film-coated tablets Apremilast Accord 20 mg film-coated tablets</ProductName>
+    <PAHolder>Accord Healthcare S.L.U.</PAHolder>
+    <AuthorisedDate>19/04/2024</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>L04AA32</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Apremilast</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
+  </Product>
+  <Product>
     <DrugIDPK>EU/1/24/1796/001</DrugIDPK>
     <LicenceNumber>EU/1/24/1796/001</LicenceNumber>
-    <ProductName>Apremilast Accord 10 mg + 20 mg + 30 mg film-coated tablets</ProductName>
+    <ProductName>Apremilast Accord 10 mg film-coated tablets Apremilast Accord 20 mg film-coated tablets Apremilast Accord 30 mg film-coated tablets</ProductName>
     <PAHolder>Accord Healthcare S.L.U.</PAHolder>
     <AuthorisedDate>19/04/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -14822,31 +14849,6 @@ Supply through pharmacies only for pack sizes in excess of 25g.</SupplyComments>
 Characteristics, section 4.2)</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>EU/1/24/1796/005</DrugIDPK>
-    <LicenceNumber>EU/1/24/1796/005</LicenceNumber>
-    <ProductName>Apremilast Accord 10+20 mg film-coated tablets</ProductName>
-    <PAHolder>Accord Healthcare S.L.U.</PAHolder>
-    <AuthorisedDate>19/04/2024</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>L04AA32</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances>
-      <ActiveSubstance>Apremilast</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
-  </Product>
-  <Product>
     <DrugIDPK>EU/1/24/1796/006-007</DrugIDPK>
     <LicenceNumber>EU/1/24/1796/006-007</LicenceNumber>
     <ProductName>Apremilast Accord 20 mg film-coated tablets</ProductName>
@@ -14860,7 +14862,9 @@ Characteristics, section 4.2)</SupplyComments>
       <ATC>L04AA32</ATC>
     </ATCs>
     <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
     <ActiveSubstances>
       <ActiveSubstance>Apremilast</ActiveSubstance>
     </ActiveSubstances>
@@ -14906,62 +14910,6 @@ Characteristics, section 4.2)</SupplyComments>
     <ProductName>Apremilast Aurobindo 30mg film-coated tablets</ProductName>
     <PAHolder>Aurobindo Pharma (Malta) Limited</PAHolder>
     <AuthorisedDate>31/10/2025</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>L04AA32</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Apremilast</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA23266/072/001</DrugIDPK>
-    <LicenceNumber>PA23266/072/001</LicenceNumber>
-    <ProductName>Apremilast axunio 10 mg film-coated tablets Apremilast axunio 20 mg film-coated tablets Apremilast axunio 30 mg film-coated tablets.</ProductName>
-    <PAHolder>Viatris Limited</PAHolder>
-    <AuthorisedDate>07/11/2025</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>L04AA32</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Apremilast</ActiveSubstance>
-      <ActiveSubstance>Apremilast</ActiveSubstance>
-      <ActiveSubstance>Apremilast</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PA23266/072/002</DrugIDPK>
-    <LicenceNumber>PA23266/072/002</LicenceNumber>
-    <ProductName>Apremilast axunio 30 mg film-coated tablets</ProductName>
-    <PAHolder>Viatris Limited</PAHolder>
-    <AuthorisedDate>07/11/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
@@ -15210,7 +15158,7 @@ Characteristics, section 4.2)</SupplyComments>
   <Product>
     <DrugIDPK>PA0711/330/002</DrugIDPK>
     <LicenceNumber>PA0711/330/002</LicenceNumber>
-    <ProductName>Apremilast Rowex 10 mg film-coated tabletsApremilast Rowex 20 mg film-coated tabletsApremilast Rowex 30 mg film-coated tablets</ProductName>
+    <ProductName>Apremilast Rowex 10 mg film-coated tablets Apremilast Rowex 20 mg film-coated tablets Apremilast Rowex 30 mg film-coated tablets</ProductName>
     <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>31/05/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -15261,6 +15209,62 @@ Characteristics, section 4.2)</SupplyComments>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>Medicinal product subject to restricted medical prescription (See Summary of Product Characteristics, section 4.2).</SupplyComments>
+  </Product>
+  <Product>
+    <DrugIDPK>PA23266/072/001</DrugIDPK>
+    <LicenceNumber>PA23266/072/001</LicenceNumber>
+    <ProductName>Apremilast Viatris 10 mg film-coated tablets Apremilast Viatris 20 mg film-coated tablets Apremilast Viatris 30 mg film-coated tablets</ProductName>
+    <PAHolder>Viatris Limited</PAHolder>
+    <AuthorisedDate>07/11/2025</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>L04AA32</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Apremilast</ActiveSubstance>
+      <ActiveSubstance>Apremilast</ActiveSubstance>
+      <ActiveSubstance>Apremilast</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>PA23266/072/002</DrugIDPK>
+    <LicenceNumber>PA23266/072/002</LicenceNumber>
+    <ProductName>Apremilast Viatris 30 mg film-coated tablets</ProductName>
+    <PAHolder>Viatris Limited</PAHolder>
+    <AuthorisedDate>07/11/2025</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>L04AA32</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Apremilast</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
     <DrugIDPK>PA2315/148/003</DrugIDPK>
@@ -20227,90 +20231,6 @@ Promotion to the general public only for indications appropriate for self-diagno
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>EU/1/19/1353/001</DrugIDPK>
-    <LicenceNumber>EU/1/19/1353/001</LicenceNumber>
-    <ProductName>Atazanavir Krka 150 mg Hard capsule</ProductName>
-    <PAHolder>KRKA, d.d., Novo mesto</PAHolder>
-    <AuthorisedDate>25/03/2019</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Capsule, hard</DosageForm>
-    <ATCs>
-      <ATC>J05AE</ATC>
-      <ATC>J05AE08</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Atazanavir sulfate</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/19/1353/002</DrugIDPK>
-    <LicenceNumber>EU/1/19/1353/002</LicenceNumber>
-    <ProductName>Atazanavir Krka 200 mg Hard capsule</ProductName>
-    <PAHolder>KRKA, d.d., Novo mesto</PAHolder>
-    <AuthorisedDate>25/03/2019</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Capsule, hard</DosageForm>
-    <ATCs>
-      <ATC>J05AE</ATC>
-      <ATC>J05AE08</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Atazanavir sulfate</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/19/1353/003-004</DrugIDPK>
-    <LicenceNumber>EU/1/19/1353/003-004</LicenceNumber>
-    <ProductName>Atazanavir Krka 300 mg Hard capsule</ProductName>
-    <PAHolder>KRKA, d.d., Novo mesto</PAHolder>
-    <AuthorisedDate>25/03/2019</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Capsule, hard</DosageForm>
-    <ATCs>
-      <ATC>J05AE</ATC>
-      <ATC>J05AE08</ATC>
-    </ATCs>
-    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Atazanavir sulfate</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>PA0711/287/004</DrugIDPK>
     <LicenceNumber>PA0711/287/004</LicenceNumber>
     <ProductName>Atazanavir Rowex 300 mg hard capsules</ProductName>
@@ -24039,34 +23959,6 @@ Promotion to the general public only for indications appropriate for self-diagno
     </RoutesOfAdministration>
     <ActiveSubstances>
       <ActiveSubstance>Moxifloxacin hydrochloride</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>PPA1463/118/001</DrugIDPK>
-    <LicenceNumber>PPA1463/118/001</LicenceNumber>
-    <ProductName>Avelox 400 mg film-coated tablets</ProductName>
-    <PAHolder>IMED Healthcare Ltd.,</PAHolder>
-    <AuthorisedDate>16/03/2018</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>J01MA</ATC>
-      <ATC>J01MA14</ATC>
-    </ATCs>
-    <LegalBasis>Parallel importation notified in accordance with Article 76(3) of Directive 2001/83/EC</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Moxifloxacin</ActiveSubstance>
     </ActiveSubstances>
     <DispensingLegalStatus>
       <Status>Product subject to prescription which may not be renewed (A)</Status>
@@ -35657,7 +35549,7 @@ For use in adults and children over 12 years.</SupplyComments>
     <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>20/12/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Sublingual tablet</DosageForm>
     <ATCs>
@@ -35715,7 +35607,7 @@ This product contains a substance listed in Schedule 2 to the Misuse of Drugs Re
     <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>20/12/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Sublingual tablet</DosageForm>
     <ATCs>
@@ -49390,7 +49282,7 @@ Supply through phar</SupplyComments>
     <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>12/12/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Film-coated tablet</DosageForm>
     <ATCs>
@@ -94917,36 +94809,6 @@ Characteristics, section 4.2).</SupplyComments>
 In accordance with Article 114 of Directive 2001/83/EC, the official batch release will be undertaken by a state laboratory or a laboratory designated for that purpose.</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>EU/1/20/1433/001-004</DrugIDPK>
-    <LicenceNumber>EU/1/20/1433/001-004</LicenceNumber>
-    <ProductName>Fluad Tetra suspension for injection in pre-filled syringe</ProductName>
-    <PAHolder>Seqirus Netherlands B.V.</PAHolder>
-    <AuthorisedDate>20/05/2020</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Suspension for injection in pre-filled syringe</DosageForm>
-    <ATCs>
-      <ATC>J07BB02</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intramuscular use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>A/(H1N1)-LIKE VIRUS ANTIGEN</ActiveSubstance>
-      <ActiveSubstance>A/(H3N2)-LIKE VURUS ANTIGEN</ActiveSubstance>
-      <ActiveSubstance>B (Victoria Lineage) - Like Virus Antigen</ActiveSubstance>
-      <ActiveSubstance>B (Yamagata Lineage)-Like Virus Antigen</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>PA1077/134/001</DrugIDPK>
     <LicenceNumber>PA1077/134/001</LicenceNumber>
     <ProductName>Fluarix Tetra suspension for injection in pre-filled syringe Influenza vaccine (split virion, inactivated)</ProductName>
@@ -124616,6 +124478,31 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>EU/1/00/146/033</DrugIDPK>
+    <LicenceNumber>EU/1/00/146/033</LicenceNumber>
+    <ProductName>Keppra 100 mg/ml concentrate for solution for infusion</ProductName>
+    <PAHolder>UCB Pharma S.A.</PAHolder>
+    <AuthorisedDate>29/09/2000</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Concentrate for solution for infusion</DosageForm>
+    <ATCs>
+      <ATC>N03AX14</ATC>
+    </ATCs>
+    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration xsi:nil="true" />
+    <ActiveSubstances>
+      <ActiveSubstance>Levetiracetam</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
     <DrugIDPK>EU/1/00/146/027</DrugIDPK>
     <LicenceNumber>EU/1/00/146/027</LicenceNumber>
     <InterchangeableListCode>IC0119-171-019</InterchangeableListCode>
@@ -125033,10 +124920,10 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA0281/125/001</DrugIDPK>
     <LicenceNumber>PA0281/125/001</LicenceNumber>
     <ProductName>Ketoconazole 20mg/g Shampoo</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>29/09/2006</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Shampoo</DosageForm>
     <ATCs>
@@ -133201,10 +133088,10 @@ Packs containi</SupplyComments>
     <LicenceNumber>PA0281/269/001</LicenceNumber>
     <InterchangeableListCode>IC0020-002-003</InterchangeableListCode>
     <ProductName>Lercanidipine Hydrochloride Pinewood 10 mg film-coated tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>30/05/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Film-coated tablet</DosageForm>
     <ATCs>
@@ -133229,10 +133116,10 @@ Packs containi</SupplyComments>
     <LicenceNumber>PA0281/269/002</LicenceNumber>
     <InterchangeableListCode>IC0020-003-003</InterchangeableListCode>
     <ProductName>Lercanidipine Hydrochloride Pinewood 20 mg film-coated tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>30/05/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Film-coated tablet</DosageForm>
     <ATCs>
@@ -138638,7 +138525,7 @@ Characteristics, section 4.2).</SupplyComments>
     </RoutesOfAdministration>
     <ActiveSubstances>
       <ActiveSubstance>Ezetimibe</ActiveSubstance>
-      <ActiveSubstance>Rosuvastatin</ActiveSubstance>
+      <ActiveSubstance>Rosuvastatin zinc tetrahydrate</ActiveSubstance>
     </ActiveSubstances>
     <DispensingLegalStatus>
       <Status>Product subject to prescription which may be renewed (B)</Status>
@@ -138696,7 +138583,7 @@ Characteristics, section 4.2).</SupplyComments>
     </RoutesOfAdministration>
     <ActiveSubstances>
       <ActiveSubstance>Ezetimibe</ActiveSubstance>
-      <ActiveSubstance>Rosuvastatin</ActiveSubstance>
+      <ActiveSubstance>Rosuvastatin zinc tetrahydrate</ActiveSubstance>
     </ActiveSubstances>
     <DispensingLegalStatus>
       <Status>Product subject to prescription which may be renewed (B)</Status>
@@ -138754,7 +138641,7 @@ Characteristics, section 4.2).</SupplyComments>
     </RoutesOfAdministration>
     <ActiveSubstances>
       <ActiveSubstance>Ezetimibe</ActiveSubstance>
-      <ActiveSubstance>Rosuvastatin</ActiveSubstance>
+      <ActiveSubstance>Rosuvastatin zinc tetrahydrate</ActiveSubstance>
     </ActiveSubstances>
     <DispensingLegalStatus>
       <Status>Product subject to prescription which may be renewed (B)</Status>
@@ -140551,6 +140438,56 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>EU/1/13/856/005</DrugIDPK>
+    <LicenceNumber>EU/1/13/856/005</LicenceNumber>
+    <ProductName>Lonquex 6 mg/0.6 ml solution for injection</ProductName>
+    <PAHolder>Teva B.V.</PAHolder>
+    <AuthorisedDate>19/04/2023</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Solution for injection</DosageForm>
+    <ATCs>
+      <ATC>L03AA14</ATC>
+    </ATCs>
+    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration xsi:nil="true" />
+    <ActiveSubstances>
+      <ActiveSubstance>lipegfilgrastim</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Medicinal products on restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
+  </Product>
+  <Product>
+    <DrugIDPK>EU/1/13/856/004</DrugIDPK>
+    <LicenceNumber>EU/1/13/856/004</LicenceNumber>
+    <ProductName>Lonquex 6 mg/0.6 ml solution for injection</ProductName>
+    <PAHolder>Teva B.V.</PAHolder>
+    <AuthorisedDate>19/04/2023</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Solution for injection</DosageForm>
+    <ATCs>
+      <ATC>L03AA14</ATC>
+    </ATCs>
+    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration xsi:nil="true" />
+    <ActiveSubstances>
+      <ActiveSubstance>lipegfilgrastim</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Medicinal products on restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
+  </Product>
+  <Product>
     <DrugIDPK>EU/1/13/856/001-002</DrugIDPK>
     <LicenceNumber>EU/1/13/856/001-002</LicenceNumber>
     <ProductName>Lonquex 6 mg solution for injection in pre-filled syringe</ProductName>
@@ -141087,9 +141024,9 @@ For pack sizes of more than 30 tablets: Product su</SupplyComments>
     <SupplyComments>This product contains a substance listed in schedule 4, part 1 to the Misuse of Drugs Regulations 2017.</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>EU/1/19/1355/001</DrugIDPK>
-    <LicenceNumber>EU/1/19/1355/001</LicenceNumber>
-    <ProductName>Lorviqua</ProductName>
+    <DrugIDPK>EU/1/19/1355/002</DrugIDPK>
+    <LicenceNumber>EU/1/19/1355/002</LicenceNumber>
+    <ProductName>Lorviqua 100 mg film-coated tablet</ProductName>
     <PAHolder>Pfizer Europe MA EEIG</PAHolder>
     <AuthorisedDate>06/05/2019</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -141115,9 +141052,9 @@ For pack sizes of more than 30 tablets: Product su</SupplyComments>
     <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2)</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>EU/1/19/1355/002</DrugIDPK>
-    <LicenceNumber>EU/1/19/1355/002</LicenceNumber>
-    <ProductName>Lorviqua 100 mg film-coated tablet</ProductName>
+    <DrugIDPK>EU/1/19/1355/001</DrugIDPK>
+    <LicenceNumber>EU/1/19/1355/001</LicenceNumber>
+    <ProductName>Lorviqua 25 mg film-coated tablets</ProductName>
     <PAHolder>Pfizer Europe MA EEIG</PAHolder>
     <AuthorisedDate>06/05/2019</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -142015,10 +141952,10 @@ For pack sizes of more than 30 tablets: Product su</SupplyComments>
     <LicenceNumber>PA0281/272/002</LicenceNumber>
     <InterchangeableListCode>IC0010-003-016</InterchangeableListCode>
     <ProductName>Loseina 20 mg hard gastro-resistant capsules</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>05/11/2021</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Gastro-resistant capsule, hard</DosageForm>
     <ATCs>
@@ -142043,10 +141980,10 @@ For pack sizes of more than 30 tablets: Product su</SupplyComments>
     <LicenceNumber>PA0281/272/003</LicenceNumber>
     <InterchangeableListCode>IC0010-004-016</InterchangeableListCode>
     <ProductName>Loseina 40 mg hard gastro-resistant capsules</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>05/11/2021</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Gastro-resistant capsule, hard</DosageForm>
     <ATCs>
@@ -144345,7 +144282,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA2307/004/003</DrugIDPK>
     <LicenceNumber>PA2307/004/003</LicenceNumber>
     <ProductName>Madopar 100 mg/25 mg dispersible tablets</ProductName>
-    <PAHolder>Roche Products (Ireland) Ltd</PAHolder>
+    <PAHolder>Roche Products (Ireland) Limited</PAHolder>
     <AuthorisedDate>08/04/1987</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -144374,7 +144311,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA2307/004/001</DrugIDPK>
     <LicenceNumber>PA2307/004/001</LicenceNumber>
     <ProductName>Madopar 200 mg/50 mg hard capsules</ProductName>
-    <PAHolder>Roche Products (Ireland) Ltd</PAHolder>
+    <PAHolder>Roche Products (Ireland) Limited</PAHolder>
     <AuthorisedDate>01/04/1979</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -144403,7 +144340,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA2307/004/002</DrugIDPK>
     <LicenceNumber>PA2307/004/002</LicenceNumber>
     <ProductName>Madopar 50 mg/12.5 mg dispersible tablets</ProductName>
-    <PAHolder>Roche Products (Ireland) Ltd</PAHolder>
+    <PAHolder>Roche Products (Ireland) Limited</PAHolder>
     <AuthorisedDate>08/04/1987</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -163542,13 +163479,13 @@ Characteristics, section 4.2).</SupplyComments>
   <Product>
     <DrugIDPK>PA2242/013/001</DrugIDPK>
     <LicenceNumber>PA2242/013/001</LicenceNumber>
-    <ProductName>Nexium 10 mg gastro-resistant granules for oral suspension, sachet</ProductName>
+    <ProductName>Nexium 10 mg granules for gastro-resistant oral suspension in sachet</ProductName>
     <PAHolder>Grunenthal Pharma Limited.</PAHolder>
     <AuthorisedDate>01/08/2008</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Gastro-resistant granules for oral suspension in sachet</DosageForm>
+    <DosageForm>Granules for gastro-resistant oral suspension in sachet</DosageForm>
     <ATCs>
       <ATC>A02BC</ATC>
       <ATC>A02BC05</ATC>
@@ -177622,10 +177559,10 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0281/152/001</LicenceNumber>
     <InterchangeableListCode>IC0010-003-016</InterchangeableListCode>
     <ProductName>Omeprazole Pinewood 20 mg gastro-resistant capsules, hard</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>18/11/2003</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Gastro-resistant capsule, hard</DosageForm>
     <ATCs>
@@ -182364,6 +182301,34 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>EU/1/14/981/004</DrugIDPK>
+    <LicenceNumber>EU/1/14/981/004</LicenceNumber>
+    <ProductName>Otezla 10 mg film-coated tablets Otezla 20 mg film-coated tablets</ProductName>
+    <PAHolder>Amgen Europe B.V.,</PAHolder>
+    <AuthorisedDate>15/01/2015</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>L04AA32</ATC>
+    </ATCs>
+    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Apremilast</ActiveSubstance>
+      <ActiveSubstance>Apremilast</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
+  </Product>
+  <Product>
     <DrugIDPK>EU/1/14/981/001</DrugIDPK>
     <LicenceNumber>EU/1/14/981/001</LicenceNumber>
     <ProductName>Otezla 10 mg film-coated tablets Otezla 20 mg film-coated tablets Otezla 30 mg film-coated tablets</ProductName>
@@ -182393,32 +182358,6 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>EU/1/14/981/004</DrugIDPK>
-    <LicenceNumber>EU/1/14/981/004</LicenceNumber>
-    <ProductName>Otezla 10 mg, 20 mg film-coated tablets</ProductName>
-    <PAHolder>Amgen Europe B.V.,</PAHolder>
-    <AuthorisedDate>15/01/2015</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>L04AA32</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
-    <ActiveSubstances>
-      <ActiveSubstance>Apremilast</ActiveSubstance>
-      <ActiveSubstance>Apremilast</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
-  </Product>
-  <Product>
     <DrugIDPK>EU/1/14/981/005</DrugIDPK>
     <LicenceNumber>EU/1/14/981/005</LicenceNumber>
     <ProductName>Otezla 20 mg film–coated tablets</ProductName>
@@ -182432,7 +182371,9 @@ Characteristics, section 4.2).</SupplyComments>
       <ATC>L04AA32</ATC>
     </ATCs>
     <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration xsi:nil="true" />
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
     <ActiveSubstances>
       <ActiveSubstance>Apremilast</ActiveSubstance>
     </ActiveSubstances>
@@ -230963,7 +230904,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0711/170/003</LicenceNumber>
     <InterchangeableListCode>IC0063-024-014</InterchangeableListCode>
     <ProductName>Sidena 100 mg tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>09/10/2009</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -230992,7 +230933,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0711/170/001</LicenceNumber>
     <InterchangeableListCode>IC0063-022-014</InterchangeableListCode>
     <ProductName>Sidena 25 mg tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>09/10/2009</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -231020,7 +230961,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA0711/170/002</DrugIDPK>
     <LicenceNumber>PA0711/170/002</LicenceNumber>
     <ProductName>Sidena 50 mg Tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>09/10/2009</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -257961,7 +257902,7 @@ Characteristics, section 4.2).</SupplyComments>
   <Product>
     <DrugIDPK>PA1445/027/001</DrugIDPK>
     <LicenceNumber>PA1445/027/001</LicenceNumber>
-    <ProductName>Treatment initiation pack: Apremilast Aurobindo 10mg film-coated tablets. Apremilast Aurobindo 20mg film-coated tablets. Apremilast Aurobindo 30mg film-coated tablets</ProductName>
+    <ProductName>Treatment initiation pack: Apremilast Aurobindo 10mg film-coated tablets  Apremilast Aurobindo 20mg film-coated tablets Apremilast Aurobindo 30mg film-coated tablets</ProductName>
     <PAHolder>Aurobindo Pharma (Malta) Limited</PAHolder>
     <AuthorisedDate>31/10/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -278738,7 +278679,7 @@ This product contains a substance listed in schedule 2 to the Misuse of Drugs Re
     <LicenceNumber>PA0891/003/003</LicenceNumber>
     <InterchangeableListCode>IC0095-155-019</InterchangeableListCode>
     <ProductName>Xyzal 0.5 mg/ml oral solution</ProductName>
-    <PAHolder>UCB (Pharma) Ireland Limited</PAHolder>
+    <PAHolder>UCB (Pharma) Ireland Limited,</PAHolder>
     <AuthorisedDate>27/10/2006</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -278794,7 +278735,7 @@ This product contains a substance listed in schedule 2 to the Misuse of Drugs Re
     <DrugIDPK>PA0891/003/002</DrugIDPK>
     <LicenceNumber>PA0891/003/002</LicenceNumber>
     <ProductName>Xyzal 5 mg/ml oral drops, solution</ProductName>
-    <PAHolder>UCB (Pharma) Ireland Limited</PAHolder>
+    <PAHolder>UCB (Pharma) Ireland Limited,</PAHolder>
     <AuthorisedDate>02/12/2005</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
