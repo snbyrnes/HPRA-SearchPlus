@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-12T02:30:17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-13T02:30:10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -21234,7 +21234,7 @@ Promotion to the general public only for indications appropriate for self-diagno
     <LicenceNumber>PA0281/236/001</LicenceNumber>
     <InterchangeableListCode>IC0001-002-003</InterchangeableListCode>
     <ProductName>Atorvastatin 10 mg Film-Coated Tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>22/06/2012</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -21350,7 +21350,7 @@ Promotion to the general public only for indications appropriate for self-diagno
     <LicenceNumber>PA0281/236/002</LicenceNumber>
     <InterchangeableListCode>IC0001-003-003</InterchangeableListCode>
     <ProductName>Atorvastatin 20 mg Film-Coated Tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>22/06/2012</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -21437,7 +21437,7 @@ Promotion to the general public only for indications appropriate for self-diagno
     <LicenceNumber>PA0281/236/003</LicenceNumber>
     <InterchangeableListCode>IC0001-004-003</InterchangeableListCode>
     <ProductName>Atorvastatin 40 mg Film-Coated Tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>22/06/2012</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -21524,7 +21524,7 @@ Promotion to the general public only for indications appropriate for self-diagno
     <LicenceNumber>PA0281/236/004</LicenceNumber>
     <InterchangeableListCode>IC0001-005-003</InterchangeableListCode>
     <ProductName>Atorvastatin 80 mg Film-Coated Tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>22/06/2012</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -23857,6 +23857,33 @@ Promotion to the general public only for indications appropriate for self-diagno
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>PA23266/082/001</DrugIDPK>
+    <LicenceNumber>PA23266/082/001</LicenceNumber>
+    <ProductName>Avarante 10 mg film-coated tablets</ProductName>
+    <PAHolder>Viatris Limited</PAHolder>
+    <AuthorisedDate>12/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>G04BE08</ATC>
+    </ATCs>
+    <LegalBasis>Hybrid application (Article 10(3) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Tadalafil</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product not subject to medical prescription</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to the general public</PromotionLegalStatus>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
@@ -79737,10 +79764,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments>This product contains a substance listed in schedule 4 Part 1 to the Misuse of Drugs Regulations 2017.</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>PA23055/003/003</DrugIDPK>
-    <LicenceNumber>PA23055/003/003</LicenceNumber>
+    <DrugIDPK>PA23355/050/003</DrugIDPK>
+    <LicenceNumber>PA23355/050/003</LicenceNumber>
     <ProductName>Epanutin 100 mg Hard Capsules</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>01/04/1979</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -79793,10 +79820,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/003/001</DrugIDPK>
-    <LicenceNumber>PA23055/003/001</LicenceNumber>
+    <DrugIDPK>PA23355/050/001</DrugIDPK>
+    <LicenceNumber>PA23355/050/001</LicenceNumber>
     <ProductName>Epanutin 25 mg Hard Capsules</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>29/10/1976</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -79821,10 +79848,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/003/007</DrugIDPK>
-    <LicenceNumber>PA23055/003/007</LicenceNumber>
+    <DrugIDPK>PA23355/050/007</DrugIDPK>
+    <LicenceNumber>PA23355/050/007</LicenceNumber>
     <ProductName>Epanutin 30 mg/5ml Oral Suspension</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>01/04/1979</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -79849,10 +79876,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/003/004</DrugIDPK>
-    <LicenceNumber>PA23055/003/004</LicenceNumber>
+    <DrugIDPK>PA23355/050/004</DrugIDPK>
+    <LicenceNumber>PA23355/050/004</LicenceNumber>
     <ProductName>Epanutin 300 mg Hard Capsules</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>26/03/1990</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -79877,10 +79904,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/003/002</DrugIDPK>
-    <LicenceNumber>PA23055/003/002</LicenceNumber>
+    <DrugIDPK>PA23355/050/002</DrugIDPK>
+    <LicenceNumber>PA23355/050/002</LicenceNumber>
     <ProductName>Epanutin 50 mg Hard Capsules</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>01/04/1979</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -79905,10 +79932,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/003/005</DrugIDPK>
-    <LicenceNumber>PA23055/003/005</LicenceNumber>
+    <DrugIDPK>PA23355/050/005</DrugIDPK>
+    <LicenceNumber>PA23355/050/005</LicenceNumber>
     <ProductName>Epanutin Infatabs 50mg Chewable Tablets</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>09/05/1975</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -79933,10 +79960,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/003/006</DrugIDPK>
-    <LicenceNumber>PA23055/003/006</LicenceNumber>
+    <DrugIDPK>PA23355/050/006</DrugIDPK>
+    <LicenceNumber>PA23355/050/006</LicenceNumber>
     <ProductName>Epanutin Ready Mixed Parenteral 250 mg/5 ml Solution for Injection or Infusion</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>09/05/1975</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -82363,15 +82390,42 @@ This product contains a substance listed in schedule 2 to the Misuse of Drugs Re
     <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>EU/1/17/1195/005-012</DrugIDPK>
-    <LicenceNumber>EU/1/17/1195/005-012</LicenceNumber>
+    <DrugIDPK>EU/1/17/1195/009-012</DrugIDPK>
+    <LicenceNumber>EU/1/17/1195/009-012</LicenceNumber>
+    <ProductName>Erelzi 50 mg solution for injection in pre-filled pen</ProductName>
+    <PAHolder>Sandoz GmbH</PAHolder>
+    <AuthorisedDate>23/06/2017</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Solution for injection in pre-filled pen</DosageForm>
+    <ATCs>
+      <ATC>L04AB01</ATC>
+    </ATCs>
+    <LegalBasis>Similar biological application (Article 10(4) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Etanercept</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>*** AWAITING VALUE ***</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus xsi:nil="true" />
+    <PromotionLegalStatus>*** AWAITING VALUE ***</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>EU/1/17/1195/005-008</DrugIDPK>
+    <LicenceNumber>EU/1/17/1195/005-008</LicenceNumber>
     <ProductName>Erelzi 50 mg solution for injection in pre-filled syringe</ProductName>
     <PAHolder>Sandoz GmbH</PAHolder>
     <AuthorisedDate>23/06/2017</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Solution for injection</DosageForm>
+    <DosageForm>Solution for injection in pre-filled syringe</DosageForm>
     <ATCs>
       <ATC>L04AB</ATC>
       <ATC>L04AB01</ATC>
@@ -93079,6 +93133,33 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>PA2219/011/002</DrugIDPK>
+    <LicenceNumber>PA2219/011/002</LicenceNumber>
+    <ProductName>FIBRYGA 2 g powder and solvent for solution for injection/infusion</ProductName>
+    <PAHolder>Octapharma (IP)</PAHolder>
+    <AuthorisedDate>12/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Powder and solvent for solution for injection/infusion</DosageForm>
+    <ATCs>
+      <ATC>B02BB01</ATC>
+    </ATCs>
+    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Human fibrinogen</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
     <DrugIDPK>PA2219/011/001</DrugIDPK>
     <LicenceNumber>PA2219/011/001</LicenceNumber>
     <ProductName>FIBRYGA, 1 g, powder and solvent for solution for injection/infusion</ProductName>
@@ -94267,7 +94348,7 @@ Characteristics, section 4.2).</SupplyComments>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to the general public</PromotionLegalStatus>
-    <SupplyComments>Product not subject to medical prescription if compliant with the following restrictions: pack containing not more than 3,000 mcg fluticasone proprionate, maximum period of treatment: 6 months, maximum dose: 100 mcg per nostril, maximum daily dose: 200 mcg</SupplyComments>
+    <SupplyComments>Product not subject to medical prescription if compliant with the following restrictions: pack containing not more than 3,000 mcg fluticasone proprionate, maximum period of treatment: 6 months, maximum dose: 100 mcg per nostril, maximum daily dose: 200 mcg per nostril, limited indications, pharmaceutical form: non-pressurised nasal spray, for use in adults and children not under 12 years.</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA1077/044/010</DrugIDPK>
@@ -96433,7 +96514,7 @@ undertaken by a state laboratory or a laboratory designated for that purpose.</S
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to the general public</PromotionLegalStatus>
-    <SupplyComments>Retail through pharmacies and promotion to the public if compliant with the following restrictions: pack containing not more than 3,000 mcg fluticasone proprionate, maximum period of treatment: 6 months, maxiumum dose: 100 mcg per nostril, maximum daily do</SupplyComments>
+    <SupplyComments>Retail through pharmacies and promotion to the public if compliant with the following restrictions: pack containing not more than 3,000 mcg fluticasone proprionate, maximum period of treatment: 6 months, maxiumum dose: 100 mcg per nostril, maximum daily dose: 200 mcg per nostril, limited indications, pharmaceutical form: non-pressurised nasal spray, for use in adults only.</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA1688/013/002</DrugIDPK>
@@ -100360,7 +100441,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>IRE Elit</PAHolder>
     <AuthorisedDate>09/01/2026</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Radionuclide generator</DosageForm>
     <ATCs>
@@ -141756,7 +141837,7 @@ For pack sizes of more than 30 tablets: Product su</SupplyComments>
     <PAHolder>PCO Manufacturing Ltd.</PAHolder>
     <AuthorisedDate xsi:nil="true" />
     <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Gastro-resistant tablet</DosageForm>
     <ATCs>
@@ -148500,6 +148581,33 @@ In accordance with Article 114 of Directive 2001/83/EC, the official batch relea
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>PA23451/001/003</DrugIDPK>
+    <LicenceNumber>PA23451/001/003</LicenceNumber>
+    <ProductName>Meropenem ACS Dobfar 2 g powder for solution for injection/infusion</ProductName>
+    <PAHolder>ACS Dobfar S.p.A.</PAHolder>
+    <AuthorisedDate>12/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Powder for solution for injection/infusion</DosageForm>
+    <ATCs>
+      <ATC>J01DH02</ATC>
+    </ATCs>
+    <LegalBasis>Hybrid application (Article 10(3) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Meropenem Trihydrate</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
     <DrugIDPK>PA23451/001/001</DrugIDPK>
     <LicenceNumber>PA23451/001/001</LicenceNumber>
     <ProductName>Meropenem ACS Dobfar 500 mg powder for solution for injection/infusion</ProductName>
@@ -153212,6 +153320,33 @@ Product subject to prescription which may not be renewed for pack sizes of ove</
     <ActiveSubstances>
       <ActiveSubstance>Ethinyloestradiol</ActiveSubstance>
       <ActiveSubstance>Gestodene</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may be renewed (B)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>PA23429/003/002</DrugIDPK>
+    <LicenceNumber>PA23429/003/002</LicenceNumber>
+    <ProductName>Mirabegron Ascend 50 mg prolonged-release tablets</ProductName>
+    <PAHolder>Ascend GmbH</PAHolder>
+    <AuthorisedDate>12/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Prolonged-release tablet</DosageForm>
+    <ATCs>
+      <ATC>G04BD12</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Mirabegron</ActiveSubstance>
     </ActiveSubstances>
     <DispensingLegalStatus>
       <Status>Product subject to prescription which may be renewed (B)</Status>
@@ -180504,7 +180639,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>Guerbet</PAHolder>
     <AuthorisedDate>22/04/1993</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Solution for injection/infusion</DosageForm>
     <ATCs>
