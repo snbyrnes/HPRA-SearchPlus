@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-16T02:30:13" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-17T02:30:22" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -66418,7 +66418,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0822/211/002</LicenceNumber>
     <InterchangeableListCode>IC0151-062-001</InterchangeableListCode>
     <ProductName>Diflucan 150 mg hard capsules</ProductName>
-    <PAHolder>Pfizer Healthcare Ireland</PAHolder>
+    <PAHolder>Pfizer Healthcare Ireland Unlimited Company</PAHolder>
     <AuthorisedDate>05/08/1988</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -66476,7 +66476,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0822/211/003</LicenceNumber>
     <InterchangeableListCode>IC0151-067-001</InterchangeableListCode>
     <ProductName>Diflucan 200 mg hard capsules</ProductName>
-    <PAHolder>Pfizer Healthcare Ireland</PAHolder>
+    <PAHolder>Pfizer Healthcare Ireland Unlimited Company</PAHolder>
     <AuthorisedDate>22/08/1989</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -66533,7 +66533,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0822/211/001</LicenceNumber>
     <InterchangeableListCode>IC0151-023-001</InterchangeableListCode>
     <ProductName>Diflucan 50 mg hard capsules</ProductName>
-    <PAHolder>Pfizer Healthcare Ireland</PAHolder>
+    <PAHolder>Pfizer Healthcare Ireland Unlimited Company</PAHolder>
     <AuthorisedDate>05/08/1988</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -68920,7 +68920,7 @@ Characteristics, section 4.2).</SupplyComments>
   <Product>
     <DrugIDPK>PA23148/008/001</DrugIDPK>
     <LicenceNumber>PA23148/008/001</LicenceNumber>
-    <ProductName>Dorzolamide + Timolol Misom 20 mg/ml + 5 mg/ml eye drops, solution in single-dose container</ProductName>
+    <ProductName>Dorzolamide/Timolol Brown &amp; Burk 20 mg/ml + 5 mg/ml eye drops, solution in single-dose container</ProductName>
     <PAHolder>Brown &amp; Burk IR Limited</PAHolder>
     <AuthorisedDate>23/08/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -101347,7 +101347,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA0979/083/001</DrugIDPK>
     <LicenceNumber>PA0979/083/001</LicenceNumber>
     <ProductName>Gaviscon Extra Mixed Berries Flavour Oral Suspension in Sachet Sodium alginate 500 mg/10ml Sodium hydrogen carbonate 213 mg/ 10ml Calcium carbonate 325 mg/ 10ml</ProductName>
-    <PAHolder>Reckitt Benckiser Ireland Ltd</PAHolder>
+    <PAHolder>Reckitt Benckiser Ireland Limited</PAHolder>
     <AuthorisedDate>02/08/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -101376,7 +101376,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA0979/084/001</DrugIDPK>
     <LicenceNumber>PA0979/084/001</LicenceNumber>
     <ProductName>Gaviscon Extra Mixed Berries Oral Suspension Sodium alginate 500 mg/ 10 ml sodium hydrogen carbonate 213 mg/ 10 ml Calcium carbonate 325 mg/ 10 ml</ProductName>
-    <PAHolder>Reckitt Benckiser Ireland Ltd,</PAHolder>
+    <PAHolder>Reckitt Benckiser Ireland Limited</PAHolder>
     <AuthorisedDate>02/08/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -113316,7 +113316,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA23490/030/001</DrugIDPK>
     <LicenceNumber>PA23490/030/001</LicenceNumber>
     <ProductName>Imodium Plus 2 mg/125 mg Tablets</ProductName>
-    <PAHolder>JNTL Consumer Health I (Ireland) Limited</PAHolder>
+    <PAHolder>JNTL Consumer Health (Ireland) Limited</PAHolder>
     <AuthorisedDate>20/04/2007</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -129112,7 +129112,7 @@ Characteristics, section 4.2).</SupplyComments>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to the general public</PromotionLegalStatus>
-    <SupplyComments>Retail sales through pharmacies subject to the following restrictions: maximum strength: 1.0%, maximum pack size: 15g, maximum period of treatment: 14 days, products other than spray solutions, limited indications: treatment of tinea cruris (jock or dhobie</SupplyComments>
+    <SupplyComments>Retail sales through pharmacies subject to the following restrictions: maximum strength: 1.0%, maximum pack size: 15g, maximum period of treatment: 14 days, products other than spray solutions, limited indications: treatment of tinea cruris (jock or dhobie itch) and tinea pedis (athlete's foot), use in adults and children over 16 years.</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA22650/009/003</DrugIDPK>
@@ -134427,6 +134427,60 @@ Packs containi</SupplyComments>
       <ATC>N03AX14</ATC>
     </ATCs>
     <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Levetiracetam</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>PA2059/088/002</DrugIDPK>
+    <LicenceNumber>PA2059/088/002</LicenceNumber>
+    <ProductName>Levetiracetam Kabi 10 mg/ml solution for infusion</ProductName>
+    <PAHolder>Fresenius Kabi Deutschland GmbH</PAHolder>
+    <AuthorisedDate>12/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Solution for infusion</DosageForm>
+    <ATCs>
+      <ATC>N03AX14</ATC>
+    </ATCs>
+    <LegalBasis>Hybrid application (Article 10(3) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Levetiracetam</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>PA2059/088/001</DrugIDPK>
+    <LicenceNumber>PA2059/088/001</LicenceNumber>
+    <ProductName>Levetiracetam Kabi 5 mg/ml solution for infusion</ProductName>
+    <PAHolder>Fresenius Kabi Deutschland GmbH</PAHolder>
+    <AuthorisedDate>12/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Solution for infusion</DosageForm>
+    <ATCs>
+      <ATC>N03AX14</ATC>
+    </ATCs>
+    <LegalBasis>Hybrid application (Article 10(3) of Directive No 2001/83/EC)</LegalBasis>
     <RoutesOfAdministration>
       <RoutesOfAdministration>Intravenous use</RoutesOfAdministration>
     </RoutesOfAdministration>
@@ -143391,6 +143445,31 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>EU/1/04/279/053-055</DrugIDPK>
+    <LicenceNumber>EU/1/04/279/053-055</LicenceNumber>
+    <ProductName>Lyrica 150 mg orodispersible tablets</ProductName>
+    <PAHolder>Upjohn EESV</PAHolder>
+    <AuthorisedDate xsi:nil="true" />
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Orodispersible tablet</DosageForm>
+    <ATCs xsi:nil="true" />
+    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Pregabalin</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>*** AWAITING VALUE ***</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus xsi:nil="true" />
+    <PromotionLegalStatus>*** AWAITING VALUE ***</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
     <DrugIDPK>EU/1/04/279/044</DrugIDPK>
     <LicenceNumber>EU/1/04/279/044</LicenceNumber>
     <InterchangeableListCode>IC0110-128-019</InterchangeableListCode>
@@ -143505,6 +143584,31 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
+    <DrugIDPK>EU/1/04/279/047-049</DrugIDPK>
+    <LicenceNumber>EU/1/04/279/047-049</LicenceNumber>
+    <ProductName>Lyrica 25 mg orodispersible tablets</ProductName>
+    <PAHolder>Upjohn EESV</PAHolder>
+    <AuthorisedDate xsi:nil="true" />
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Orodispersible tablet</DosageForm>
+    <ATCs xsi:nil="true" />
+    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Pregabalin</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>*** AWAITING VALUE ***</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus xsi:nil="true" />
+    <PromotionLegalStatus>*** AWAITING VALUE ***</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
     <DrugIDPK>EU/1/04/279/023-025</DrugIDPK>
     <LicenceNumber>EU/1/04/279/023-025</LicenceNumber>
     <InterchangeableListCode>IC0110-029-001</InterchangeableListCode>
@@ -143586,6 +143690,31 @@ Characteristics, section 4.2).</SupplyComments>
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments xsi:nil="true" />
+  </Product>
+  <Product>
+    <DrugIDPK>EU/1/04/279/050-052</DrugIDPK>
+    <LicenceNumber>EU/1/04/279/050-052</LicenceNumber>
+    <ProductName>Lyrica 75 mg orodispersible tablets</ProductName>
+    <PAHolder>Upjohn EESV</PAHolder>
+    <AuthorisedDate xsi:nil="true" />
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Orodispersible tablet</DosageForm>
+    <ATCs xsi:nil="true" />
+    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Pregabalin</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>*** AWAITING VALUE ***</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus xsi:nil="true" />
+    <PromotionLegalStatus>*** AWAITING VALUE ***</PromotionLegalStatus>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
@@ -187868,7 +187997,7 @@ Prescription only: Pack size greater than 24. Product not supplied in blister pa
     </DispensingLegalStatus>
     <SupplyLegalStatus>Supply through non-pharmacy outlets and pharmacies</SupplyLegalStatus>
     <PromotionLegalStatus>Advertising to the general public</PromotionLegalStatus>
-    <SupplyComments>General sale: MAXIMUM PACK SIZE 12 in blister packs. Contains only paracetamol as analgesic. Maximum one pack per retail transaction. Pharmacy only: MAXIMUM PACK SIZE 24 in blister packs. Maximum two packs per retail transaction with pharmacist interview.</SupplyComments>
+    <SupplyComments>General sale: MAXIMUM PACK SIZE 12 in blister packs. Contains only paracetamol as analgesic. Maximum one pack per retail transaction. Pharmacy only: MAXIMUM PACK SIZE 24 in blister packs. Maximum two packs per retail transaction with pharmacist interview. Prescription only: Pack size greater than 24 and any packs not supplied in blister packs or such equivalent form of packaging as specified in the product authorisation. Promotion to the public: Pack size not more than 24. Promotion to healthcare professionals: Pack size greater than 24.</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA2294/002/001</DrugIDPK>
@@ -212584,7 +212713,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA23490/038/002</DrugIDPK>
     <LicenceNumber>PA23490/038/002</LicenceNumber>
     <ProductName>Regaine Extra Strength 5% w/v Cutaneous Solution</ProductName>
-    <PAHolder>JNTL Consumer Health I (Ireland) Limited</PAHolder>
+    <PAHolder>JNTL Consumer Health (Ireland) Limited</PAHolder>
     <AuthorisedDate>07/02/1995</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -212612,7 +212741,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA23490/018/001</DrugIDPK>
     <LicenceNumber>PA23490/018/001</LicenceNumber>
     <ProductName>Regaine for Men Extra Strength Scalp Foam 5% w/w Cutaneous Foam</ProductName>
-    <PAHolder>JNTL Consumer Health I (Ireland) Limited</PAHolder>
+    <PAHolder>JNTL Consumer Health (Ireland) Limited</PAHolder>
     <AuthorisedDate>03/08/2012</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -212640,7 +212769,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA23490/018/002</DrugIDPK>
     <LicenceNumber>PA23490/018/002</LicenceNumber>
     <ProductName>Regaine for Women Extra Strength Scalp Foam 5% w/w Cutaneous Foam</ProductName>
-    <PAHolder>JNTL Consumer Health I (Ireland) Limited</PAHolder>
+    <PAHolder>JNTL Consumer Health (Ireland) Limited</PAHolder>
     <AuthorisedDate>29/01/2016</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -271008,7 +271137,6 @@ Characteristics, section 4.2).</SupplyComments>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Modified-release tablet</DosageForm>
     <ATCs>
-      <ATC>M01AE</ATC>
       <ATC>M01AE52</ATC>
     </ATCs>
     <LegalBasis>Parallel importation notified in accordance with Article 76(3) of Directive 2001/83/EC</LegalBasis>
