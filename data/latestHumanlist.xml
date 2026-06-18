@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-17T02:30:22" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-18T02:30:25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -58177,7 +58177,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0074/095/001</LicenceNumber>
     <InterchangeableListCode>IC0173-208-001</InterchangeableListCode>
     <ProductName>Dabigatran etexilate Rowa 110 mg hard capsules</ProductName>
-    <PAHolder>Rowa Pharmaceuticals Limited</PAHolder>
+    <PAHolder>Rowa Pharmaceuticals Limited,</PAHolder>
     <AuthorisedDate>24/01/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -58205,7 +58205,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0074/095/002</LicenceNumber>
     <InterchangeableListCode>IC0173-062-001</InterchangeableListCode>
     <ProductName>Dabigatran etexilate Rowa 150 mg hard capsules</ProductName>
-    <PAHolder>Rowa Pharmaceuticals Limited</PAHolder>
+    <PAHolder>Rowa Pharmaceuticals Limited,</PAHolder>
     <AuthorisedDate>24/01/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -62592,7 +62592,7 @@ Characteristics, section 4.2).</SupplyComments>
   <Product>
     <DrugIDPK>PA0126/235/002</DrugIDPK>
     <LicenceNumber>PA0126/235/002</LicenceNumber>
-    <ProductName>Denzapine 100 mg Tablets</ProductName>
+    <ProductName>Denzapine ®100 mg Tablets</ProductName>
     <PAHolder>Clonmel Healthcare Ltd</PAHolder>
     <AuthorisedDate>05/09/2008</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -62618,12 +62618,18 @@ Characteristics, section 4.2).</SupplyComments>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>DENZAPINE Official Recommendations: 
 DENZAPINE is associated with a specific risk of agranulocytosis. Any adverse haematological effects should be notified to the Irish Medicines Board. 
-Intrinsic to Denzapine therapy is enrolment with and monitoring by</SupplyComments>
+Intrinsic to Denzapine therapy is enrolment with and monitoring by the DENZAPINE Monitoring Service (DMS), based at:
+Denzapine Monitoring Service
+Merz Pharma UK Ltd., 260 Centennial Park, Elstree South, Elstree, Hertfordshire WD6 3SR, UK.
+The DMS database embodies tightly controlled post-marketing surveillance and ensures the safe use of DENZAPINE in registered patients. Features of the DMS which are of fundamental importance to patient safety include the following:
+Psychiatrists who wish to prescribe DENZAPINE must be registered with the DMS.
+Pharmacists dispensing DENZAPINE must be registered with the DMS.
+Patients to receive DENZAPINE must be enrolled with the DMS. They must undergo pre-treatment screening, as well as subsequent haematological tests. These will be weekly initially, then may become fortnightly after a perio</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA0126/235/004</DrugIDPK>
     <LicenceNumber>PA0126/235/004</LicenceNumber>
-    <ProductName>Denzapine 200 mg Tablets</ProductName>
+    <ProductName>Denzapine ®200 mg Tablets</ProductName>
     <PAHolder>Clonmel Healthcare Ltd</PAHolder>
     <AuthorisedDate>03/04/2009</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -62648,12 +62654,18 @@ Intrinsic to Denzapine therapy is enrolment with and monitoring by</SupplyCommen
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>DENZAPINE Official Recommendations: 
 DENZAPINE is associated with a specific risk of agranulocytosis. Any adverse haematological effects should be notified to the Irish Medicines Board. 
-Intrinsic to Denzapine therapy is enrolment with and monitoring by</SupplyComments>
+Intrinsic to Denzapine therapy is enrolment with and monitoring by the DENZAPINE Monitoring Service (DMS), based at:
+Denzapine Monitoring Service
+Merz Pharma UK Ltd., 260 Centennial Park, Elstree South, Elstree, Hertfordshire WD6 3SR, UK.
+The DMS database embodies tightly controlled post-marketing surveillance and ensures the safe use of DENZAPINE in registered patients. Features of the DMS which are of fundamental importance to patient safety include the following:
+Psychiatrists who wish to prescribe DENZAPINE must be registered with the DMS.
+Pharmacists dispensing DENZAPINE must be registered with the DMS.
+Patients to receive DENZAPINE must be enrolled with the DMS. They must undergo pre-treatment screening, as well as subsequent haematological tests. These will be weekly initially, then may become fortnightly after a perio</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA0126/235/001</DrugIDPK>
     <LicenceNumber>PA0126/235/001</LicenceNumber>
-    <ProductName>Denzapine 25 mg Tablets</ProductName>
+    <ProductName>Denzapine ®25 mg Tablets</ProductName>
     <PAHolder>Clonmel Healthcare Ltd</PAHolder>
     <AuthorisedDate>05/09/2008</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -62679,12 +62691,18 @@ Intrinsic to Denzapine therapy is enrolment with and monitoring by</SupplyCommen
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>DENZAPINE Official Recommendations: 
 DENZAPINE is associated with a specific risk of agranulocytosis. Any adverse haematological effects should be notified to the Irish Medicines Board. 
-Intrinsic to Denzapine therapy is enrolment with and monitoring by</SupplyComments>
+Intrinsic to Denzapine therapy is enrolment with and monitoring by the DENZAPINE Monitoring Service (DMS), based at:
+Denzapine Monitoring Service
+Merz Pharma UK Ltd., 260 Centennial Park, Elstree South, Elstree, Hertfordshire WD6 3SR, UK.
+The DMS database embodies tightly controlled post-marketing surveillance and ensures the safe use of DENZAPINE in registered patients. Features of the DMS which are of fundamental importance to patient safety include the following:
+Psychiatrists who wish to prescribe DENZAPINE must be registered with the DMS.
+Pharmacists dispensing DENZAPINE must be registered with the DMS.
+Patients to receive DENZAPINE must be enrolled with the DMS. They must undergo pre-treatment screening, as well as subsequent haematological tests. These will be weekly initially, then may become fortnightly after a perio</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA0126/235/005</DrugIDPK>
     <LicenceNumber>PA0126/235/005</LicenceNumber>
-    <ProductName>Denzapine 50 mg/ml Oral Suspension</ProductName>
+    <ProductName>Denzapine ®50 mg/ml Oral Suspension</ProductName>
     <PAHolder>Clonmel Healthcare Ltd</PAHolder>
     <AuthorisedDate>06/03/2009</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -62709,12 +62727,18 @@ Intrinsic to Denzapine therapy is enrolment with and monitoring by</SupplyCommen
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>DENZAPINE Official Recommendations: 
 DENZAPINE is associated with a specific risk of agranulocytosis. Any adverse haematological effects should be notified to the Irish Medicines Board. 
-Intrinsic to Denzapine therapy is enrolment with and monitoring by</SupplyComments>
+Intrinsic to Denzapine therapy is enrolment with and monitoring by the DENZAPINE Monitoring Service (DMS), based at:
+Denzapine Monitoring Service
+Merz Pharma UK Ltd., 260 Centennial Park, Elstree South, Elstree, Hertfordshire WD6 3SR, UK.
+The DMS database embodies tightly controlled post-marketing surveillance and ensures the safe use of DENZAPINE in registered patients. Features of the DMS which are of fundamental importance to patient safety include the following:
+Psychiatrists who wish to prescribe DENZAPINE must be registered with the DMS.
+Pharmacists dispensing DENZAPINE must be registered with the DMS.
+Patients to receive DENZAPINE must be enrolled with the DMS. They must undergo pre-treatment screening, as well as subsequent haematological tests. These will be weekly initially, then may become fortnightly after a perio</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA0126/235/003</DrugIDPK>
     <LicenceNumber>PA0126/235/003</LicenceNumber>
-    <ProductName>Denzapine 50 mg Tablets</ProductName>
+    <ProductName>Denzapine ®50 mg Tablets</ProductName>
     <PAHolder>Clonmel Healthcare Ltd</PAHolder>
     <AuthorisedDate>03/04/2009</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -62739,7 +62763,13 @@ Intrinsic to Denzapine therapy is enrolment with and monitoring by</SupplyCommen
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>DENZAPINE Official Recommendations: 
 DENZAPINE is associated with a specific risk of agranulocytosis. Any adverse haematological effects should be notified to the Irish Medicines Board. 
-Intrinsic to Denzapine therapy is enrolment with and monitoring by</SupplyComments>
+Intrinsic to Denzapine therapy is enrolment with and monitoring by the DENZAPINE Monitoring Service (DMS), based at:
+Denzapine Monitoring Service
+Merz Pharma UK Ltd., 260 Centennial Park, Elstree South, Elstree, Hertfordshire WD6 3SR, UK.
+The DMS database embodies tightly controlled post-marketing surveillance and ensures the safe use of DENZAPINE in registered patients. Features of the DMS which are of fundamental importance to patient safety include the following:
+Psychiatrists who wish to prescribe DENZAPINE must be registered with the DMS.
+Pharmacists dispensing DENZAPINE must be registered with the DMS.
+Patients to receive DENZAPINE must be enrolled with the DMS. They must undergo pre-treatment screening, as well as subsequent haematological tests. These will be weekly initially, then may become fortnightly after a perio</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA0776/003/001</DrugIDPK>
@@ -152614,175 +152644,6 @@ Product subject to prescription which may not be renewed for pack sizes of ove</
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>EU/1/04/292/013</DrugIDPK>
-    <LicenceNumber>EU/1/04/292/013</LicenceNumber>
-    <ProductName>Mimpara 1 mg granules in capsules for opening</ProductName>
-    <PAHolder>Amgen Europe B.V.,</PAHolder>
-    <AuthorisedDate>28/08/2017</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Granules</DosageForm>
-    <ATCs>
-      <ATC>H05BX</ATC>
-      <ATC>H05BX01</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Cinacalcet hydrochloride</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/04/292/014</DrugIDPK>
-    <LicenceNumber>EU/1/04/292/014</LicenceNumber>
-    <ProductName>Mimpara 2.5 mg granules in capsules for opening</ProductName>
-    <PAHolder>Amgen Europe B.V.,</PAHolder>
-    <AuthorisedDate>28/08/2017</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Granules</DosageForm>
-    <ATCs>
-      <ATC>H05BX</ATC>
-      <ATC>H05BX01</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Cinacalcet hydrochloride</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/04/292/001-004</DrugIDPK>
-    <LicenceNumber>EU/1/04/292/001-004</LicenceNumber>
-    <InterchangeableListCode>IC0134-033-003</InterchangeableListCode>
-    <ProductName>Mimpara 30 mg film-coated tablets</ProductName>
-    <PAHolder>Amgen Europe B.V.,</PAHolder>
-    <AuthorisedDate xsi:nil="true" />
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>H05BX</ATC>
-      <ATC>H05BX01</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Cinacalcet hydrochloride</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/04/292/015</DrugIDPK>
-    <LicenceNumber>EU/1/04/292/015</LicenceNumber>
-    <ProductName>Mimpara 5 mg granules in capsules for opening</ProductName>
-    <PAHolder>Amgen Europe B.V.,</PAHolder>
-    <AuthorisedDate>28/08/2017</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Granules</DosageForm>
-    <ATCs>
-      <ATC>H05BX</ATC>
-      <ATC>H05BX01</ATC>
-    </ATCs>
-    <LegalBasis>New active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Cinacalcet hydrochloride</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/04/292/005-008</DrugIDPK>
-    <LicenceNumber>EU/1/04/292/005-008</LicenceNumber>
-    <InterchangeableListCode>IC0134-127-003</InterchangeableListCode>
-    <ProductName>Mimpara 60 mg film-coated tablets</ProductName>
-    <PAHolder>Amgen Europe B.V.,</PAHolder>
-    <AuthorisedDate>20/10/2004</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>H05BX01</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Cinacalcet hydrochloride</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/04/292/009-012</DrugIDPK>
-    <LicenceNumber>EU/1/04/292/009-012</LicenceNumber>
-    <InterchangeableListCode>IC0134-166-003</InterchangeableListCode>
-    <ProductName>Mimpara 90 mg film-coated tablets</ProductName>
-    <PAHolder>Amgen Europe B.V.,</PAHolder>
-    <AuthorisedDate>22/10/2004</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Film-coated tablet</DosageForm>
-    <ATCs>
-      <ATC>H05BX01</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>Cinacalcet hydrochloride</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may be renewed (B)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
-  </Product>
-  <Product>
     <DrugIDPK>PA0822/144/001</DrugIDPK>
     <LicenceNumber>PA0822/144/001</LicenceNumber>
     <ProductName>MINESSE 60 micrograms/15 micrograms film-coated tablet</ProductName>
@@ -218293,7 +218154,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0711/106/001</LicenceNumber>
     <InterchangeableListCode>IC0012-047-019</InterchangeableListCode>
     <ProductName>Rispone 1 mg/ml oral solution</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>13/10/2006</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -267322,7 +267183,7 @@ Batches of Vaccine marketed in Ireland shall be subject to control authority bat
     <DrugIDPK>EU/1/07/423/001-003</DrugIDPK>
     <LicenceNumber>EU/1/07/423/001-003</LicenceNumber>
     <ProductName>Vectibix 20 mg/mL concentrate for solution for infusion</ProductName>
-    <PAHolder>Amgen Europe B.V.</PAHolder>
+    <PAHolder>Amgen Europe B.V.,</PAHolder>
     <AuthorisedDate xsi:nil="true" />
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -279913,33 +279774,6 @@ Characteristics, section 4.2)</SupplyComments>
     <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
     <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product 
 Characteristics, section 4.2)</SupplyComments>
-  </Product>
-  <Product>
-    <DrugIDPK>EU/1/20/1444/001</DrugIDPK>
-    <LicenceNumber>EU/1/20/1444/001</LicenceNumber>
-    <ProductName>Zabdeno suspension for injection</ProductName>
-    <PAHolder>Janssen-Cilag International NV</PAHolder>
-    <AuthorisedDate>01/07/2020</AuthorisedDate>
-    <ProductType>HM</ProductType>
-    <MarketInfo>Unknown</MarketInfo>
-    <RegistrationStatus>AU</RegistrationStatus>
-    <DosageForm>Suspension for injection</DosageForm>
-    <ATCs>
-      <ATC>J07BX02</ATC>
-    </ATCs>
-    <LegalBasis>Full application (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
-    <RoutesOfAdministration>
-      <RoutesOfAdministration>Intramuscular use</RoutesOfAdministration>
-    </RoutesOfAdministration>
-    <ActiveSubstances>
-      <ActiveSubstance>AD26.ZEBOV</ActiveSubstance>
-    </ActiveSubstances>
-    <DispensingLegalStatus>
-      <Status>Product subject to prescription which may not be renewed (A)</Status>
-    </DispensingLegalStatus>
-    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
-    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
-    <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
     <DrugIDPK>PA23369/005/001</DrugIDPK>
