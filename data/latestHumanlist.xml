@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-18T02:30:25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-19T02:30:13" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -62537,7 +62537,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA1113/020/001</DrugIDPK>
     <LicenceNumber>PA1113/020/001</LicenceNumber>
     <ProductName>Dentinox Cradle Cap Treatment Shampoo, Sodium lauryl ether sulpho-succinate 6% w/w, Sodium lauryl ether sulphate 2.7% w/w</ProductName>
-    <PAHolder>Phoenix Labs</PAHolder>
+    <PAHolder>Phoenix Labs Unlimited Company</PAHolder>
     <AuthorisedDate>09/01/1995</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -127121,7 +127121,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PPA1463/186/001</DrugIDPK>
     <LicenceNumber>PPA1463/186/001</LicenceNumber>
     <ProductName>Kyleena 19.5 mg intrauterine delivery system</ProductName>
-    <PAHolder>IMED Healthcare Ltd.</PAHolder>
+    <PAHolder>IMED Healthcare Ltd.,</PAHolder>
     <AuthorisedDate>25/02/2022</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -142089,7 +142089,7 @@ For pack sizes of more than 30 tablets: Product su</SupplyComments>
     <LicenceNumber>PA0281/272/001</LicenceNumber>
     <InterchangeableListCode>IC0010-002-016</InterchangeableListCode>
     <ProductName>Loseina 10 mg hard gastro-resistant capsules</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>05/11/2021</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -222865,7 +222865,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0281/157/002</LicenceNumber>
     <InterchangeableListCode>IC0006-002-003</InterchangeableListCode>
     <ProductName>Rosuvastatin Pinewood 10 mg Film-coated Tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>28/07/2017</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -222894,7 +222894,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0281/157/003</LicenceNumber>
     <InterchangeableListCode>IC0006-003-003</InterchangeableListCode>
     <ProductName>Rosuvastatin Pinewood 20 mg Film-coated Tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>28/07/2017</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -222923,7 +222923,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0281/157/004</LicenceNumber>
     <InterchangeableListCode>IC0006-004-003</InterchangeableListCode>
     <ProductName>Rosuvastatin Pinewood 40 mg Film-coated Tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>28/07/2017</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -222952,7 +222952,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0281/157/001</LicenceNumber>
     <InterchangeableListCode>IC0006-001-003</InterchangeableListCode>
     <ProductName>Rosuvastatin Pinewood 5 mg Film-coated Tablets</ProductName>
-    <PAHolder>Pinewood Laboratories Ltd</PAHolder>
+    <PAHolder>Pinewood Laboratories Limited</PAHolder>
     <AuthorisedDate>28/07/2017</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
