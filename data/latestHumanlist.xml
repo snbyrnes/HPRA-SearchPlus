@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-19T02:30:13" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-20T02:30:12" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -2925,10 +2925,10 @@ Characteristics, section 4.2).</SupplyComments>
 For use in adults and children over 12 years.</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>PA0749/195/001</DrugIDPK>
-    <LicenceNumber>PA0749/195/001</LicenceNumber>
+    <DrugIDPK>PA1113/036/001</DrugIDPK>
+    <LicenceNumber>PA1113/036/001</LicenceNumber>
     <ProductName>Actiq 200 micrograms compressed lozenge with integral oromucosal applicator</ProductName>
-    <PAHolder>Teva Pharma B.V.</PAHolder>
+    <PAHolder>Phoenix Labs Unlimited Company</PAHolder>
     <AuthorisedDate>23/01/2002</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -2953,10 +2953,10 @@ For use in adults and children over 12 years.</SupplyComments>
     <SupplyComments>This product contains a substance listed in schedule 2 to the Misuse of Drugs Regulations 2017.</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>PA0749/195/002</DrugIDPK>
-    <LicenceNumber>PA0749/195/002</LicenceNumber>
+    <DrugIDPK>PA1113/036/002</DrugIDPK>
+    <LicenceNumber>PA1113/036/002</LicenceNumber>
     <ProductName>Actiq 400 micrograms compressed lozenge with integral oromucosal applicator</ProductName>
-    <PAHolder>Teva Pharma B.V.</PAHolder>
+    <PAHolder>Phoenix Labs Unlimited Company</PAHolder>
     <AuthorisedDate>23/01/2002</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -3008,10 +3008,10 @@ For use in adults and children over 12 years.</SupplyComments>
     <SupplyComments>This product contains a substance listed in schedule 2 to the Misuse of Drugs Regulations 2017.</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>PA0749/195/003</DrugIDPK>
-    <LicenceNumber>PA0749/195/003</LicenceNumber>
+    <DrugIDPK>PA1113/036/003</DrugIDPK>
+    <LicenceNumber>PA1113/036/003</LicenceNumber>
     <ProductName>Actiq 600 micrograms compressed lozenge with integral oromucosal applicator</ProductName>
-    <PAHolder>Teva Pharma B.V.</PAHolder>
+    <PAHolder>Phoenix Labs Unlimited Company</PAHolder>
     <AuthorisedDate>23/01/2002</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -24828,6 +24828,33 @@ Characteristics, section 4.2)</SupplyComments>
     <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
   </Product>
   <Product>
+    <DrugIDPK>EU/1/19/1413/002</DrugIDPK>
+    <LicenceNumber>EU/1/19/1413/002</LicenceNumber>
+    <ProductName>Azacitidine Accord 25 mg/mL powder for suspension for injection</ProductName>
+    <PAHolder>Accord Healthcare S.L.U.</PAHolder>
+    <AuthorisedDate>13/02/2020</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Powder for suspension for injection</DosageForm>
+    <ATCs>
+      <ATC>L01BC07</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Subcutaneous use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Azacitidine</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Medicinal product subject to restricted medical prescription (See Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
+  </Product>
+  <Product>
     <DrugIDPK>EU/1/19/1413/011-018</DrugIDPK>
     <LicenceNumber>EU/1/19/1413/011-018</LicenceNumber>
     <ProductName>Azacitidine Accord 300 mg film-coated tablets</ProductName>
@@ -38296,6 +38323,34 @@ Pharmacy only: MAXIMUM PACK SIZE 140ml for product for children aged 6 – 12 ye
     </RoutesOfAdministration>
     <ActiveSubstances>
       <ActiveSubstance>Acalabrutinib</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
+  </Product>
+  <Product>
+    <DrugIDPK>EU/1/20/1479/001-004</DrugIDPK>
+    <LicenceNumber>EU/1/20/1479/001-004</LicenceNumber>
+    <ProductName>Calquence film-coated tablets</ProductName>
+    <PAHolder>AstraZeneca AB</PAHolder>
+    <AuthorisedDate>20/02/2023</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Unknown</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>L01</ATC>
+      <ATC>L01EL02</ATC>
+    </ATCs>
+    <LegalBasis>Known active substance (Article 8(3) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Acalabrutinib maleate</ActiveSubstance>
     </ActiveSubstances>
     <DispensingLegalStatus>
       <Status>Product subject to prescription which may not be renewed (A)</Status>
@@ -76722,7 +76777,7 @@ If you have any unusual symptoms such as unexplained pains in the chest, abdomen
     <PAHolder>Laboratoires Thea</PAHolder>
     <AuthorisedDate>23/06/2023</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Not marketed</MarketInfo>
+    <MarketInfo>Marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Eye gel in single-dose container</DosageForm>
     <ATCs>
@@ -102838,10 +102893,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments>Medicinal product subject to restricted medical prescription (see Annex I: Summary of Product Characteristics, section 4.2).</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>PA23055/015/001</DrugIDPK>
-    <LicenceNumber>PA23055/015/001</LicenceNumber>
+    <DrugIDPK>PA23355/062/001</DrugIDPK>
+    <LicenceNumber>PA23355/062/001</LicenceNumber>
     <ProductName>Geodon 20mg capsules, hard</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>08/03/2002</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -102866,10 +102921,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/015/002</DrugIDPK>
-    <LicenceNumber>PA23055/015/002</LicenceNumber>
+    <DrugIDPK>PA23355/062/002</DrugIDPK>
+    <LicenceNumber>PA23355/062/002</LicenceNumber>
     <ProductName>Geodon 40mg capsules, hard</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>08/03/2002</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -102894,10 +102949,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/015/003</DrugIDPK>
-    <LicenceNumber>PA23055/015/003</LicenceNumber>
+    <DrugIDPK>PA23355/062/003</DrugIDPK>
+    <LicenceNumber>PA23355/062/003</LicenceNumber>
     <ProductName>Geodon 60mg capsules, hard</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>08/03/2002</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -102922,10 +102977,10 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments xsi:nil="true" />
   </Product>
   <Product>
-    <DrugIDPK>PA23055/015/004</DrugIDPK>
-    <LicenceNumber>PA23055/015/004</LicenceNumber>
+    <DrugIDPK>PA23355/062/004</DrugIDPK>
+    <LicenceNumber>PA23355/062/004</LicenceNumber>
     <ProductName>Geodon 80mg capsules, hard</ProductName>
-    <PAHolder>Upjohn EESV</PAHolder>
+    <PAHolder>Viatris Healthcare Limited</PAHolder>
     <AuthorisedDate>08/03/2002</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -144348,6 +144403,33 @@ Characteristics, section 4.2).</SupplyComments>
     <SupplyComments>Medicinal product subject to restricted medical prescription (See Summary of Product Characteristics, section 4.2).</SupplyComments>
   </Product>
   <Product>
+    <DrugIDPK>PA23250/017/001</DrugIDPK>
+    <LicenceNumber>PA23250/017/001</LicenceNumber>
+    <ProductName>Macitentan MSN 10 mg film-coated tablets</ProductName>
+    <PAHolder>MSN Labs Europe Limited</PAHolder>
+    <AuthorisedDate>19/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Film-coated tablet</DosageForm>
+    <ATCs>
+      <ATC>C02KX04</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Macitentan</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Medicinal product subject to restricted medical prescription (see Summary of Product Characteristics, section 4.2)</SupplyComments>
+  </Product>
+  <Product>
     <DrugIDPK>PA0711/340/001</DrugIDPK>
     <LicenceNumber>PA0711/340/001</LicenceNumber>
     <ProductName>Macitentan Rowex 10 mg film-coated tablets</ProductName>
@@ -144865,7 +144947,7 @@ Characteristics, section 4.2).</SupplyComments>
   <Product>
     <DrugIDPK>PA1077/111/001</DrugIDPK>
     <LicenceNumber>PA1077/111/001</LicenceNumber>
-    <ProductName>Malarone 250mg/100mg film-coated tablets</ProductName>
+    <ProductName>Malarone 250 mg/100 mg film-coated tablets</ProductName>
     <PAHolder>GlaxoSmithKline (Ireland) Limited</PAHolder>
     <AuthorisedDate>02/12/2005</AuthorisedDate>
     <ProductType>HM</ProductType>
@@ -166477,6 +166559,60 @@ characteristics, section 4.2).</SupplyComments>
     <SupplyComments>Medicinal product subject to restricted medical prescription (Summary of Product Characteristics, section 4.2).</SupplyComments>
   </Product>
   <Product>
+    <DrugIDPK>PA0749/209/001</DrugIDPK>
+    <LicenceNumber>PA0749/209/001</LicenceNumber>
+    <ProductName>Nintedanib Teva Pharma 100 mg soft capsules</ProductName>
+    <PAHolder>Teva Pharma B.V.</PAHolder>
+    <AuthorisedDate>19/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Capsule, soft</DosageForm>
+    <ATCs>
+      <ATC>L01EX09</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Nintedanib esylate</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Medicinal product subject to restricted medical prescription (see Summary of Product Characteristics, section 4.2).</SupplyComments>
+  </Product>
+  <Product>
+    <DrugIDPK>PA0749/209/002</DrugIDPK>
+    <LicenceNumber>PA0749/209/002</LicenceNumber>
+    <ProductName>Nintedanib Teva Pharma 150 mg soft capsules</ProductName>
+    <PAHolder>Teva Pharma B.V.</PAHolder>
+    <AuthorisedDate>19/06/2026</AuthorisedDate>
+    <ProductType>HM</ProductType>
+    <MarketInfo>Not marketed</MarketInfo>
+    <RegistrationStatus>AU</RegistrationStatus>
+    <DosageForm>Capsule, soft</DosageForm>
+    <ATCs>
+      <ATC>L01EX09</ATC>
+    </ATCs>
+    <LegalBasis>Generic application (Article 10(1) of Directive No 2001/83/EC)</LegalBasis>
+    <RoutesOfAdministration>
+      <RoutesOfAdministration>Oral use</RoutesOfAdministration>
+    </RoutesOfAdministration>
+    <ActiveSubstances>
+      <ActiveSubstance>Nintedanib esylate</ActiveSubstance>
+    </ActiveSubstances>
+    <DispensingLegalStatus>
+      <Status>Product subject to prescription which may not be renewed (A)</Status>
+    </DispensingLegalStatus>
+    <SupplyLegalStatus>Supply through pharmacies only</SupplyLegalStatus>
+    <PromotionLegalStatus>Advertising to healthcare professionals only</PromotionLegalStatus>
+    <SupplyComments>Medicinal product subject to restricted medical prescription (see Summary of Product Characteristics, section 4.2).</SupplyComments>
+  </Product>
+  <Product>
     <DrugIDPK>EU/1/25/1959/001-002</DrugIDPK>
     <LicenceNumber>EU/1/25/1959/001-002</LicenceNumber>
     <ProductName>Nintedanib Viatris 100 mg soft capsules</ProductName>
@@ -187219,10 +187355,10 @@ Promotion to the public: Pack size not more than 24</SupplyComments>
     <SupplyComments>This product contains a substance listed in schedule 5 to the Misuse of Drugs Regulations 2017.</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>PA1535/020/002</DrugIDPK>
-    <LicenceNumber>PA1535/020/002</LicenceNumber>
+    <DrugIDPK>PA25595/001/002</DrugIDPK>
+    <LicenceNumber>PA25595/001/002</LicenceNumber>
     <ProductName>Paracetamol/Ibuprofen 1000 mg/300mg powder for oral solution in sachet</ProductName>
-    <PAHolder>Vale Pharmaceuticals Limited</PAHolder>
+    <PAHolder>Aft Pharmaceuticals (Eur) Limited</PAHolder>
     <AuthorisedDate>29/08/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -187247,13 +187383,13 @@ Promotion to the public: Pack size not more than 24</SupplyComments>
     <SupplyComments>Pharmacy only: MAXIMUM PACK SIZE 12. Maximum two packs per per retail transaction with pharmacist interview. 
 Prescription only: Pack size greater than 12. 
 Promotion to Public: Pack size not more than 12. 
-Promotion to Healthcare professionals: Pack si</SupplyComments>
+Promotion to Healthcare professionals: Pack size greater than 12</SupplyComments>
   </Product>
   <Product>
-    <DrugIDPK>PA1535/020/001</DrugIDPK>
-    <LicenceNumber>PA1535/020/001</LicenceNumber>
+    <DrugIDPK>PA25595/001/001</DrugIDPK>
+    <LicenceNumber>PA25595/001/001</LicenceNumber>
     <ProductName>Paracetamol/Ibuprofen 500 mg/150 mg powder for oral solution in sachet</ProductName>
-    <PAHolder>Vale Pharmaceuticals Limited</PAHolder>
+    <PAHolder>Aft Pharmaceuticals (Eur) Limited</PAHolder>
     <AuthorisedDate>29/08/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -187278,7 +187414,7 @@ Promotion to Healthcare professionals: Pack si</SupplyComments>
     <SupplyComments>Pharmacy only: MAXIMUM PACK SIZE 24. Maximum two packs per per retail transaction with pharmacist interview. 
 Prescription only: Pack size greater than 24. 
 Promotion to Public: Pack size not more than 24. 
-Promotion to Healthcare professionals: Pack si</SupplyComments>
+Promotion to Healthcare professionals: Pack size greater than 24</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA0678/160/001</DrugIDPK>
@@ -187742,7 +187878,7 @@ Promotion to the public: Pack size not more than 140ml</SupplyComments>
     <SupplyComments>Pharmacy only: MAXIMUM PACK SIZE 24. Maximum two packs per sale. Promotion to the public.
 Prescription only: Pack size greater than 24; Promotion to healthcare professionals.
 
-Paracetamol Retail sale through pharmacies only in blister packs containing n</SupplyComments>
+Paracetamol Retail sale through pharmacies only in blister packs containing not more than 24 unit dosage forms. Not more than two such packs should be supplied in the course of any one retail transaction unless a valid prescription exists. Packs containing more than 24 unit dosage forms may be supplied to pharmacies for the use by pharmacists provided the label states that they are for dispensing purposes only. Packs containing more than 50 unit dosage forms are prescription only. Promotion to the public subject to the following restrictions for phenylephrine base: maximum dose 12.2mg, maximum daily dose 48.8mg. Paracetamol Promotion to the general public for packs containing not more than 24 unit dosage forms Promotion to healthcare professionals only for packs containing more than 24 unit dosage forms.</SupplyComments>
   </Product>
   <Product>
     <DrugIDPK>PA22871/016/001</DrugIDPK>
