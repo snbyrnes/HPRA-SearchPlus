@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-22T02:30:03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-23T02:30:19" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -157660,7 +157660,7 @@ ii)  As a prescription-only item for pack sizes greater than 20 tablets.
     <DrugIDPK>PPA1463/232/001</DrugIDPK>
     <LicenceNumber>PPA1463/232/001</LicenceNumber>
     <ProductName>Moviprep, powder for oral solution</ProductName>
-    <PAHolder>IMED Healthcare Ltd.</PAHolder>
+    <PAHolder>IMED Healthcare Ltd.,</PAHolder>
     <AuthorisedDate>27/09/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -194094,7 +194094,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>Vantive Belgium SRL</PAHolder>
     <AuthorisedDate>10/09/2004</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Solution for peritoneal dialysis</DosageForm>
     <ATCs>
@@ -194126,7 +194126,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>Vantive Belgium SRL</PAHolder>
     <AuthorisedDate>09/01/2004</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Solution for peritoneal dialysis</DosageForm>
     <ATCs>
@@ -194158,7 +194158,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>Vantive Belgium SRL</PAHolder>
     <AuthorisedDate>10/09/2004</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Solution for peritoneal dialysis</DosageForm>
     <ATCs>
@@ -194190,7 +194190,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>Vantive Belgium SRL</PAHolder>
     <AuthorisedDate>09/01/2004</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Solution for peritoneal dialysis</DosageForm>
     <ATCs>
@@ -194222,7 +194222,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>Vantive Belgium SRL</PAHolder>
     <AuthorisedDate>10/09/2004</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Solution for peritoneal dialysis</DosageForm>
     <ATCs>
@@ -194254,7 +194254,7 @@ Characteristics, section 4.2).</SupplyComments>
     <PAHolder>Vantive Belgium SRL</PAHolder>
     <AuthorisedDate>09/01/2004</AuthorisedDate>
     <ProductType>HM</ProductType>
-    <MarketInfo>Marketed</MarketInfo>
+    <MarketInfo>Not marketed</MarketInfo>
     <RegistrationStatus>AU</RegistrationStatus>
     <DosageForm>Solution for peritoneal dialysis</DosageForm>
     <ATCs>
@@ -250003,7 +250003,7 @@ Prescription only: Pack size greater than 50</SupplyComments>
     <LicenceNumber>PA1239/025/001</LicenceNumber>
     <InterchangeableListCode>IC0050-099-039</InterchangeableListCode>
     <ProductName>Telmisartan/Hydrochlorothiazide Liconsa 40 mg/12.5 mg tablets</ProductName>
-    <PAHolder>Laboratorios LICONSA, S.A.</PAHolder>
+    <PAHolder>Laboratorios Liconsa S.A.</PAHolder>
     <AuthorisedDate>28/02/2014</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -250033,7 +250033,7 @@ Prescription only: Pack size greater than 50</SupplyComments>
     <LicenceNumber>PA1239/025/002</LicenceNumber>
     <InterchangeableListCode>IC0050-081-039</InterchangeableListCode>
     <ProductName>Telmisartan/Hydrochlorothiazide Liconsa 80 mg/12.5 mg tablets</ProductName>
-    <PAHolder>Laboratorios LICONSA, S.A.</PAHolder>
+    <PAHolder>Laboratorios Liconsa S.A.</PAHolder>
     <AuthorisedDate>28/02/2014</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -250063,7 +250063,7 @@ Prescription only: Pack size greater than 50</SupplyComments>
     <LicenceNumber>PA1239/025/003</LicenceNumber>
     <InterchangeableListCode>IC0050-100-039</InterchangeableListCode>
     <ProductName>Telmisartan/Hydrochlorothiazide Liconsa 80 mg/25 mg tablets</ProductName>
-    <PAHolder>Laboratorios LICONSA, S.A.</PAHolder>
+    <PAHolder>Laboratorios Liconsa S.A.</PAHolder>
     <AuthorisedDate>28/02/2014</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
