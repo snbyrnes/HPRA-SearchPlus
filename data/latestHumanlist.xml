@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-23T02:30:19" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-24T02:30:12" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -137783,7 +137783,7 @@ Characteristics, section 4.2).</SupplyComments>
   <Product>
     <DrugIDPK>PA23266/013/001</DrugIDPK>
     <LicenceNumber>PA23266/013/001</LicenceNumber>
-    <ProductName>Linagliptin Viatris 5 mg Film-coated tablets</ProductName>
+    <ProductName>Linagliptin Viatris 5 mg film-coated tablets</ProductName>
     <PAHolder>Viatris Limited</PAHolder>
     <AuthorisedDate>09/02/2024</AuthorisedDate>
     <ProductType>HM</ProductType>
