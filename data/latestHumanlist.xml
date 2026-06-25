@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-24T02:30:12" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-25T02:30:15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -42571,7 +42571,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA0711/101/002</DrugIDPK>
     <LicenceNumber>PA0711/101/002</LicenceNumber>
     <ProductName>Ceftal 250mg coated tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>13/10/2006</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -42599,7 +42599,7 @@ Characteristics, section 4.2).</SupplyComments>
     <DrugIDPK>PA0711/101/003</DrugIDPK>
     <LicenceNumber>PA0711/101/003</LicenceNumber>
     <ProductName>Ceftal 500 mg Coated Tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>13/10/2006</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Not marketed</MarketInfo>
@@ -70084,7 +70084,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0711/141/002</LicenceNumber>
     <InterchangeableListCode>IC0062-002-015</InterchangeableListCode>
     <ProductName>Dozept 10 mg film-coated-tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>10/10/2008</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -70113,7 +70113,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PA0711/141/001</LicenceNumber>
     <InterchangeableListCode>IC0062-001-015</InterchangeableListCode>
     <ProductName>Dozept 5 mg film-coated tablets</ProductName>
-    <PAHolder>Rowex Ltd</PAHolder>
+    <PAHolder>Rowex Limited,</PAHolder>
     <AuthorisedDate>10/10/2008</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
@@ -129032,7 +129032,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PPA1463/192/001</LicenceNumber>
     <InterchangeableListCode>IC0150-115-067</InterchangeableListCode>
     <ProductName>Lamisil 1% w/w cream</ProductName>
-    <PAHolder>IMED Healthcare Ltd.</PAHolder>
+    <PAHolder>IMED Healthcare Ltd.,</PAHolder>
     <AuthorisedDate>15/07/2022</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
@@ -229204,7 +229204,7 @@ Characteristics, section 4.2).</SupplyComments>
     <LicenceNumber>PPA1463/006/006</LicenceNumber>
     <InterchangeableListCode>IC0128-177-053</InterchangeableListCode>
     <ProductName>Seretide 250 Evohaler 25 microgram/250 microgram/dose pressurised inhalation, suspension</ProductName>
-    <PAHolder>IMED Healthcare Ltd.</PAHolder>
+    <PAHolder>IMED Healthcare Ltd.,</PAHolder>
     <AuthorisedDate>14/02/2025</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Unknown</MarketInfo>
