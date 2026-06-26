@@ -1,4 +1,4 @@
-<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-25T02:30:15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Products xmlns="https://assets.hpra.ie/products//xml/Human" xsi:schemaLocation="https://assets.hpra.ie/products//xml/Human https://assets.hpra.ie/products//xml/Human.xsd" schemaVersion="1.0" datePublished="2026-06-26T02:30:11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Product>
     <DrugIDPK>PA0179/002/013</DrugIDPK>
     <LicenceNumber>PA0179/002/013</LicenceNumber>
@@ -27325,7 +27325,7 @@ Characteristics, section 4.2)</SupplyComments>
     <DrugIDPK>PA23490/011/001</DrugIDPK>
     <LicenceNumber>PA23490/011/001</LicenceNumber>
     <ProductName>Benylin Children’s Chesty Cough 50 mg/5 ml Syrup</ProductName>
-    <PAHolder>JNTL Consumer Health I (Ireland) Limited</PAHolder>
+    <PAHolder>JNTL Consumer Health (Ireland) Limited</PAHolder>
     <AuthorisedDate>27/07/1998</AuthorisedDate>
     <ProductType>HM</ProductType>
     <MarketInfo>Marketed</MarketInfo>
