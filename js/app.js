@@ -69,6 +69,8 @@
         { key: 'drugIDPK', header: 'Drug ID', render: p => escHTML(p.drugIDPK), style: 'font-size:11px;', default: false },
         { key: 'productType', header: 'Product Type', render: p => escHTML(p.productType), default: false },
         { key: 'registrationStatus', header: 'Registration', render: p => escHTML(p.registrationStatus), default: false },
+        { key: 'listType', header: 'List', render: p => `<span class="cell-badge ${p.listType === 'withdrawn' ? 'badge-not-marketed' : 'badge-marketed'}">${p.listType === 'withdrawn' ? 'Withdrawn' : 'Authorised'}</span>`, default: false },
+        { key: 'withdrawalDate', header: 'Withdrawal Date', render: p => p.withdrawalDate || '—', style: 'white-space:nowrap;', default: false },
         { key: 'legalBasis', header: 'Legal Basis', render: p => escHTML(p.legalBasis), default: false },
         { key: 'dispensingStatuses', header: 'Dispensing', render: p => p.dispensingStatuses.join(', ') || '\u2014', default: false },
         { key: 'supplyLegalStatus', header: 'Supply Status', render: p => escHTML(p.supplyLegalStatus) || '\u2014', default: false },
@@ -97,6 +99,7 @@
     const searchHint = $('searchHint');
     const sortSelect = $('sortSelect');
     const filterType = $('filterType');
+    const filterList = $('filterList');
     const filterStatus = $('filterStatus');
     const filterLegalBasis = $('filterLegalBasis');
     const filterDispensing = $('filterDispensing');
@@ -145,6 +148,7 @@
 
     // ── XML Loading ────────────────────────────────────
     // Try data/ subfolder first (GitHub Pages layout), then root (local use)
+    // Authorised (latest) list — required. Try data/ subfolder first, then root.
     const XML_FILENAMES = [
         'data/latestHumanlist.xml',
         'data/latestHumanList.xml',
@@ -160,17 +164,25 @@
         'products.xml'
     ];
 
-    async function tryAutoLoad() {
+    // Withdrawn list — optional, merged in alongside the authorised list.
+    const WITHDRAWN_FILENAMES = [
+        'data/withdrawnHumanlist.xml',
+        'data/withdrawnHumanList.xml',
+        'data/WithdrawnHumanList.xml',
+        'withdrawnHumanlist.xml',
+        'withdrawnHumanList.xml',
+        'WithdrawnHumanList.xml'
+    ];
+
+    async function fetchFirstXml(filenames) {
         const cacheBust = `?v=${Date.now()}`;
-        for (const fname of XML_FILENAMES) {
+        for (const fname of filenames) {
             try {
                 const resp = await fetch(encodeURI(fname) + cacheBust, { cache: 'no-store' });
                 if (resp.ok) {
                     const text = await resp.text();
                     if (text.includes('<Product') || text.includes('<Products')) {
-                        const displayName = decodeURI(fname.split('/').pop());
-                        showToast(`Auto-loaded ${displayName}`);
-                        return text;
+                        return { text, displayName: decodeURI(fname.split('/').pop()) };
                     }
                 }
             } catch (e) { /* continue */ }
@@ -179,16 +191,21 @@
     }
 
     async function init() {
-        const xmlText = await tryAutoLoad();
-        if (xmlText) {
-            processXML(xmlText);
+        const authorised = await fetchFirstXml(XML_FILENAMES);
+        if (authorised) {
+            // Withdrawn list is best-effort: if it's missing the app still works.
+            const withdrawn = await fetchFirstXml(WITHDRAWN_FILENAMES);
+            const loaded = [authorised.displayName];
+            if (withdrawn) loaded.push(withdrawn.displayName);
+            showToast(`Auto-loaded ${loaded.join(' + ')}`);
+            processXML(authorised.text, withdrawn ? withdrawn.text : null);
         } else {
             $('loadingState').style.display = 'none';
             $('dropZone').style.display = 'block';
         }
     }
 
-    function processXML(xmlText) {
+    function processXML(xmlText, withdrawnText = null) {
         try {
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
@@ -220,6 +237,17 @@
             }
 
             allProducts = parseProducts(xmlDoc);
+
+            // Merge in the withdrawn list (best-effort, same schema).
+            if (withdrawnText) {
+                const wDoc = parser.parseFromString(withdrawnText, 'text/xml');
+                if (wDoc.getElementsByTagName('parsererror').length === 0) {
+                    allProducts = allProducts.concat(parseProducts(wDoc, 'withdrawn'));
+                } else {
+                    console.warn('Withdrawn list failed to parse — showing authorised list only');
+                }
+            }
+
             filteredProducts = [...allProducts];
 
             // Show UI
@@ -263,7 +291,8 @@
     }
 
     // ── XML Parsing ────────────────────────────────────
-    function parseProducts(xmlDoc) {
+    // listType: 'authorised' | 'withdrawn' | null (null => infer from RegistrationStatus)
+    function parseProducts(xmlDoc, listType = null) {
         const products = [];
         const nodes = xmlDoc.getElementsByTagName('Product');
         for (let i = 0; i < nodes.length; i++) {
@@ -280,6 +309,7 @@
                 }
             }
 
+            const registrationStatus = txt(n, 'RegistrationStatus');
             products.push({
                 drugIDPK: txt(n, 'DrugIDPK'),
                 licenceNumber: txt(n, 'LicenceNumber'),
@@ -288,7 +318,7 @@
                 authorisedDate: txt(n, 'AuthorisedDate'),
                 productType: txt(n, 'ProductType'),
                 marketInfo: txt(n, 'MarketInfo'),
-                registrationStatus: txt(n, 'RegistrationStatus'),
+                registrationStatus,
                 dosageForm: txt(n, 'DosageForm'),
                 legalBasis: txt(n, 'LegalBasis'),
                 activeSubstances: txts(n, 'ActiveSubstance'),
@@ -298,6 +328,8 @@
                 supplyLegalStatus: txt(n, 'SupplyLegalStatus'),
                 promotionLegalStatus: txt(n, 'PromotionLegalStatus'),
                 supplyComments: txt(n, 'SupplyComments'),
+                withdrawalDate: txt(n, 'WithdrawalDate'),
+                listType: listType || (registrationStatus === 'WI' ? 'withdrawn' : 'authorised'),
             });
         }
         return products;
@@ -641,6 +673,7 @@
     function applyFilters() {
         const term = searchTerm.toLowerCase();
         const type = filterType.value;
+        const list = filterList.value;
         const status = filterStatus.value;
         const legal = filterLegalBasis.value;
         const dispensing = filterDispensing.value;
@@ -652,6 +685,7 @@
                     p.productName, p.paHolder, p.drugIDPK, p.licenceNumber,
                     p.dosageForm, p.legalBasis, p.marketInfo, p.registrationStatus,
                     p.supplyLegalStatus, p.promotionLegalStatus, p.supplyComments,
+                    p.withdrawalDate,
                     ...p.activeSubstances, ...p.routesOfAdministration,
                     ...p.atcs, ...p.dispensingStatuses
                 ].join(' ').toLowerCase();
@@ -661,6 +695,7 @@
             }
 
             if (msState.market.length && !msState.market.includes(p.marketInfo)) return false;
+            if (list && p.listType !== list) return false;
             if (type && p.productType !== type) return false;
             if (status && p.registrationStatus !== status) return false;
             if (legal && p.legalBasis !== legal) return false;
@@ -1042,6 +1077,15 @@
                     <div class="modal-field-value">${val(p.registrationStatus)}</div>
                 </div>
                 <div class="modal-field">
+                    <div class="modal-field-label">Medicine List</div>
+                    <div class="modal-field-value"><span class="badge ${p.listType === 'withdrawn' ? 'badge-not-marketed' : 'badge-marketed'}">${p.listType === 'withdrawn' ? 'Withdrawn' : 'Authorised'}</span></div>
+                </div>
+                ${p.withdrawalDate ? `
+                <div class="modal-field">
+                    <div class="modal-field-label">Withdrawal Date</div>
+                    <div class="modal-field-value">${val(p.withdrawalDate)}</div>
+                </div>` : ''}
+                <div class="modal-field">
                     <div class="modal-field-label">Market Info</div>
                     <div class="modal-field-value"><span class="badge ${badgeClass(p.marketInfo)}">${escHTML(p.marketInfo)}</span></div>
                 </div>
@@ -1110,6 +1154,7 @@
         searchClear.classList.remove('visible');
         searchHint.style.display = '';
         filterType.value = '';
+        filterList.value = 'authorised';
         filterStatus.value = '';
         filterLegalBasis.value = '';
         filterDispensing.value = '';
@@ -1167,6 +1212,9 @@
             }
         });
         if (filterType.value) addPill('Type', filterType.value, () => { filterType.value = ''; });
+        if (filterList.value !== 'authorised') {
+            addPill('List', filterList.value === 'withdrawn' ? 'Withdrawn' : 'All (Auth + Withdrawn)', () => { filterList.value = 'authorised'; });
+        }
         if (filterStatus.value) addPill('Registration', filterStatus.value, () => { filterStatus.value = ''; });
         if (filterLegalBasis.value) addPill('Legal Basis', filterLegalBasis.value, () => { filterLegalBasis.value = ''; });
         if (filterDispensing.value) addPill('Dispensing', filterDispensing.value, () => { filterDispensing.value = ''; });
@@ -1193,6 +1241,7 @@
         const savedAtc = atcBrowserFilter;
         const savedMs = Object.fromEntries(Object.entries(msState).map(([k,v]) => [k, [...v]]));
         const savedType = filterType.value;
+        const savedList = filterList.value;
         const savedStatus = filterStatus.value;
         const savedLegal = filterLegalBasis.value;
         const savedDisp = filterDispensing.value;
@@ -1206,6 +1255,7 @@
             atcBrowserFilter = savedAtc;
             Object.keys(msState).forEach(k => msState[k] = [...savedMs[k]]);
             filterType.value = savedType;
+            filterList.value = savedList;
             filterStatus.value = savedStatus;
             filterLegalBasis.value = savedLegal;
             filterDispensing.value = savedDisp;
@@ -1235,6 +1285,7 @@
         });
         if (savedAtc) test('Remove ATC Tree filter', () => { atcBrowserFilter = ''; }, () => { atcBrowserFilter = ''; if (atcBrowserInitialized) updateAtcBrowserUI(); });
         if (savedType) test(`Remove Product Type filter`, () => { filterType.value = ''; }, () => { filterType.value = ''; });
+        if (savedList) test(`Show all medicine lists`, () => { filterList.value = ''; }, () => { filterList.value = ''; });
         if (savedStatus) test(`Remove Registration filter`, () => { filterStatus.value = ''; }, () => { filterStatus.value = ''; });
         if (savedLegal) test(`Remove Legal Basis filter`, () => { filterLegalBasis.value = ''; }, () => { filterLegalBasis.value = ''; });
         if (savedDisp) test(`Remove Dispensing filter`, () => { filterDispensing.value = ''; }, () => { filterDispensing.value = ''; });
@@ -1244,7 +1295,7 @@
 
     function updateClearButton() {
         const hasFilters = searchTerm || atcBrowserFilter ||
-            filterType.value || filterStatus.value ||
+            filterType.value || filterList.value !== 'authorised' || filterStatus.value ||
             filterLegalBasis.value || filterDispensing.value ||
             Object.values(msState).some(a => a.length > 0) ||
             showOnlyReviewed;
@@ -1433,6 +1484,7 @@
         if (searchTerm) params.set('q', searchTerm);
         if (msState.market.length) params.set('market', msState.market.join('|'));
         if (filterType.value) params.set('type', filterType.value);
+        if (filterList.value !== 'authorised') params.set('list', filterList.value === '' ? 'all' : filterList.value);
         if (filterStatus.value) params.set('reg', filterStatus.value);
         if (filterLegalBasis.value) params.set('legal', filterLegalBasis.value);
         if (filterDispensing.value) params.set('disp', filterDispensing.value);
@@ -1463,6 +1515,8 @@
         }
 
         if (params.get('type')) filterType.value = params.get('type');
+        const listParam = params.get('list');
+        if (listParam) filterList.value = listParam === 'all' ? '' : listParam;
         if (params.get('reg')) filterStatus.value = params.get('reg');
         if (params.get('legal')) filterLegalBasis.value = params.get('legal');
         if (params.get('disp')) filterDispensing.value = params.get('disp');
@@ -1514,7 +1568,7 @@
 
         const headers = [
             'Reviewed', 'Product Name', 'Licence Number', 'Drug ID', 'PA Holder',
-            'Authorised Date', 'Product Type', 'Market Info', 'Registration Status',
+            'Medicine List', 'Authorised Date', 'Withdrawal Date', 'Product Type', 'Market Info', 'Registration Status',
             'Dosage Form', 'Active Substances', 'Routes of Administration', 'ATC Codes',
             'Legal Basis', 'Dispensing Legal Status', 'Supply Legal Status',
             'Promotion Legal Status', 'Supply Comments'
@@ -1523,7 +1577,8 @@
         const rows = filteredProducts.map(p => [
             reviewedIds.has(p.drugIDPK) ? 'Yes' : 'No',
             p.productName, p.licenceNumber, p.drugIDPK, p.paHolder,
-            p.authorisedDate, p.productType, p.marketInfo, p.registrationStatus,
+            p.listType === 'withdrawn' ? 'Withdrawn' : 'Authorised',
+            p.authorisedDate, p.withdrawalDate, p.productType, p.marketInfo, p.registrationStatus,
             p.dosageForm, p.activeSubstances.join('; '), p.routesOfAdministration.join('; '),
             p.atcs.join('; '), p.legalBasis, p.dispensingStatuses.join('; '),
             p.supplyLegalStatus, p.promotionLegalStatus, p.supplyComments
@@ -1651,7 +1706,7 @@
     });
 
     // Select filters
-    [filterType, filterStatus, filterLegalBasis, filterDispensing].forEach(sel => {
+    [filterType, filterList, filterStatus, filterLegalBasis, filterDispensing].forEach(sel => {
         sel.addEventListener('change', filterAndRender);
     });
 

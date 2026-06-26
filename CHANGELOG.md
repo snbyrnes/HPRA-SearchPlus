@@ -4,6 +4,16 @@ All notable changes to HPRA SearchPlus will be documented in this file.
 
 ---
 
+## v1.9.0 — 2026-06-26
+
+### Added
+- **Withdrawn medicines list** — the app now loads HPRA's `withdrawnHumanlist.xml` (~19,700 products) alongside the authorised list and merges the two in the browser
+- **"Medicine List" filter** — a new dropdown filters between **Authorised**, **Withdrawn**, or **All**; it defaults to **Authorised** so the existing view is unchanged until you opt in
+- **Withdrawal Date** — exposed as an optional table column, a detail-modal field, in full-text search, and in the CSV export (which also gains a "Medicine List" column)
+- **Daily refresh of both lists** — the GitHub Actions workflow now downloads and commits both the authorised and withdrawn XML files every day at 05:00 UTC
+
+---
+
 ## v1.8.0 — 2026-05-12
 
 ### Added
