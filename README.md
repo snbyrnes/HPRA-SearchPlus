@@ -29,7 +29,8 @@ A fast, client-side browser for the [HPRA](https://www.hpra.ie/) (Health Product
 - **Pagination** — configurable 25/50/100/250 items per page
 
 ### Data Handling
-- **Auto-load** — automatically finds and loads XML from the `data/` folder (or root fallback)
+- **Auto-load** — loads the pre-built `data/products.json` (falls back to XML auto-load if absent)
+- **"What changed" feed** — a 🆕 button summarises what was newly authorised, withdrawn, or changed in the latest daily update
 - **Drag & drop** — drop any HPRA XML file directly onto the page
 - **File picker** — manual XML loading via the "Load XML" button
 - **Hot-reload** — load a new XML file at any time without refreshing
@@ -96,13 +97,19 @@ hpra-search/
 │   └── styles.css          # All styles (light mode, dark mode, responsive)
 ├── js/
 │   └── app.js              # Application logic (parsing, filtering, rendering)
+├── scripts/
+│   └── build-data.mjs      # Data pipeline: download XML → products.json + changes.json
 ├── data/
-│   └── latestHumanlist.xml  # ← Auto-updated daily by GitHub Actions
+│   ├── products.json           # ← Authorised list (loaded on startup)
+│   ├── products-withdrawn.json # ← Withdrawn list (lazy-loaded on demand)
+│   ├── changes.json            # ← Daily "what changed" diff
+│   └── atc-dictionary.json     # ← ATC code→name lookup (WHO ATC/DDD Index)
 ├── .github/
 │   └── workflows/
-│       └── update-xml.yml  # Scheduled workflow to refresh XML data
+│       └── update-xml.yml  # Scheduled workflow that runs the data pipeline
 ├── .nojekyll               # Prevents GitHub Pages Jekyll processing
 ├── .gitattributes          # Line-ending normalisation
+├── .gitignore              # Ignores transiently-downloaded data/*.xml
 └── README.md               # This file
 ```
 
@@ -113,7 +120,12 @@ hpra-search/
 ### Local Usage
 
 1. Clone or download this repository
-2. Place the HPRA XML file in the `data/` folder (named `latestHumanlist.xml`)
+2. Build the data file (downloads the HPRA XML and produces `data/products.json`):
+   ```bash
+   node scripts/build-data.mjs          # downloads fresh XML from HPRA
+   # or, if you already have data/*.xml locally:
+   node scripts/build-data.mjs --local
+   ```
 3. Serve the folder with any local HTTP server:
    ```bash
    # Python
@@ -138,11 +150,13 @@ hpra-search/
 
 ### Updating the Data
 
-The XML data is updated **automatically** — a GitHub Actions workflow runs daily at 05:00 UTC, downloads the latest file from `assets.hpra.ie`, and commits it to the `data/` folder. No manual steps required.
+The data is updated **automatically** — a GitHub Actions workflow runs daily at 05:00 UTC. It runs `scripts/build-data.mjs`, which downloads the latest authorised and withdrawn lists from `assets.hpra.ie`, parses them into `data/products.json` (authorised) and `data/products-withdrawn.json` (withdrawn, lazy-loaded by the app), diffs against the previous build to produce `data/changes.json`, and commits all three. The raw XML is downloaded transiently and is **not** committed (it stays out of the repo via `.gitignore`).
 
-You can also trigger a manual update at any time from the **Actions** tab in GitHub → select **Update HPRA XML Data** → **Run workflow**.
+You can also trigger a manual update at any time from the **Actions** tab in GitHub → select **Update HPRA Data** → **Run workflow**.
 
-If you need to load a different XML file manually, use the drag-and-drop or **Load XML** button in the app. The app also accepts these filename variants as fallbacks: `latestHumanList.xml`, `LatestHumanList.xml`, `humanlist.xml`, `HumanList.xml`, `products.xml`.
+**ATC names** are provided by `data/atc-dictionary.json`, a one-time extraction of the WHO ATC/DDD Index (2026) mapping every ATC code to its level name. It changes roughly annually; to refresh it, extract the "ATC code" / "ATC level name" columns from the WHO index spreadsheet into the same `{ "names": { "<code>": "<name>" } }` shape.
+
+If you need to load a different XML file manually, use the drag-and-drop or **Load XML** button in the app — the in-browser XML parser remains as a fallback. The app also accepts these filename variants as fallbacks: `latestHumanList.xml`, `LatestHumanList.xml`, `humanlist.xml`, `HumanList.xml`, `products.xml`.
 
 ---
 
@@ -156,7 +170,7 @@ This project deliberately uses **vanilla JavaScript** with no frameworks or buil
 - **Easy maintenance** — a single JS file with clear sections, no abstraction layers
 - **GitHub Pages compatible** — pure static files with a single lightweight GitHub Actions workflow for automated data updates
 
-The XML data (~13MB) is parsed client-side using the browser's native `DOMParser`, which handles it in ~1–2 seconds on modern hardware.
+The app loads a pre-built `data/products.json` (the authorised list, ≈510 KB gzipped over the wire) produced by the data pipeline, so there is no client-side XML parsing on a normal visit. The larger withdrawn list is fetched only when needed. The browser's native `DOMParser` is retained only as a fallback for manually loaded XML files.
 
 ---
 

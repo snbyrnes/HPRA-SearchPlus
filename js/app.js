@@ -6,6 +6,10 @@
     // ── State ──────────────────────────────────────────
     let allProducts = [];
     let filteredProducts = [];
+    // Lazy loading: the withdrawn list is fetched only when the Medicine List
+    // filter needs it (Withdrawn / All). True once loaded or when not applicable.
+    let withdrawnLoaded = false;
+    let withdrawnLoading = null;
     let currentPage = 1;
     let itemsPerPage = 50;
     let viewMode = localStorage.getItem('viewMode') || 'table'; // 'card' | 'table'
@@ -47,6 +51,24 @@
         'V': 'Various'
     };
 
+    // Full ATC code→name dictionary (WHO ATC/DDD Index), loaded from data/atc-dictionary.json.
+    // Covers all 5 levels; level-1 keeps the curated short labels above.
+    let atcNames = {};
+    async function loadAtcDictionary() {
+        try {
+            const resp = await fetch('data/atc-dictionary.json?v=' + Date.now(), { cache: 'no-store' });
+            if (resp.ok) {
+                const d = await resp.json();
+                if (d && d.names) atcNames = d.names;
+            }
+        } catch (e) { /* fall back to level-1 names only */ }
+    }
+    function atcName(code) {
+        if (!code) return '';
+        if (code.length === 1 && ATC_LEVEL1_NAMES[code]) return ATC_LEVEL1_NAMES[code];
+        return atcNames[code] || '';
+    }
+
     // ── Column → Sort field mapping ────────────────────
     const COLUMN_SORT_MAP = {
         productName: 'name',
@@ -64,7 +86,7 @@
         { key: 'activeSubstances', header: 'Active Substances', render: p => p.activeSubstances.map(s => hl(s)).join(', '), default: true },
         { key: 'marketInfo', header: 'Market', render: p => `<span class="cell-badge ${badgeClass(p.marketInfo)}">${p.marketInfo}</span>`, default: true },
         { key: 'routesOfAdministration', header: 'Routes', render: p => p.routesOfAdministration.join(', ') || '\u2014', style: 'font-size:11px;', default: true },
-        { key: 'atcs', header: 'ATC', render: p => p.atcs.join(', ') || '\u2014', style: 'font-size:11px;font-family:monospace;', default: true },
+        { key: 'atcs', header: 'ATC', render: p => p.atcs.map(a => { const n = atcName(a); return n ? `<span title="${escHTML(n)}">${escHTML(a)}</span>` : escHTML(a); }).join(', ') || '\u2014', style: 'font-size:11px;font-family:monospace;', default: true },
         { key: 'authorisedDate', header: 'Auth. Date', render: p => p.authorisedDate || '\u2014', style: 'white-space:nowrap;', default: true },
         { key: 'drugIDPK', header: 'Drug ID', render: p => escHTML(p.drugIDPK), style: 'font-size:11px;', default: false },
         { key: 'productType', header: 'Product Type', render: p => escHTML(p.productType), default: false },
@@ -190,7 +212,36 @@
         return null;
     }
 
+    // Pre-built JSON produced by scripts/build-data.mjs (preferred — tiny + no XML parsing).
+    const JSON_FILENAMES = ['data/products.json', 'products.json'];
+
+    async function tryLoadJSON() {
+        const cacheBust = `?v=${Date.now()}`;
+        for (const fname of JSON_FILENAMES) {
+            try {
+                const resp = await fetch(encodeURI(fname) + cacheBust, { cache: 'no-store' });
+                if (resp.ok) {
+                    const doc = await resp.json();
+                    if (doc && Array.isArray(doc.products) && doc.products.length) return doc;
+                }
+            } catch (e) { /* continue */ }
+        }
+        return null;
+    }
+
     async function init() {
+        // ATC names power the browser/columns/modal — load before any render.
+        await loadAtcDictionary();
+
+        // Fast path: pre-built JSON dataset.
+        const data = await tryLoadJSON();
+        if (data) {
+            showToast(`Loaded ${data.products.length.toLocaleString()} products`);
+            processData(data);
+            return;
+        }
+
+        // Fallback: raw HPRA XML (authorised + optional withdrawn).
         const authorised = await fetchFirstXml(XML_FILENAMES);
         if (authorised) {
             // Withdrawn list is best-effort: if it's missing the app still works.
@@ -205,6 +256,147 @@
         }
     }
 
+    // Publication date + freshness badge, shared by the JSON and XML load paths.
+    function setPublicationDate(dateStr) {
+        const d = new Date(dateStr);
+        if (isNaN(d.getTime())) return;
+        const pubEl = $('publicationDate');
+        pubEl.textContent = `Published: ${d.toLocaleDateString('en-IE', {
+            year: 'numeric', month: 'long', day: 'numeric'
+        })} at ${d.toLocaleTimeString('en-IE', { hour: '2-digit', minute: '2-digit' })}`;
+
+        const daysAgo = Math.floor((Date.now() - d.getTime()) / (1000 * 60 * 60 * 24));
+        const fClass = daysAgo <= 30 ? 'freshness-fresh' : daysAgo <= 90 ? 'freshness-aging' : 'freshness-stale';
+        const fText = daysAgo === 0 ? 'Today' : daysAgo === 1 ? '1 day ago' : `${daysAgo} days ago`;
+        const fTip = daysAgo <= 30 ? 'Data is up to date' : daysAgo <= 90 ? 'Data may be outdated — consider updating' : 'Data is stale — please update the data';
+        const badge = document.createElement('span');
+        badge.className = `freshness-badge ${fClass}`;
+        badge.textContent = fText;
+        badge.title = fTip;
+        pubEl.appendChild(badge);
+    }
+
+    // Wire up the UI once allProducts has been populated (by either load path).
+    function finishLoad() {
+        filteredProducts = [...allProducts];
+
+        $('loadingState').style.display = 'none';
+        $('dropZone').style.display = 'none';
+        $('searchRow').style.display = 'flex';
+        $('filtersRow').style.display = 'flex';
+        $('statsBar').style.display = 'flex';
+        exportBtn.style.display = '';
+        viewToggleBtn.style.display = '';
+        atcBrowserBtn.style.display = '';
+        shareBtn.style.display = '';
+        if (reviewedFilterBtn) reviewedFilterBtn.style.display = '';
+        updateReviewedBadge();
+        if ($('appFooter')) $('appFooter').style.display = '';
+
+        populateFilters();
+        buildColumnPicker();
+        applyUrlState();
+        updateFilterPills();
+        initAtcBrowser();
+        if (atcBrowserVisible) $('atcBrowserPanel').style.display = '';
+        sortSelect.value = currentSort;
+        applyFilters();
+        applySort();
+        updateViewToggle();
+        updateClearButton();
+        renderProducts();
+        updateUrlState();
+        loadChangeFeed();
+
+        // A shared link may select Withdrawn/All — render authorised first (fast),
+        // then lazy-load the withdrawn list and re-render.
+        if (filterList.value !== 'authorised' && !withdrawnLoaded) {
+            ensureWithdrawnLoaded().then(() => filterAndRender()).catch(() => {});
+        }
+
+        console.log(`Loaded ${allProducts.length} products`);
+    }
+
+    function showLoadError(message) {
+        console.error(message);
+        $('loadingState').innerHTML = `
+            <div class="no-results">
+                <div class="no-results-icon">⚠️</div>
+                <div class="no-results-text">Error Loading Data</div>
+                <p style="color:#86868b;margin-top:8px;">${escHTML(String(message))}</p>
+            </div>`;
+    }
+
+    // Fast path: pre-built JSON from the data pipeline (scripts/build-data.mjs).
+    // products.json holds the authorised list; the withdrawn list is lazy-loaded.
+    function processData(doc) {
+        try {
+            if (!doc || !Array.isArray(doc.products)) throw new Error('Invalid data file — no products array');
+            if (doc.datePublished?.authorised) setPublicationDate(doc.datePublished.authorised);
+            allProducts = doc.products;
+            withdrawnLoaded = false;
+            finishLoad();
+        } catch (err) {
+            showLoadError(err.message);
+        }
+    }
+
+    // Capture / restore filter selections across a populateFilters() rebuild
+    // (needed because rebuilding resets the option lists and msState).
+    function snapshotFilters() {
+        return {
+            type: filterType.value, list: filterList.value, status: filterStatus.value,
+            legal: filterLegalBasis.value, disp: filterDispensing.value,
+            ms: Object.fromEntries(Object.keys(msState).map(k => [k, [...msState[k]]])),
+        };
+    }
+    function restoreFilters(snap) {
+        filterType.value = snap.type; filterList.value = snap.list; filterStatus.value = snap.status;
+        filterLegalBasis.value = snap.legal; filterDispensing.value = snap.disp;
+        Object.keys(msState).forEach(key => {
+            const vals = snap.ms[key] || [];
+            msState[key] = vals;
+            const wrapper = document.querySelector(`.multiselect-wrapper[data-ms="${key}"]`);
+            if (!wrapper) return;
+            wrapper.querySelectorAll('.multiselect-options input[type="checkbox"]').forEach(cb => {
+                cb.checked = vals.includes(msData[key][parseInt(cb.dataset.idx)]);
+            });
+            updateMsDisplay(wrapper, key);
+        });
+    }
+
+    async function ensureWithdrawnLoaded() {
+        if (withdrawnLoaded) return;
+        if (!withdrawnLoading) withdrawnLoading = loadWithdrawn();
+        return withdrawnLoading;
+    }
+
+    async function loadWithdrawn() {
+        const FILES = ['data/products-withdrawn.json', 'products-withdrawn.json'];
+        let items = null;
+        for (const f of FILES) {
+            try {
+                const resp = await fetch(encodeURI(f) + '?v=' + Date.now(), { cache: 'no-store' });
+                if (resp.ok) {
+                    const doc = await resp.json();
+                    items = Array.isArray(doc) ? doc : (doc.products || null);
+                    if (items) break;
+                }
+            } catch (e) { /* try next */ }
+        }
+        if (!items) { withdrawnLoading = null; throw new Error('Could not load the withdrawn medicines list'); }
+
+        // Merge, then rebuild filter options + ATC tree over the full dataset,
+        // preserving the user's current selections.
+        const snap = snapshotFilters();
+        allProducts = allProducts.concat(items);
+        withdrawnLoaded = true;
+        populateFilters();
+        restoreFilters(snap);
+        initAtcBrowser();
+    }
+
+    // Fallback path: raw HPRA XML (manual drag-drop, or if products.json is absent).
     function processXML(xmlText, withdrawnText = null) {
         try {
             const parser = new DOMParser();
@@ -213,28 +405,8 @@
             if (xmlDoc.getElementsByTagName('parsererror').length > 0)
                 throw new Error('Invalid XML — failed to parse');
 
-            // Publication date & freshness indicator
             const root = xmlDoc.documentElement;
-            if (root?.hasAttribute('datePublished')) {
-                const d = new Date(root.getAttribute('datePublished'));
-                if (!isNaN(d.getTime())) {
-                    const pubEl = $('publicationDate');
-                    pubEl.textContent = `Published: ${d.toLocaleDateString('en-IE', {
-                        year: 'numeric', month: 'long', day: 'numeric'
-                    })} at ${d.toLocaleTimeString('en-IE', { hour: '2-digit', minute: '2-digit' })}`;
-
-                    // Freshness badge
-                    const daysAgo = Math.floor((Date.now() - d.getTime()) / (1000 * 60 * 60 * 24));
-                    const fClass = daysAgo <= 30 ? 'freshness-fresh' : daysAgo <= 90 ? 'freshness-aging' : 'freshness-stale';
-                    const fText = daysAgo === 0 ? 'Today' : daysAgo === 1 ? '1 day ago' : `${daysAgo} days ago`;
-                    const fTip = daysAgo <= 30 ? 'Data is up to date' : daysAgo <= 90 ? 'Data may be outdated \u2014 consider updating' : 'Data is stale \u2014 please update the XML';
-                    const badge = document.createElement('span');
-                    badge.className = `freshness-badge ${fClass}`;
-                    badge.textContent = fText;
-                    badge.title = fTip;
-                    pubEl.appendChild(badge);
-                }
-            }
+            if (root?.hasAttribute('datePublished')) setPublicationDate(root.getAttribute('datePublished'));
 
             allProducts = parseProducts(xmlDoc);
 
@@ -248,45 +420,11 @@
                 }
             }
 
-            filteredProducts = [...allProducts];
-
-            // Show UI
-            $('loadingState').style.display = 'none';
-            $('dropZone').style.display = 'none';
-            $('searchRow').style.display = 'flex';
-            $('filtersRow').style.display = 'flex';
-            $('statsBar').style.display = 'flex';
-            exportBtn.style.display = '';
-            viewToggleBtn.style.display = '';
-            atcBrowserBtn.style.display = '';
-            shareBtn.style.display = '';
-            if (reviewedFilterBtn) reviewedFilterBtn.style.display = '';
-            updateReviewedBadge();
-            if ($('appFooter')) $('appFooter').style.display = '';
-
-            populateFilters();
-            buildColumnPicker();
-            applyUrlState();
-            updateFilterPills();
-            initAtcBrowser();
-            if (atcBrowserVisible) $('atcBrowserPanel').style.display = '';
-            sortSelect.value = currentSort;
-            applyFilters();
-            applySort();
-            updateViewToggle();
-            updateClearButton();
-            renderProducts();
-            updateUrlState();
-
-            console.log(`Loaded ${allProducts.length} products`);
+            // Manual/fallback loads use whatever file(s) were provided — no lazy fetch.
+            withdrawnLoaded = true;
+            finishLoad();
         } catch (err) {
-            console.error(err);
-            $('loadingState').innerHTML = `
-                <div class="no-results">
-                    <div class="no-results-icon">⚠️</div>
-                    <div class="no-results-text">Error Loading File</div>
-                    <p style="color:#86868b;margin-top:8px;">${err.message}</p>
-                </div>`;
+            showLoadError(err.message);
         }
     }
 
@@ -447,14 +585,16 @@
             const label = document.createElement('label');
             label.className = 'multiselect-option';
             label.dataset.idx = idx;
-            label.dataset.searchText = val.toLowerCase(); // for search matching
+            // For ATC, show the code's name and let users search by it (value stays the code).
+            const atcLabel = key === 'atc' ? atcName(val) : '';
+            label.dataset.searchText = (atcLabel ? `${val} ${atcLabel}` : val).toLowerCase();
 
             const cb = document.createElement('input');
             cb.type = 'checkbox';
             cb.dataset.idx = idx;
 
             const nameSpan = document.createElement('span');
-            nameSpan.textContent = val;
+            nameSpan.textContent = atcLabel ? `${val} — ${atcLabel}` : val;
 
             const countSpan = document.createElement('span');
             countSpan.className = 'count';
@@ -687,7 +827,7 @@
                     p.supplyLegalStatus, p.promotionLegalStatus, p.supplyComments,
                     p.withdrawalDate,
                     ...p.activeSubstances, ...p.routesOfAdministration,
-                    ...p.atcs, ...p.dispensingStatuses
+                    ...p.atcs, ...p.atcs.map(atcName), ...p.dispensingStatuses
                 ].join(' ').toLowerCase();
                 // Support multi-word search: all words must match
                 const words = term.split(/\s+/).filter(w => w);
@@ -1058,7 +1198,7 @@
                 </div>
                 <div class="modal-field">
                     <div class="modal-field-label">ATC Codes</div>
-                    <div class="modal-field-value">${p.atcs.length ? p.atcs.map(a => `<code style="background:#f0f0f5;padding:1px 5px;border-radius:4px;font-size:13px;">${escHTML(a)}</code>`).join(' ') : '<em style="color:#86868b;">—</em>'}</div>
+                    <div class="modal-field-value">${p.atcs.length ? p.atcs.map(a => { const n = atcName(a); return `<div style="margin:2px 0;"><code style="background:#f0f0f5;padding:1px 5px;border-radius:4px;font-size:13px;">${escHTML(a)}</code>${n ? ` <span style="color:#86868b;font-size:13px;">${escHTML(n)}</span>` : ''}</div>`; }).join('') : '<em style="color:#86868b;">—</em>'}</div>
                 </div>
             </div>
 
@@ -1350,7 +1490,7 @@
             const hasKids = node.children.length > 0;
             const pad = depth * 20;
             const activeClass = atcBrowserFilter === node.code ? ' atc-node-active' : '';
-            const levelName = node.code.length === 1 ? (ATC_LEVEL1_NAMES[node.code] || '') : '';
+            const levelName = atcName(node.code);
             return `<div class="atc-node${activeClass}" data-code="${escHTML(node.code)}">
                 <div class="atc-node-row" style="padding-left:${pad + 10}px" data-code="${escHTML(node.code)}">
                     ${hasKids ? '<span class="atc-toggle">\u25b6</span>' : '<span class="atc-toggle-spacer"></span>'}
@@ -1410,7 +1550,7 @@
                 nodes.forEach(n => n.style.display = 'none');
                 nodes.forEach(n => {
                     const code = (n.dataset.code || '').toLowerCase();
-                    const name = (ATC_LEVEL1_NAMES[n.dataset.code] || '').toLowerCase();
+                    const name = atcName(n.dataset.code).toLowerCase();
                     if (code.includes(term) || name.includes(term)) {
                         n.style.display = '';
                         let el = n.parentElement;
@@ -1706,7 +1846,24 @@
     });
 
     // Select filters
-    [filterType, filterList, filterStatus, filterLegalBasis, filterDispensing].forEach(sel => {
+    // The Medicine List filter may need to lazy-load the withdrawn dataset first.
+    filterList.addEventListener('change', onListFilterChange);
+
+    async function onListFilterChange() {
+        if (filterList.value !== 'authorised' && !withdrawnLoaded) {
+            showToast('Loading withdrawn medicines…');
+            try {
+                await ensureWithdrawnLoaded();
+            } catch (e) {
+                showToast('Failed to load withdrawn list');
+                filterList.value = 'authorised';
+                return;
+            }
+        }
+        filterAndRender();
+    }
+
+    [filterType, filterStatus, filterLegalBasis, filterDispensing].forEach(sel => {
         sel.addEventListener('change', filterAndRender);
     });
 
@@ -1974,7 +2131,87 @@
             .replace(/(<\/[hulo][^>]*>)<\/p>/g, '$1');
     }
 
+    // ── "What changed" feed ────────────────────────────
+    let changeFeed = null;
+
+    // Headline count = the distinct categories we surface (no double-counting).
+    function changeFeedTotal(s) {
+        if (!s) return 0;
+        return (s.newlyAuthorised || 0) + (s.newlyWithdrawn || 0) + (s.fieldChanged || 0) + (s.removed || 0);
+    }
+
+    async function loadChangeFeed() {
+        const btn = $('changesBtn');
+        try {
+            const resp = await fetch('data/changes.json?v=' + Date.now(), { cache: 'no-store' });
+            if (!resp.ok) return;
+            changeFeed = await resp.json();
+        } catch (e) { return; }
+        if (!btn) return;
+        const total = changeFeedTotal(changeFeed?.summary);
+        if (changeFeed?.firstRun || total === 0) { btn.style.display = 'none'; return; }
+        btn.style.display = '';
+        btn.textContent = `🆕 ${total.toLocaleString()} change${total === 1 ? '' : 's'}`;
+        btn.title = `${total.toLocaleString()} change${total === 1 ? '' : 's'} in the latest data update`;
+    }
+
+    function renderChangeFeed() {
+        const c = $('changesContent');
+        if (!c) return;
+        if (!changeFeed) { c.innerHTML = '<div class="changelog-loading">No change data available.</div>'; return; }
+
+        const fmt = (s) => { const d = s ? new Date(s) : null; return d && !isNaN(d) ? d.toLocaleDateString('en-IE', { year: 'numeric', month: 'short', day: 'numeric' }) : '?'; };
+        const sections = [
+            ['Newly authorised', changeFeed.newlyAuthorised, '#34c759'],
+            ['Newly withdrawn', changeFeed.newlyWithdrawn, '#ff3b30'],
+            ['Changed', changeFeed.fieldChanged, '#ff9500'],
+            ['Removed from lists', changeFeed.removed, '#86868b'],
+        ];
+
+        const sameOrMissing = !changeFeed.since || changeFeed.since === changeFeed.until;
+        let html = sameOrMissing
+            ? `<p style="color:#86868b;margin:0 0 12px;">Changes in the latest data update (published <strong>${fmt(changeFeed.until)}</strong>).</p>`
+            : `<p style="color:#86868b;margin:0 0 12px;">Comparing data published <strong>${fmt(changeFeed.since)}</strong> → <strong>${fmt(changeFeed.until)}</strong>.</p>`;
+        let any = false;
+        for (const [label, sec, color] of sections) {
+            if (!sec || !sec.total) continue;
+            any = true;
+            const items = sec.items || [];
+            const shown = items.slice(0, 100);
+            html += `<div class="help-section"><div class="help-section-title" style="color:${color};">${label} (${sec.total.toLocaleString()})</div>`;
+            html += '<ul style="margin:6px 0 0;padding-left:18px;">';
+            for (const it of shown) {
+                let extra = '';
+                if (it.changes) {
+                    const flds = Object.keys(it.changes).map(f =>
+                        `${escHTML(f)}: “${escHTML(it.changes[f].from || '∅')}” → “${escHTML(it.changes[f].to || '∅')}”`).join('; ');
+                    extra = ` <span style="color:#86868b;font-size:12px;">— ${flds}</span>`;
+                }
+                html += `<li style="margin:3px 0;"><strong>${escHTML(it.productName || it.drugIDPK)}</strong> <span style="color:#86868b;font-size:12px;">${escHTML(it.paHolder || '')}${it.licenceNumber ? ' · ' + escHTML(it.licenceNumber) : ''}</span>${extra}</li>`;
+            }
+            const remaining = sec.total - shown.length;
+            if (remaining > 0) html += `<li style="color:#86868b;list-style:none;">…and ${remaining.toLocaleString()} more${sec.truncated ? ' (truncated)' : ''}</li>`;
+            html += '</ul></div>';
+        }
+        if (!any) html += '<div class="changelog-loading">No changes in the latest update.</div>';
+        c.innerHTML = html;
+    }
+
+    function initChangeFeed() {
+        const btn = $('changesBtn');
+        const modal = $('changesModal');
+        const closeBtn = $('closeChanges');
+        if (!btn || !modal) return;
+        const open = () => { renderChangeFeed(); modal.classList.add('active'); document.body.style.overflow = 'hidden'; };
+        const close = () => { modal.classList.remove('active'); document.body.style.overflow = ''; };
+        btn.addEventListener('click', open);
+        closeBtn?.addEventListener('click', close);
+        modal.addEventListener('click', e => { if (e.target === modal) close(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('active')) close(); });
+    }
+
     // ── Init ───────────────────────────────────────────
     init();
     initChangelog();
+    initChangeFeed();
 })();

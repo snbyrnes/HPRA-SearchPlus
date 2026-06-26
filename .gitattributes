@@ -10,3 +10,9 @@
 *.js text
 *.md text
 *.json text
+
+# Generated data — keep huge diffs out of PRs / blame
+data/products.json linguist-generated=true -diff
+data/products-withdrawn.json linguist-generated=true -diff
+data/changes.json linguist-generated=true
+data/atc-dictionary.json linguist-generated=true -diff

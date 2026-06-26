@@ -1,0 +1,7 @@
+# Raw HPRA XML is downloaded transiently by the data pipeline (scripts/build-data.mjs)
+# and is no longer committed — the app loads data/products.json instead.
+data/*.xml
+
+# Source spreadsheets (e.g. the WHO ATC/DDD index) — extracted into
+# data/atc-dictionary.json, not committed.
+*.xlsx

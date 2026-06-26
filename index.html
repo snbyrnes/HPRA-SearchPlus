@@ -25,6 +25,7 @@
                     </div>
                     <button type="button" class="btn btn-secondary" id="atcBrowserBtn" title="Browse ATC classification tree" style="display:none;">🌳 ATC</button>
                     <button type="button" class="btn btn-secondary" id="shareBtn" title="Copy shareable link with current filters" style="display:none;">🔗 Share</button>
+                    <button type="button" class="btn btn-secondary" id="changesBtn" title="See what changed in the latest data update" style="display:none;">🆕 What's changed</button>
                     <button type="button" class="btn btn-secondary" id="reviewedFilterBtn" title="Filter to show only reviewed items" style="display:none;">☑ Reviewed</button>
                     <button type="button" class="btn btn-secondary" id="clearChecklistBtn" title="Clear all checklist selections" style="display:none;">✕ Clear Checklist</button>
                     <button type="button" class="btn-icon" id="helpBtn" title="Keyboard shortcuts &amp; help (?)" aria-label="Help">?</button>
@@ -246,6 +247,16 @@
             <div class="changelog-body" id="changelogContent">
                 <div class="changelog-loading">Loading changelog...</div>
             </div>
+        </div>
+    </div>
+
+    <div class="changelog-overlay" id="changesModal">
+        <div class="changelog-modal">
+            <div class="changelog-header">
+                <h3>🆕 What's changed</h3>
+                <button type="button" class="changelog-close" id="closeChanges" title="Close">✕</button>
+            </div>
+            <div class="changelog-body" id="changesContent"></div>
         </div>
     </div>
 

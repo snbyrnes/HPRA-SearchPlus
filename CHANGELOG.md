@@ -4,13 +4,32 @@ All notable changes to HPRA SearchPlus will be documented in this file.
 
 ---
 
+## v1.11.0 — 2026-06-26
+
+### Changed
+- **Lazy-loaded withdrawn list** — the data pipeline now writes the authorised and withdrawn lists to separate files (`products.json` + `products-withdrawn.json`). The app loads only the authorised list on startup (~510 KB gzipped instead of ~1.3 MB) and fetches the withdrawn list on demand the first time the **Medicine List** filter is set to *Withdrawn* or *All* (or when opening a shared link that needs it). Active filter selections are preserved across the load. Since the table already paginates, no row virtualization was required.
+
+---
+
+## v1.10.0 — 2026-06-26
+
+### Added
+- **Pre-built data pipeline** — a dependency-free Node script (`scripts/build-data.mjs`) downloads both HPRA XML lists, parses them, and emits a single compact `data/products.json`. The browser now loads that JSON directly instead of parsing ~31 MB of XML on every visit (≈1.3 MB over the wire after gzip, and no client-side `DOMParser`). Output was validated field-for-field against the previous in-browser parser across all ~29,800 products with zero differences.
+- **"What changed" feed** — the pipeline diffs each build against the previous one and writes `data/changes.json` (newly authorised, newly withdrawn, changed fields, removed). A 🆕 button in the header opens a summary of what changed in the latest daily update.
+- **Full ATC names (all levels)** — a bundled `data/atc-dictionary.json` (WHO ATC/DDD Index 2026, ~7,000 codes) now labels ATC codes at every level — previously only the 14 top-level groups were named. Names appear in the ATC tree browser, the ATC filter dropdown (now searchable by name), the ATC table column (on hover), the detail modal, and global search.
+
+### Changed
+- **Daily workflow** now runs the data pipeline and commits `products.json` + `changes.json`. The raw XML is downloaded transiently and is no longer committed to the repo (it remains available via drag-and-drop import and as a load fallback).
+
+---
+
 ## v1.9.0 — 2026-06-26
 
 ### Added
 - **Withdrawn medicines list** — the app now loads HPRA's `withdrawnHumanlist.xml` (~19,700 products) alongside the authorised list and merges the two in the browser
 - **"Medicine List" filter** — a new dropdown filters between **Authorised**, **Withdrawn**, or **All**; it defaults to **Authorised** so the existing view is unchanged until you opt in
 - **Withdrawal Date** — exposed as an optional table column, a detail-modal field, in full-text search, and in the CSV export (which also gains a "Medicine List" column)
-- **Daily refresh of both lists** — the GitHub Actions workflow now downloads and commits both the authorised and withdrawn XML files every day at 05:00 UTC
+- **Daily refresh of both lists** — the GitHub Actions workflow refreshes both the authorised and withdrawn lists every day at 05:00 UTC (see v1.10.0 for the JSON pipeline that superseded the raw-XML commit step)
 
 ---
 
