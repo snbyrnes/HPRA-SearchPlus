@@ -130,6 +130,7 @@
     const paginationControls = $('paginationControls');
     const perPageSelect = $('perPageSelect');
     const exportBtn = $('exportBtn');
+    const exportSMBtn = $('exportSMBtn');
     const viewToggleBtn = $('viewToggleBtn');
     const atcBrowserBtn = $('atcBrowserBtn');
     const shareBtn = $('shareBtn');
@@ -286,6 +287,7 @@
         $('filtersRow').style.display = 'flex';
         $('statsBar').style.display = 'flex';
         exportBtn.style.display = '';
+        if (exportSMBtn) exportSMBtn.style.display = '';
         viewToggleBtn.style.display = '';
         atcBrowserBtn.style.display = '';
         shareBtn.style.display = '';
@@ -1743,6 +1745,60 @@
             ? `"${s.replace(/"/g, '""')}"` : s;
     }
 
+    // ── SM Special Export (NMPC bulk product data template) ──
+    function exportSMSpecial() {
+        if (!filteredProducts.length) { showToast('No results to export'); return; }
+
+        // Two header rows matching the NMPC bulk product data extract template
+        const sectionRow = [
+            'CONTENT CLASSIFICATION', '', '', 'GENERAL INFORMATION', '', '', '', '', '', '', '',
+            'CONTAINED PRODUCT(S) INFORMATION', '', '', '', '', '', '', '', ''
+        ];
+        const headerRow = [
+            'New Content', 'Licence Type', 'Wholesaler Product Reference No.', 'Registered Name*',
+            'Effective Date of Product/Pack Launch', 'Indicative Trade Price', 'Container Type*',
+            'Product Authorisation Number', 'PCRS Identifier/Name', 'GTIN',
+            'Attachment links - Image of Unit Dose; Data Sheet/SMPC; Packaging Artwork; Others',
+            'Packsize Quantity*', 'Packsize Units*', 'Marketing Authorisation Holder*', 'Dose Form*',
+            'Legal Status - MDA Schedule', 'Ingredient Name*', 'Ingredient Strength Value*',
+            'Ingredient Strength Unit*', 'ATC Code'
+        ];
+
+        const rows = filteredProducts.map(p => [
+            'Medicinal Product',        // New Content
+            '',                         // Licence Type
+            '',                         // Wholesaler Product Reference No.
+            p.productName,              // Registered Name*
+            '',                         // Effective Date of Product/Pack Launch
+            '',                         // Indicative Trade Price
+            '',                         // Container Type*
+            p.licenceNumber,            // Product Authorisation Number
+            '',                         // PCRS Identifier/Name
+            '',                         // GTIN
+            '',                         // Attachment links
+            '',                         // Packsize Quantity*
+            '',                         // Packsize Units*
+            p.paHolder,                 // Marketing Authorisation Holder*
+            p.dosageForm,               // Dose Form*
+            p.supplyComments,           // Legal Status - MDA Schedule
+            '',                         // Ingredient Name*
+            '',                         // Ingredient Strength Value*
+            '',                         // Ingredient Strength Unit*
+            p.atcs.join('; ')           // ATC Code
+        ].map(csvField));
+
+        const BOM = '\uFEFF'; // UTF-8 BOM for Excel
+        const csv = BOM + [sectionRow.join(','), headerRow.join(','), ...rows.map(r => r.join(','))].join('\r\n');
+        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `NMPC-bulk-product-data-${new Date().toISOString().slice(0,10)}.csv`;
+        a.click();
+        URL.revokeObjectURL(url);
+        showToast(`Exported ${filteredProducts.length.toLocaleString()} products (SM Special)`);
+    }
+
     // ── View Toggle ────────────────────────────────────
     function updateViewToggle() {
         viewToggleBtn.textContent = viewMode === 'card' ? '📊 Table' : '📇 Cards';
@@ -1882,6 +1938,7 @@
 
     // Export
     exportBtn.addEventListener('click', exportCSV);
+    if (exportSMBtn) exportSMBtn.addEventListener('click', exportSMSpecial);
 
     // View toggle
     viewToggleBtn.addEventListener('click', () => {
