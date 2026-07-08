@@ -1745,15 +1745,16 @@
             ? `"${s.replace(/"/g, '""')}"` : s;
     }
 
-    // ── SM Special Export (NMPC bulk product data template) ──
-    function exportSMSpecial() {
+    // ── SM Special Export (NMPC bulk product data template, .xlsx) ──
+    async function exportSMSpecial() {
         if (!filteredProducts.length) { showToast('No results to export'); return; }
+        if (typeof ExcelJS === 'undefined') { showToast('Excel library not loaded'); return; }
 
-        // Two header rows matching the NMPC bulk product data extract template
-        const sectionRow = [
-            'CONTENT CLASSIFICATION', '', '', 'GENERAL INFORMATION', '', '', '', '', '', '', '',
-            'CONTAINED PRODUCT(S) INFORMATION', '', '', '', '', '', '', '', ''
-        ];
+        const HSE_GREEN = 'FF006A4E';       // HSE brand green
+        const HSE_GREEN_LIGHT = 'FFCDE5DC'; // field header row tint
+        const HSE_GREEN_FADED = 'FFE9F4EF'; // faded tint for alternating rows
+        const COL_COUNT = 20;
+
         const headerRow = [
             'New Content', 'Licence Type', 'Wholesaler Product Reference No.', 'Registered Name*',
             'Effective Date of Product/Pack Launch', 'Indicative Trade Price', 'Container Type*',
@@ -1764,36 +1765,79 @@
             'Ingredient Strength Unit*', 'ATC Code'
         ];
 
-        const rows = filteredProducts.map(p => [
-            'Medicinal Product',        // New Content
-            '',                         // Licence Type
-            '',                         // Wholesaler Product Reference No.
-            p.productName,              // Registered Name*
-            '',                         // Effective Date of Product/Pack Launch
-            '',                         // Indicative Trade Price
-            '',                         // Container Type*
-            p.licenceNumber,            // Product Authorisation Number
-            '',                         // PCRS Identifier/Name
-            '',                         // GTIN
-            '',                         // Attachment links
-            '',                         // Packsize Quantity*
-            '',                         // Packsize Units*
-            p.paHolder,                 // Marketing Authorisation Holder*
-            p.dosageForm,               // Dose Form*
-            p.supplyComments,           // Legal Status - MDA Schedule
-            '',                         // Ingredient Name*
-            '',                         // Ingredient Strength Value*
-            '',                         // Ingredient Strength Unit*
-            p.atcs.join('; ')           // ATC Code
-        ].map(csvField));
+        const wb = new ExcelJS.Workbook();
+        const ws = wb.addWorksheet('Bulk Product Data', { views: [{ state: 'frozen', ySplit: 2 }] });
 
-        const BOM = '\uFEFF'; // UTF-8 BOM for Excel
-        const csv = BOM + [sectionRow.join(','), headerRow.join(','), ...rows.map(r => r.join(','))].join('\r\n');
-        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+        // Row 1: merged section headers, as in the NMPC template
+        ws.mergeCells('A1:C1');
+        ws.getCell('A1').value = 'CONTENT CLASSIFICATION';
+        ws.mergeCells('D1:K1');
+        ws.getCell('D1').value = 'GENERAL INFORMATION';
+        ws.mergeCells('L1:T1');
+        ws.getCell('L1').value = 'CONTAINED PRODUCT(S) INFORMATION';
+        const row1 = ws.getRow(1);
+        for (let c = 1; c <= COL_COUNT; c++) {
+            const cell = row1.getCell(c);
+            cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: HSE_GREEN } };
+            cell.font = { bold: true, color: { argb: 'FFFFFFFF' } };
+            cell.alignment = { horizontal: 'center', vertical: 'middle' };
+        }
+        row1.height = 22;
+
+        // Row 2: field names
+        const row2 = ws.getRow(2);
+        headerRow.forEach((h, i) => {
+            const cell = row2.getCell(i + 1);
+            cell.value = h;
+            cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: HSE_GREEN_LIGHT } };
+            cell.font = { bold: true };
+            cell.alignment = { vertical: 'middle', wrapText: true };
+        });
+        row2.height = 32;
+
+        // Data rows with faded HSE green alternating stripes
+        filteredProducts.forEach((p, i) => {
+            const vals = [
+                'Medicinal Product',        // New Content
+                '',                         // Licence Type
+                '',                         // Wholesaler Product Reference No.
+                p.productName,              // Registered Name*
+                '',                         // Effective Date of Product/Pack Launch
+                '',                         // Indicative Trade Price
+                '',                         // Container Type*
+                p.licenceNumber,            // Product Authorisation Number
+                '',                         // PCRS Identifier/Name
+                '',                         // GTIN
+                '',                         // Attachment links
+                '',                         // Packsize Quantity*
+                '',                         // Packsize Units*
+                p.paHolder,                 // Marketing Authorisation Holder*
+                p.dosageForm,               // Dose Form*
+                p.supplyComments,           // Legal Status - MDA Schedule
+                '',                         // Ingredient Name*
+                '',                         // Ingredient Strength Value*
+                '',                         // Ingredient Strength Unit*
+                p.atcs.join('; ')           // ATC Code
+            ];
+            const row = ws.getRow(i + 3);
+            for (let c = 1; c <= COL_COUNT; c++) {
+                const cell = row.getCell(c);
+                cell.value = vals[c - 1];
+                if (i % 2 === 1) {
+                    cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: HSE_GREEN_FADED } };
+                }
+            }
+        });
+
+        const widths = [18, 14, 22, 42, 20, 14, 14, 22, 16, 14, 30, 14, 14, 36, 28, 32, 20, 14, 14, 18];
+        widths.forEach((w, i) => { ws.getColumn(i + 1).width = w; });
+
+        const buf = await wb.xlsx.writeBuffer();
+        const blob = new Blob([buf], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = `NMPC-bulk-product-data-${new Date().toISOString().slice(0,10)}.csv`;
+        a.download = `NMPC-bulk-product-data-${new Date().toISOString().slice(0,10)}.xlsx`;
         a.click();
         URL.revokeObjectURL(url);
         showToast(`Exported ${filteredProducts.length.toLocaleString()} products (SM Special)`);
@@ -1938,7 +1982,9 @@
 
     // Export
     exportBtn.addEventListener('click', exportCSV);
-    if (exportSMBtn) exportSMBtn.addEventListener('click', exportSMSpecial);
+    if (exportSMBtn) exportSMBtn.addEventListener('click', () => {
+        exportSMSpecial().catch(err => { console.error(err); showToast('Export failed'); });
+    });
 
     // View toggle
     viewToggleBtn.addEventListener('click', () => {
